@@ -1,8 +1,15 @@
 package com.lestarieragemilang;
 
+import java.util.Map;
+import java.util.HashMap;
+
 import javafx.fxml.FXML;
+
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.control.ButtonType;
+
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 
@@ -61,15 +68,72 @@ public class SupplierForm extends SupplierRepositories {
         entity.setSupplierAddress(supplierAddressField.getText());
         entity.setSupplierEmail(supplierEmailField.getText());
 
+        // Update Supplier Data
         if (supplierActionButton.getText().equals("Update")) {
-            this.updateSupplierRepository(entity);
+            Map<String, Object> response = this
+                .updateSupplierRepository(entity);
 
+            if ((boolean) response.get("result")) {
+                Alert confirmationDialog = new Alert(Alert.AlertType.INFORMATION);
+                confirmationDialog.getDialogPane().setPrefSize(450, 250);
+
+                confirmationDialog.setTitle("Berhasil Memperbarui Data.");
+                confirmationDialog.setHeaderText((String) response.get("message"));
+    
+                confirmationDialog.getButtonTypes()
+                    .setAll(ButtonType.YES);
+    
+                confirmationDialog.showAndWait().ifPresent(buttonType -> {
+                    if (buttonType == ButtonType.YES) {
+                        Redirect.page("supplier", anchorPane, getClass());
+                        CacheService.clear();
+                    }
+                });
+            
+            } else {
+                Alert confirmationDialog = new Alert(Alert.AlertType.ERROR);
+                confirmationDialog.getDialogPane().setPrefSize(450, 250);
+
+                confirmationDialog.setTitle("Gagal Memperbarui Data.");
+                confirmationDialog.setHeaderText((String) response.get("message"));
+    
+                confirmationDialog.getButtonTypes().setAll(ButtonType.YES);
+                confirmationDialog.showAndWait();
+            }
+
+        // Add Supplier Data
         } else if (supplierActionButton.getText().equals("Tambah")) {
-            this.createSupplierRepository(entity);
-        }
+            Map<String, Object> response = this
+                .createSupplierRepository(entity);
 
-        Redirect.page("supplier", anchorPane, getClass());
-        CacheService.clear();
+            if ((boolean) response.get("result")) {
+                Alert confirmationDialog = new Alert(Alert.AlertType.INFORMATION);
+                confirmationDialog.getDialogPane().setPrefSize(450, 250);
+
+                confirmationDialog.setTitle("Berhasil Menambahkan Data.");
+                confirmationDialog.setHeaderText((String) response.get("message"));
+
+                confirmationDialog.getButtonTypes()
+                    .setAll(ButtonType.YES);
+
+                confirmationDialog.showAndWait().ifPresent(buttonType -> {
+                    if (buttonType == ButtonType.YES) {
+                        Redirect.page("supplier", anchorPane, getClass());
+                        CacheService.clear();
+                    }
+                });
+
+            } else {
+                Alert confirmationDialog = new Alert(Alert.AlertType.ERROR);
+                confirmationDialog.getDialogPane().setPrefSize(450, 250);
+
+                confirmationDialog.setTitle("Gagal Menambahkan Data.");
+                confirmationDialog.setHeaderText((String) response.get("message"));
+
+                confirmationDialog.getButtonTypes().setAll(ButtonType.YES);
+                confirmationDialog.showAndWait();
+            }
+        }
     }
 
     private void inputHandler() {
@@ -91,6 +155,8 @@ public class SupplierForm extends SupplierRepositories {
         } else {
             supplierActionButton.setText("Tambah");
         }
+
+        supplierIdField.setEditable(false);
 
         inputHandler();
     }

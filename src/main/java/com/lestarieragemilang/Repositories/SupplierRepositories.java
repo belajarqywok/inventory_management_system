@@ -1,12 +1,15 @@
 package com.lestarieragemilang.Repositories;
 
+import java.util.Map;
 import java.util.List;
+import java.util.HashMap;
 import java.util.ArrayList;
 
 import java.sql.ResultSet;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.PreparedStatement;
+import java.sql.SQLIntegrityConstraintViolationException;
 
 import com.lestarieragemilang.Entities.SupplierEntity;
 import com.lestarieragemilang.Configurations.DatabaseConfiguration;
@@ -24,6 +27,7 @@ public class SupplierRepositories extends DatabaseConfiguration {
    * Get Suppliers Repository
    * 
    * @return List<Object[]>
+   * 
    */
   protected List<Object[]> getSuppliersRepository () {
     List<Object[]> suppliersDataList = new ArrayList<>();
@@ -73,9 +77,12 @@ public class SupplierRepositories extends DatabaseConfiguration {
    * Create Supplier Repository
    * 
    * @param entity SupplierEntity
-   * @return boolean
+   * @return Map<String, Object>
+   * 
    */
-  protected boolean createSupplierRepository (SupplierEntity entity) {
+  protected Map<String, Object> createSupplierRepository (SupplierEntity entity) {
+    Map<String, Object> response = new HashMap<>();
+
     Connection connection = getConnection();
     String queryString = String.format(
       "INSERT INTO %s ( " +
@@ -108,40 +115,65 @@ public class SupplierRepositories extends DatabaseConfiguration {
 
       if (statement.executeUpdate() > 0) {
         connection.commit();
-        return true;
-          
+  
+        response.put("result", true);
+        response.put("message", "Data Berhasil Ditambahkan.");
+  
+        return (Map<String, Object>) response;
+            
       } else {
         connection.rollback();
-        return false;
+  
+        response.put("result", false);
+        response.put("message", "Data Gagal Ditambahkan, Coba Lagi.");
+  
+        return (Map<String, Object>) response;
       }
-
-    } catch (SQLException exception) {
+  
+    } catch (SQLIntegrityConstraintViolationException exception) {
       exception.printStackTrace();
-
+  
       try { connection.rollback(); }
       catch (SQLException rollbackException) {
         rollbackException.printStackTrace();
       }
-      
-      return false;
-
-    } finally {
-      try { 
-        connection.setAutoCommit(true);
+  
+      response.put("result", false);
+      response.put("message", "ID, Email, atau Kontak Mungkin Telah Digunakan, Coba Yang Lain.");
+        
+      return (Map<String, Object>) response;
+  
+    } catch (SQLException exception) {
+      exception.printStackTrace();
+  
+      try { connection.rollback(); }
+      catch (SQLException rollbackException) {
+        rollbackException.printStackTrace();
       }
+        
+      response.put("result", false);
+      response.put("message", "Data Gagal Ditambahkan, Coba Lagi.");
+  
+      return (Map<String, Object>) response;
+  
+    } finally {
+      try { connection.setAutoCommit(true); }
       catch (SQLException exception) { exception.printStackTrace(); }
     }
   }
 
 
-  
+
   /**
    * Update Supplier Repository
    * 
    * @param entity SupplierEntity
-   * @return boolean
+   * @return Map<String, Object>
+   * 
    */
-  protected boolean updateSupplierRepository (SupplierEntity entity) {
+  protected Map<String, Object> updateSupplierRepository (SupplierEntity entity) {
+    Map<String, Object> response = new HashMap<>();
+
     Connection connection = getConnection();
     String queryString = String.format(
       "UPDATE %s SET "       +
@@ -172,12 +204,33 @@ public class SupplierRepositories extends DatabaseConfiguration {
 
       if (statement.executeUpdate() > 0) {
         connection.commit();
-        return true;
+  
+        response.put("result", true);
+        response.put("message", "Data Berhasil Diperbarui.");
+  
+        return (Map<String, Object>) response;
 
       } else {
         connection.rollback();
-        return false;
+  
+        response.put("result", false);
+        response.put("message", "Data Gagal Diperbarui, Coba Lagi.");
+  
+        return (Map<String, Object>) response;
       }
+
+    } catch (SQLIntegrityConstraintViolationException exception) {
+      exception.printStackTrace();
+  
+      try { connection.rollback(); }
+      catch (SQLException rollbackException) {
+        rollbackException.printStackTrace();
+      }
+  
+      response.put("result", false);
+      response.put("message", "ID, Email, atau Kontak Mungkin Telah Digunakan, Coba Yang Lain.");
+        
+      return (Map<String, Object>) response;
 
     } catch (SQLException exception) {
       exception.printStackTrace();
@@ -187,12 +240,13 @@ public class SupplierRepositories extends DatabaseConfiguration {
         rollbackException.printStackTrace();
       }
       
-      return false;
+      response.put("result", false);
+      response.put("message", "Data Gagal Diperbarui, Coba Lagi.");
+
+      return (Map<String, Object>) response;
 
     } finally {
-      try { 
-        connection.setAutoCommit(true);
-      }
+      try { connection.setAutoCommit(true); }
       catch (SQLException exception) { exception.printStackTrace(); }
     }
   }
@@ -204,6 +258,7 @@ public class SupplierRepositories extends DatabaseConfiguration {
    * 
    * @param supplierId String
    * @return boolean
+   * 
    */
   protected boolean deleteSupplierRepository (String supplierId) {
     Connection connection = getConnection();
@@ -253,6 +308,7 @@ public class SupplierRepositories extends DatabaseConfiguration {
    * Search Suppliers Repository
    * 
    * @return List<Object[]>
+   * 
    */
   protected List<Object[]> searchSuppliersRepository (String key) {
     List<Object[]> suppliersDataList = new ArrayList<>();

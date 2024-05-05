@@ -1,8 +1,15 @@
 package com.lestarieragemilang;
 
+import java.util.Map;
+import java.util.HashMap;
+
 import javafx.fxml.FXML;
+
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.control.ButtonType;
+
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 
@@ -34,6 +41,7 @@ public class CustomerForm extends CustomerRepositories {
     @FXML
     private TextField customerEmailField;
 
+
     @FXML
     void clearButton (MouseEvent event) {
         customerIdField.setText("");
@@ -45,14 +53,16 @@ public class CustomerForm extends CustomerRepositories {
         CacheService.clear();
     }
 
+
     @FXML
     void backButton (MouseEvent event) {
         Redirect.page("customer", anchorPane, getClass());
         CacheService.clear();
     }
 
+
     @FXML
-    void customerActionButton (MouseEvent event) {
+    void customerActionButton(MouseEvent event) {
         CustomerEntity entity = new CustomerEntity();
 
         entity.setCustomerId(customerIdField.getText());
@@ -61,16 +71,76 @@ public class CustomerForm extends CustomerRepositories {
         entity.setCustomerAddress(customerAddressField.getText());
         entity.setCustomerEmail(customerEmailField.getText());
 
+        // Update Customer Data
         if (customerActionButton.getText().equals("Update")) {
-            this.updateCustomerRepository(entity);
+            Map<String, Object> response = this
+                .updateCustomerRepository(entity);
 
+            if ((boolean) response.get("result")) {
+                Alert confirmationDialog = new Alert(Alert.AlertType.INFORMATION);
+                confirmationDialog.getDialogPane().setPrefSize(450, 250);
+
+                confirmationDialog.setTitle("Berhasil Memperbarui Data.");
+                confirmationDialog.setHeaderText((String) response.get("message"));
+    
+                confirmationDialog.getButtonTypes()
+                    .setAll(ButtonType.YES);
+    
+                confirmationDialog.showAndWait().ifPresent(buttonType -> {
+                    if (buttonType == ButtonType.YES) {
+                        Redirect.page("customer", anchorPane, getClass());
+                        CacheService.clear();
+                    }
+                });
+    
+            } else {
+                Alert confirmationDialog = new Alert(Alert.AlertType.ERROR);
+                confirmationDialog.getDialogPane().setPrefSize(450, 250);
+
+                confirmationDialog.setTitle("Gagal Memperbarui Data.");
+                confirmationDialog.setHeaderText((String) response.get("message"));
+    
+                confirmationDialog.getButtonTypes().setAll(ButtonType.YES);
+                confirmationDialog.showAndWait();
+            }
+
+
+        // Add Customer Data
         } else if (customerActionButton.getText().equals("Tambah")) {
-            this.createCustomerRepository(entity);
-        }
+            Map<String, Object> response = this
+                .createCustomerRepository(entity);
 
-        Redirect.page("customer", anchorPane, getClass());
-        CacheService.clear();
+            if ((boolean) response.get("result")) {
+                Alert confirmationDialog = new Alert(Alert.AlertType.INFORMATION);
+                confirmationDialog.getDialogPane().setPrefSize(450, 250);
+
+                confirmationDialog.setTitle("Berhasil Menambahkan Data.");
+                confirmationDialog.setHeaderText((String) response.get("message"));
+
+                confirmationDialog.getButtonTypes()
+                    .setAll(ButtonType.YES);
+
+                confirmationDialog.showAndWait().ifPresent(buttonType -> {
+                    if (buttonType == ButtonType.YES) {
+                        Redirect.page("customer", anchorPane, getClass());
+                        CacheService.clear();
+                    }
+                });
+
+            } else {
+                Alert confirmationDialog = new Alert(Alert.AlertType.ERROR);
+                confirmationDialog.getDialogPane().setPrefSize(450, 250);
+
+                confirmationDialog.setTitle("Gagal Menambahkan Data.");
+                confirmationDialog.setHeaderText((String) response.get("message"));
+
+                confirmationDialog.getButtonTypes().setAll(ButtonType.YES);
+                confirmationDialog.showAndWait();
+            }
+        }
     }
+
+
 
     private void inputHandler() {
         String customerId = (String) CacheService.get("customerId");
@@ -83,6 +153,7 @@ public class CustomerForm extends CustomerRepositories {
         }
     }
 
+
     @FXML
     public void initialize() {
         if (CacheService.get("customerId") != null) {
@@ -91,6 +162,8 @@ public class CustomerForm extends CustomerRepositories {
         } else {
             customerActionButton.setText("Tambah");
         }
+
+        customerIdField.setEditable(false);
 
         inputHandler();
     }

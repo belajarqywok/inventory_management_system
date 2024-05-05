@@ -8,7 +8,7 @@ import java.sql.PreparedStatement;
 import com.lestarieragemilang.Configurations.DatabaseConfiguration;
 
 /**
- *  AuthRepositories
+ *  Auth Repositories
  */
 public class AuthRepositories extends DatabaseConfiguration {
   /**
@@ -21,8 +21,8 @@ public class AuthRepositories extends DatabaseConfiguration {
   protected boolean loginRepo(String username, String password) {
     Connection connection = getConnection();
     String query = (
-      "SELECT * FROM login WHERE username = ?" +
-      "AND password = SHA2(\"?\", 256)"
+      "SELECT * FROM admin_auth WHERE auth_username = ?" +
+      "AND auth_password = SHA2(?, 256)"
     );
         
     try {

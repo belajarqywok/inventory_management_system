@@ -18,9 +18,24 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("dashboard"), 1200, 650);
+        scene = new Scene(loadFXML("login"), 1200, 650);
         stage.initStyle(StageStyle.UNDECORATED);
         stage.setScene(scene);
+        stage.show();
+
+        final double[] xOffset = new double[1];
+        final double[] yOffset = new double[1];
+
+        scene.setOnMousePressed(event -> {
+            xOffset[0] = event.getSceneX();
+            yOffset[0] = event.getSceneY();
+        });
+
+        scene.setOnMouseDragged(event -> {
+            stage.setX(event.getScreenX() - xOffset[0]);
+            stage.setY(event.getScreenY() - yOffset[0]);
+        });
+
         stage.show();
     }
 

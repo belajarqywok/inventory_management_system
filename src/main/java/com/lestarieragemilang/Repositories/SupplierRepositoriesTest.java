@@ -1,6 +1,8 @@
 package com.lestarieragemilang.Repositories;
 
+import java.util.Map;
 import java.util.List;
+import java.util.HashMap;
 
 import com.lestarieragemilang.Entities.SupplierEntity;
 
@@ -75,10 +77,11 @@ public class SupplierRepositoriesTest extends SupplierRepositories {
     entity.setSupplierAddress("new zealand");
     entity.setSupplierEmail("qywok@admin.com");
 
-    boolean createSupplier = this
+    Map<String, Object> createSupplier = this
       .createSupplierRepository(entity);
 
-    System.out.println(createSupplier);
+    System.out.println(createSupplier.get("result"));
+    System.out.println(createSupplier.get("message"));
   }
 
 
@@ -96,10 +99,11 @@ public class SupplierRepositoriesTest extends SupplierRepositories {
     entity.setSupplierAddress("bandung");
     entity.setSupplierEmail("ptsilaban@admin.com");
 
-    boolean updateSupplier = this
+    Map<String, Object>  updateSupplier = this
       .updateSupplierRepository(entity);
 
-    System.out.println(updateSupplier);
+    System.out.println(updateSupplier.get("result"));
+    System.out.println(updateSupplier.get("message"));
   }
 
 

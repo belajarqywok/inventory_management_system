@@ -100,19 +100,24 @@ public class Customer extends CustomerRepositories {
     }
   }
 
+
   @FXML
   void addCustomerAction (MouseEvent event) {
     Redirect.page("customerForm", anchorPane, getClass());
   }
+
 
   @FXML
   void editCustomerAction (MouseEvent event) {
     Redirect.page("customerForm", anchorPane, getClass());
   }
 
+
   @FXML
   void deleteCustomerAction (MouseEvent event) {
     Alert confirmationDialog = new Alert(Alert.AlertType.CONFIRMATION);
+    confirmationDialog.getDialogPane().setPrefSize(450, 250);
+    
     confirmationDialog.setTitle("Konfirmasi");
     confirmationDialog.setHeaderText("hapus Customer");
     confirmationDialog.setContentText("Apakah anda yakin ?.");
@@ -126,6 +131,7 @@ public class Customer extends CustomerRepositories {
         }
     });
   }
+
 
   private void connectAndReadFromDatabase() {
     data = FXCollections.observableArrayList();
@@ -145,6 +151,7 @@ public class Customer extends CustomerRepositories {
       data.add(entity);
     }
   }
+
 
   private void clickHandler () {
     EventHandler<MouseEvent> handler = new EventHandler<MouseEvent>() {

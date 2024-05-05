@@ -1,4 +1,5 @@
 com\lestarieragemilang\Repositories\SupplierRepositories.class
+com\lestarieragemilang\Login.class
 com\lestarieragemilang\Configurations\DatabaseConfiguration.class
 com\lestarieragemilang\Utilities\Redirect.class
 com\lestarieragemilang\Repositories\AuthRepositories.class

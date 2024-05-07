@@ -1,0 +1,18 @@
+[Wed May 08 01:17:21 ICT 2024][INFO] ==================== COMPILE TASK ====================
+[Wed May 08 01:17:26 ICT 2024][INFO] We will now compile your code for x86_64-microsoft-windows. This may take some time.
+[Wed May 08 01:17:26 ICT 2024][FINE] Processing JavaStatic dependencies at C:\Users\kiwog\.gluon\substrate\javaStaticSdk\18-ea+prep18-9\windows-x86_64\staticjdk\lib\static
+[Wed May 08 01:17:26 ICT 2024][FINE] Processing JavaFXStatic dependencies at C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib
+[Wed May 08 01:17:26 ICT 2024][INFO] Downloading JavaFX static libs...
+[Wed May 08 01:17:26 ICT 2024][FINE] Processing zip file: url = https://download2.gluonhq.com/substrate/javafxstaticsdk/openjfx-21-ea+11.1-windows-x86_64-static.zip, zip = C:\Users\kiwog\.gluon\substrate\openjfx-21-ea+11.1-windows-x86_64-static.zip, subDir = javafxStaticSdk, levels = [21-ea+11.1, windows-x86_64], md5 = javafxStaticSdk-windows-x86_64.md5
+[Wed May 08 01:18:19 ICT 2024][INFO] JavaFX static libs downloaded successfully
+[Wed May 08 01:18:19 ICT 2024][FINE] Setup dependencies done
+[Wed May 08 01:18:19 ICT 2024][FINE] Extracting native libs to: F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\lib
+[Wed May 08 01:18:19 ICT 2024][FINE] Looking for resource: /native/windows/launcher.c
+[Wed May 08 01:18:19 ICT 2024][FINE] PB Command for compile-additional-sources: cl -c -DSUBSTRATE /MD /D_UNICODE /DUNICODE /DWIN32 /D_WINDOWS -IF:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\app launcher.c
+[Wed May 08 01:18:19 ICT 2024][FINE] Start process compile-additional-sources...
+[Wed May 08 01:20:31 ICT 2024][INFO] ==================== COMPILE TASK ====================
+[Wed May 08 01:20:35 ICT 2024][INFO] We will now compile your code for x86_64-microsoft-windows. This may take some time.
+[Wed May 08 01:20:35 ICT 2024][FINE] Extracting native libs to: F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\lib
+[Wed May 08 01:20:35 ICT 2024][FINE] Looking for resource: /native/windows/launcher.c
+[Wed May 08 01:20:35 ICT 2024][FINE] PB Command for compile-additional-sources: cl -c -DSUBSTRATE /MD /D_UNICODE /DUNICODE /DWIN32 /D_WINDOWS -IF:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\app launcher.c
+[Wed May 08 01:20:35 ICT 2024][FINE] Start process compile-additional-sources...

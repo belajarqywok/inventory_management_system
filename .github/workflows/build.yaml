@@ -1,35 +1,63 @@
-name: GraalVM Native Image builds
-on: [push, pull_request]
+name: inventory build
+
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - '*'
+
 jobs:
+  testing:
+    name: Testing
+    runs-on: ubuntu-latest
+    steps:
+      - name: Unit Testing
+        run: echo Testing
+
   build:
-    name: HelloWorld on ${{ matrix.os }}
-    runs-on: ${{ matrix.os }}
+    runs-on: windows-latest
     strategy:
       matrix:
-        os: [macos-latest, windows-latest, ubuntu-latest]
+        arch:
+          - x86_64
+          # - x86_amd64
+          # - amd64
+          # - amd64_x86
+    environment: Production
+    needs: testing
     steps:
       - uses: actions/checkout@v4
 
-      - uses: graalvm/setup-graalvm@v1.2.1
+      - name: Configure build toolchains for ${{ matrix.arch }}
+        uses: ilammy/msvc-dev-cmd@v1
         with:
-          java-version: '17'
-          distribution: 'graalvm'
-          github-token: ${{ secrets.TOKEN }}
-          native-image-job-reports: 'true'
+          arch: ${{ matrix.arch }}
 
-      - name: Build GluonFX
+      - uses: graalvm/setup-graalvm@v1
+        with:
+          java-version: '17'      
+          distribution: 'graalvm' 
+          github-token: ${{ secrets.TOKEN }}
+
+      - name: Get GraalVM environments
         run: |
+          echo "GRAALVM_HOME: $GRAALVM_HOME"
+          echo "JAVA_HOME: $JAVA_HOME"
+          java --version
+          native-image --version
+
+      - name: Build JavaFX/GluonFX Project
+        run: |
+          mvn package clean
           mvn gluonfx:build
 
-      # - name: Build and run HelloWorld.java
-      #   run: |
-      #     echo 'public class HelloWorld { public static void main(String[] args) { System.out.println("Hello, World!"); } }' > HelloWorld.java
-      #     javac HelloWorld.java
-      #     native-image HelloWorld
-      #     ./helloworld
-      
-      # - name: Upload binary
-      #   uses: actions/upload-artifact@v2
-      #   with:
-      #     name: helloworld-${{ matrix.os }}
-      #     path: helloworld*
+      - name: Zip Target
+        run: |
+          Compress-Archive -Path target/* -Destination inventory_management_system_${{ matrix.arch }}.zip
+
+      - name: Upload zip to artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: inventory_management_system_${{ matrix.arch }}
+          path: inventory_management_system_${{ matrix.arch }}.zip

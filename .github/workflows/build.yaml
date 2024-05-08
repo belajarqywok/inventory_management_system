@@ -17,15 +17,19 @@ jobs:
           github-token: ${{ secrets.TOKEN }}
           native-image-job-reports: 'true'
 
-      - name: Build and run HelloWorld.java
+      - name: Build GluonFX
         run: |
-          echo 'public class HelloWorld { public static void main(String[] args) { System.out.println("Hello, World!"); } }' > HelloWorld.java
-          javac HelloWorld.java
-          native-image HelloWorld
-          ./helloworld
+          mvn gluonfx:build
+
+      # - name: Build and run HelloWorld.java
+      #   run: |
+      #     echo 'public class HelloWorld { public static void main(String[] args) { System.out.println("Hello, World!"); } }' > HelloWorld.java
+      #     javac HelloWorld.java
+      #     native-image HelloWorld
+      #     ./helloworld
       
-      - name: Upload binary
-        uses: actions/upload-artifact@v2
-        with:
-          name: helloworld-${{ matrix.os }}
-          path: helloworld*
+      # - name: Upload binary
+      #   uses: actions/upload-artifact@v2
+      #   with:
+      #     name: helloworld-${{ matrix.os }}
+      #     path: helloworld*

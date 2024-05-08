@@ -1,0 +1,26 @@
+{
+  "resources":{
+  "includes":[
+    {"pattern":"\\QMETA-INF/services/org.junit.platform.engine.TestEngine\\E"}, 
+    {"pattern":"\\Qcom/sun/glass/utils/NativeLibLoader.class\\E"}, 
+    {"pattern":"\\Qcom/sun/javafx/scene/control/skin/modena/modena.bss\\E"}, 
+    {"pattern":"\\Qcom/sun/prism/es2/glsl/FillPgram_Color.frag\\E"}, 
+    {"pattern":"\\Qcom/sun/prism/es2/glsl/Solid_TextureFirstPassLCD.frag\\E"}, 
+    {"pattern":"\\Qcom/sun/prism/es2/glsl/Solid_TextureRGB.frag\\E"}, 
+    {"pattern":"\\Qcom/sun/prism/es2/glsl/Solid_TextureSecondPassLCD.frag\\E"}, 
+    {"pattern":"\\Qjfxtras/styles/jmetro/base.css\\E"}, 
+    {"pattern":"\\Qjfxtras/styles/jmetro/base_extras.css\\E"}, 
+    {"pattern":"\\Qjfxtras/styles/jmetro/base_other_libraries.css\\E"}, 
+    {"pattern":"\\Qjfxtras/styles/jmetro/dark_theme.css\\E"}, 
+    {"pattern":"\\Qjfxtras/styles/jmetro/light_theme.css\\E"}, 
+    {"pattern":"\\Qjfxtras/styles/jmetro/panes.css\\E"}, 
+    {"pattern":"\\Qlibglass.dylib\\E"}, 
+    {"pattern":"\\Qlibjavafx_font.dylib\\E"}, 
+    {"pattern":"\\Qlibprism_es2.dylib\\E"}, 
+    {"pattern":"\\Qorg/slf4j/impl/StaticLoggerBinder.class\\E"}
+  ]},
+  "bundles":[
+    {"name":"com.sun.javafx.tk.quantum.QuantumMessagesBundle"}, 
+    {"name":"org.eclipse.jgit.internal.JGitText"}
+  ]
+}

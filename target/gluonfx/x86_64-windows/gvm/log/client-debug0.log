@@ -16,3 +16,799 @@
 [Wed May 08 01:20:35 ICT 2024][FINE] Looking for resource: /native/windows/launcher.c
 [Wed May 08 01:20:35 ICT 2024][FINE] PB Command for compile-additional-sources: cl -c -DSUBSTRATE /MD /D_UNICODE /DUNICODE /DWIN32 /D_WINDOWS -IF:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\app launcher.c
 [Wed May 08 01:20:35 ICT 2024][FINE] Start process compile-additional-sources...
+[Wed May 08 12:26:02 ICT 2024][INFO] ==================== COMPILE TASK ====================
+[Wed May 08 12:26:08 ICT 2024][INFO] We will now compile your code for x86_64-microsoft-windows. This may take some time.
+[Wed May 08 12:26:10 ICT 2024][FINE] Extracting native libs to: F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\lib
+[Wed May 08 12:26:10 ICT 2024][FINE] Looking for resource: /native/windows/launcher.c
+[Wed May 08 12:26:10 ICT 2024][FINE] PB Command for compile-additional-sources: cl -c -DSUBSTRATE /MD /D_UNICODE /DUNICODE /DWIN32 /D_WINDOWS -IF:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\app launcher.c
+[Wed May 08 12:26:10 ICT 2024][FINE] Start process compile-additional-sources...
+[Wed May 08 12:26:10 ICT 2024][FINE] [SUB] Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27045 for x64
+[Wed May 08 12:26:10 ICT 2024][FINE] [SUB] Copyright (C) Microsoft Corporation.  All rights reserved.
+[Wed May 08 12:26:10 ICT 2024][FINE] [SUB] 
+[Wed May 08 12:26:10 ICT 2024][FINE] [SUB] launcher.c
+[Wed May 08 12:26:11 ICT 2024][FINE] [SUB] launcher.c(28): fatal error C1083: Cannot open include file: 'stdio.h': No such file or directory
+[Wed May 08 12:26:12 ICT 2024][FINE] Result for compile-additional-sources: 2
+[Wed May 08 12:26:12 ICT 2024][SEVERE] Process compile-additional-sources failed with result: 2
+Check the log files under F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\log
+And please check https://docs.gluonhq.com/ for more information.
+[Wed May 08 12:26:12 ICT 2024][INFO] Logging process [compile-additional-sources] to file: F:\projects\application projects\inventory_management_system\target\gluonfx\log\process-compile-additional-sources-1715145972440.log
+[Wed May 08 12:26:12 ICT 2024][SEVERE] Compiling failed.
+Check the log files under F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\log
+And please check https://docs.gluonhq.com/ for more information.
+[Wed May 08 12:37:54 ICT 2024][INFO] ==================== COMPILE TASK ====================
+[Wed May 08 12:38:12 ICT 2024][INFO] We will now compile your code for x86_64-microsoft-windows. This may take some time.
+[Wed May 08 12:38:12 ICT 2024][FINE] Extracting native libs to: F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\lib
+[Wed May 08 12:38:12 ICT 2024][FINE] Looking for resource: /native/windows/launcher.c
+[Wed May 08 12:38:12 ICT 2024][FINE] PB Command for compile-additional-sources: cl -c -DSUBSTRATE /MD /D_UNICODE /DUNICODE /DWIN32 /D_WINDOWS -IF:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\app launcher.c
+[Wed May 08 12:38:12 ICT 2024][FINE] Start process compile-additional-sources...
+[Wed May 08 12:38:14 ICT 2024][FINE] [SUB] Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27045 for x64
+[Wed May 08 12:38:14 ICT 2024][FINE] [SUB] Copyright (C) Microsoft Corporation.  All rights reserved.
+[Wed May 08 12:38:14 ICT 2024][FINE] [SUB] 
+[Wed May 08 12:38:14 ICT 2024][FINE] [SUB] launcher.c
+[Wed May 08 12:38:14 ICT 2024][FINE] [SUB] launcher.c(28): fatal error C1083: Cannot open include file: 'stdio.h': No such file or directory
+[Wed May 08 12:38:15 ICT 2024][FINE] Result for compile-additional-sources: 2
+[Wed May 08 12:38:15 ICT 2024][SEVERE] Process compile-additional-sources failed with result: 2
+Check the log files under F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\log
+And please check https://docs.gluonhq.com/ for more information.
+[Wed May 08 12:38:15 ICT 2024][INFO] Logging process [compile-additional-sources] to file: F:\projects\application projects\inventory_management_system\target\gluonfx\log\process-compile-additional-sources-1715146695597.log
+[Wed May 08 12:38:15 ICT 2024][SEVERE] Compiling failed.
+Check the log files under F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\log
+And please check https://docs.gluonhq.com/ for more information.
+[Wed May 08 13:26:38 ICT 2024][INFO] ==================== COMPILE TASK ====================
+[Wed May 08 13:26:44 ICT 2024][INFO] We will now compile your code for x86_64-microsoft-windows. This may take some time.
+[Wed May 08 13:26:45 ICT 2024][FINE] Extracting native libs to: F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\lib
+[Wed May 08 13:26:45 ICT 2024][FINE] Looking for resource: /native/windows/launcher.c
+[Wed May 08 13:26:45 ICT 2024][FINE] PB Command for compile-additional-sources: cl -c -DSUBSTRATE /MD /D_UNICODE /DUNICODE /DWIN32 /D_WINDOWS -IF:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\app launcher.c
+[Wed May 08 13:26:45 ICT 2024][FINE] Start process compile-additional-sources...
+[Wed May 08 13:26:46 ICT 2024][FINE] [SUB] Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27045 for x64
+[Wed May 08 13:26:46 ICT 2024][FINE] [SUB] Copyright (C) Microsoft Corporation.  All rights reserved.
+[Wed May 08 13:26:46 ICT 2024][FINE] [SUB] 
+[Wed May 08 13:26:46 ICT 2024][FINE] [SUB] launcher.c
+[Wed May 08 13:26:46 ICT 2024][FINE] [SUB] launcher.c(28): fatal error C1083: Cannot open include file: 'stdio.h': No such file or directory
+[Wed May 08 13:26:46 ICT 2024][FINE] Result for compile-additional-sources: 2
+[Wed May 08 13:26:46 ICT 2024][SEVERE] Process compile-additional-sources failed with result: 2
+Check the log files under F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\log
+And please check https://docs.gluonhq.com/ for more information.
+[Wed May 08 13:26:46 ICT 2024][INFO] Logging process [compile-additional-sources] to file: F:\projects\application projects\inventory_management_system\target\gluonfx\log\process-compile-additional-sources-1715149606494.log
+[Wed May 08 13:26:46 ICT 2024][SEVERE] Compiling failed.
+Check the log files under F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\log
+And please check https://docs.gluonhq.com/ for more information.
+[Wed May 08 15:15:31 ICT 2024][INFO] ==================== COMPILE TASK ====================
+[Wed May 08 15:15:36 ICT 2024][INFO] We will now compile your code for x86_64-microsoft-windows. This may take some time.
+[Wed May 08 15:15:37 ICT 2024][FINE] Extracting native libs to: F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\lib
+[Wed May 08 15:15:37 ICT 2024][FINE] Looking for resource: /native/windows/launcher.c
+[Wed May 08 15:15:37 ICT 2024][FINE] PB Command for compile-additional-sources: cl -c -DSUBSTRATE /MD /D_UNICODE /DUNICODE /DWIN32 /D_WINDOWS -IF:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\app launcher.c
+[Wed May 08 15:15:37 ICT 2024][FINE] Start process compile-additional-sources...
+[Wed May 08 15:15:38 ICT 2024][FINE] [SUB] Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30154 for x64
+[Wed May 08 15:15:38 ICT 2024][FINE] [SUB] Copyright (C) Microsoft Corporation.  All rights reserved.
+[Wed May 08 15:15:38 ICT 2024][FINE] [SUB] 
+[Wed May 08 15:15:38 ICT 2024][FINE] [SUB] launcher.c
+[Wed May 08 15:15:39 ICT 2024][FINE] [SUB] launcher.c(28): fatal error C1083: Cannot open include file: 'stdio.h': No such file or directory
+[Wed May 08 15:15:41 ICT 2024][FINE] Result for compile-additional-sources: 2
+[Wed May 08 15:15:41 ICT 2024][SEVERE] Process compile-additional-sources failed with result: 2
+Check the log files under F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\log
+And please check https://docs.gluonhq.com/ for more information.
+[Wed May 08 15:15:41 ICT 2024][INFO] Logging process [compile-additional-sources] to file: F:\projects\application projects\inventory_management_system\target\gluonfx\log\process-compile-additional-sources-1715156141241.log
+[Wed May 08 15:15:41 ICT 2024][SEVERE] Compiling failed.
+Check the log files under F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\log
+And please check https://docs.gluonhq.com/ for more information.
+[Wed May 08 15:19:51 ICT 2024][INFO] ==================== COMPILE TASK ====================
+[Wed May 08 15:19:53 ICT 2024][INFO] We will now compile your code for x86_64-microsoft-windows. This may take some time.
+[Wed May 08 15:19:53 ICT 2024][FINE] Extracting native libs to: F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\lib
+[Wed May 08 15:19:53 ICT 2024][FINE] Looking for resource: /native/windows/launcher.c
+[Wed May 08 15:19:53 ICT 2024][FINE] PB Command for compile-additional-sources: cl -c -DSUBSTRATE /MD /D_UNICODE /DUNICODE /DWIN32 /D_WINDOWS -IF:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\app launcher.c
+[Wed May 08 15:19:53 ICT 2024][FINE] Start process compile-additional-sources...
+[Wed May 08 15:19:54 ICT 2024][FINE] [SUB] Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30154 for x64
+[Wed May 08 15:19:54 ICT 2024][FINE] [SUB] Copyright (C) Microsoft Corporation.  All rights reserved.
+[Wed May 08 15:19:54 ICT 2024][FINE] [SUB] 
+[Wed May 08 15:19:54 ICT 2024][FINE] [SUB] launcher.c
+[Wed May 08 15:19:55 ICT 2024][FINE] [SUB] launcher.c(28): fatal error C1083: Cannot open include file: 'stdio.h': No such file or directory
+[Wed May 08 15:19:55 ICT 2024][FINE] Result for compile-additional-sources: 2
+[Wed May 08 15:19:55 ICT 2024][SEVERE] Process compile-additional-sources failed with result: 2
+Check the log files under F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\log
+And please check https://docs.gluonhq.com/ for more information.
+[Wed May 08 15:19:55 ICT 2024][INFO] Logging process [compile-additional-sources] to file: F:\projects\application projects\inventory_management_system\target\gluonfx\log\process-compile-additional-sources-1715156395455.log
+[Wed May 08 15:19:55 ICT 2024][SEVERE] Compiling failed.
+Check the log files under F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\log
+And please check https://docs.gluonhq.com/ for more information.
+[Wed May 08 15:24:00 ICT 2024][INFO] ==================== COMPILE TASK ====================
+[Wed May 08 15:24:02 ICT 2024][INFO] We will now compile your code for x86_64-microsoft-windows. This may take some time.
+[Wed May 08 15:24:02 ICT 2024][FINE] Extracting native libs to: F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\lib
+[Wed May 08 15:24:02 ICT 2024][FINE] Looking for resource: /native/windows/launcher.c
+[Wed May 08 15:24:02 ICT 2024][FINE] PB Command for compile-additional-sources: cl -c -DSUBSTRATE /MD /D_UNICODE /DUNICODE /DWIN32 /D_WINDOWS -IF:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\app launcher.c
+[Wed May 08 15:24:02 ICT 2024][FINE] Start process compile-additional-sources...
+[Wed May 08 15:24:03 ICT 2024][FINE] [SUB] Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30154 for x86
+[Wed May 08 15:24:03 ICT 2024][FINE] [SUB] Copyright (C) Microsoft Corporation.  All rights reserved.
+[Wed May 08 15:24:03 ICT 2024][FINE] [SUB] 
+[Wed May 08 15:24:03 ICT 2024][FINE] [SUB] launcher.c
+[Wed May 08 15:24:03 ICT 2024][FINE] [SUB] launcher.c(28): fatal error C1083: Cannot open include file: 'stdio.h': No such file or directory
+[Wed May 08 15:24:03 ICT 2024][FINE] Result for compile-additional-sources: 2
+[Wed May 08 15:24:03 ICT 2024][SEVERE] Process compile-additional-sources failed with result: 2
+Check the log files under F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\log
+And please check https://docs.gluonhq.com/ for more information.
+[Wed May 08 15:24:03 ICT 2024][INFO] Logging process [compile-additional-sources] to file: F:\projects\application projects\inventory_management_system\target\gluonfx\log\process-compile-additional-sources-1715156643981.log
+[Wed May 08 15:24:04 ICT 2024][SEVERE] Compiling failed.
+Check the log files under F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\log
+And please check https://docs.gluonhq.com/ for more information.
+[Wed May 08 15:53:17 ICT 2024][INFO] ==================== COMPILE TASK ====================
+[Wed May 08 15:53:43 ICT 2024][INFO] We will now compile your code for x86_64-microsoft-windows. This may take some time.
+[Wed May 08 15:53:44 ICT 2024][FINE] Extracting native libs to: F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\lib
+[Wed May 08 15:53:44 ICT 2024][FINE] Looking for resource: /native/windows/launcher.c
+[Wed May 08 15:53:44 ICT 2024][FINE] PB Command for compile-additional-sources: cl -c -DSUBSTRATE /MD /D_UNICODE /DUNICODE /DWIN32 /D_WINDOWS -IF:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\app launcher.c
+[Wed May 08 15:53:44 ICT 2024][FINE] Start process compile-additional-sources...
+[Wed May 08 15:53:48 ICT 2024][FINE] [SUB] Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30154 for x86
+[Wed May 08 15:53:48 ICT 2024][FINE] [SUB] Copyright (C) Microsoft Corporation.  All rights reserved.
+[Wed May 08 15:53:48 ICT 2024][FINE] [SUB] 
+[Wed May 08 15:53:48 ICT 2024][FINE] [SUB] launcher.c
+[Wed May 08 15:53:48 ICT 2024][FINE] [SUB] launcher.c(28): fatal error C1083: Cannot open include file: 'stdio.h': No such file or directory
+[Wed May 08 15:53:48 ICT 2024][FINE] Result for compile-additional-sources: 2
+[Wed May 08 15:53:48 ICT 2024][SEVERE] Process compile-additional-sources failed with result: 2
+Check the log files under F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\log
+And please check https://docs.gluonhq.com/ for more information.
+[Wed May 08 15:53:48 ICT 2024][INFO] Logging process [compile-additional-sources] to file: F:\projects\application projects\inventory_management_system\target\gluonfx\log\process-compile-additional-sources-1715158428508.log
+[Wed May 08 15:53:48 ICT 2024][SEVERE] Compiling failed.
+Check the log files under F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\log
+And please check https://docs.gluonhq.com/ for more information.
+[Wed May 08 18:42:52 ICT 2024][INFO] ==================== COMPILE TASK ====================
+[Wed May 08 18:42:58 ICT 2024][INFO] We will now compile your code for x86_64-microsoft-windows. This may take some time.
+[Wed May 08 18:42:58 ICT 2024][FINE] Extracting native libs to: F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\lib
+[Wed May 08 18:42:59 ICT 2024][FINE] Looking for resource: /native/windows/launcher.c
+[Wed May 08 18:42:59 ICT 2024][FINE] PB Command for compile-additional-sources: cl -c -DSUBSTRATE /MD /D_UNICODE /DUNICODE /DWIN32 /D_WINDOWS -IF:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\app launcher.c
+[Wed May 08 18:42:59 ICT 2024][FINE] Start process compile-additional-sources...
+[Wed May 08 18:43:01 ICT 2024][FINE] [SUB] Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33523 for x86
+[Wed May 08 18:43:01 ICT 2024][FINE] [SUB] Copyright (C) Microsoft Corporation.  All rights reserved.
+[Wed May 08 18:43:01 ICT 2024][FINE] [SUB] 
+[Wed May 08 18:43:01 ICT 2024][FINE] [SUB] launcher.c
+[Wed May 08 18:43:10 ICT 2024][FINE] Result for compile-additional-sources: 0
+[Wed May 08 18:43:10 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\App.class to C:\Users\kiwog\AppData\Local\Temp\classes8841430196574539911\com\lestarieragemilang\App.class
+[Wed May 08 18:43:10 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Configurations\DatabaseConfiguration.class to C:\Users\kiwog\AppData\Local\Temp\classes8841430196574539911\com\lestarieragemilang\Configurations\DatabaseConfiguration.class
+[Wed May 08 18:43:10 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Customer$1.class to C:\Users\kiwog\AppData\Local\Temp\classes8841430196574539911\com\lestarieragemilang\Customer$1.class
+[Wed May 08 18:43:10 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Customer$2.class to C:\Users\kiwog\AppData\Local\Temp\classes8841430196574539911\com\lestarieragemilang\Customer$2.class
+[Wed May 08 18:43:10 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Customer.class to C:\Users\kiwog\AppData\Local\Temp\classes8841430196574539911\com\lestarieragemilang\Customer.class
+[Wed May 08 18:43:10 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\customer.fxml to C:\Users\kiwog\AppData\Local\Temp\classes8841430196574539911\com\lestarieragemilang\customer.fxml
+[Wed May 08 18:43:10 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\CustomerForm.class to C:\Users\kiwog\AppData\Local\Temp\classes8841430196574539911\com\lestarieragemilang\CustomerForm.class
+[Wed May 08 18:43:10 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\customerForm.fxml to C:\Users\kiwog\AppData\Local\Temp\classes8841430196574539911\com\lestarieragemilang\customerForm.fxml
+[Wed May 08 18:43:11 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Dashboard.class to C:\Users\kiwog\AppData\Local\Temp\classes8841430196574539911\com\lestarieragemilang\Dashboard.class
+[Wed May 08 18:43:11 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\dashboard.fxml to C:\Users\kiwog\AppData\Local\Temp\classes8841430196574539911\com\lestarieragemilang\dashboard.fxml
+[Wed May 08 18:43:11 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Entities\CustomerEntity.class to C:\Users\kiwog\AppData\Local\Temp\classes8841430196574539911\com\lestarieragemilang\Entities\CustomerEntity.class
+[Wed May 08 18:43:11 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Entities\Product.class to C:\Users\kiwog\AppData\Local\Temp\classes8841430196574539911\com\lestarieragemilang\Entities\Product.class
+[Wed May 08 18:43:11 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Entities\SupplierEntity.class to C:\Users\kiwog\AppData\Local\Temp\classes8841430196574539911\com\lestarieragemilang\Entities\SupplierEntity.class
+[Wed May 08 18:43:11 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\kategori.fxml to C:\Users\kiwog\AppData\Local\Temp\classes8841430196574539911\com\lestarieragemilang\kategori.fxml
+[Wed May 08 18:43:11 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\laporan.fxml to C:\Users\kiwog\AppData\Local\Temp\classes8841430196574539911\com\lestarieragemilang\laporan.fxml
+[Wed May 08 18:43:11 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Login.class to C:\Users\kiwog\AppData\Local\Temp\classes8841430196574539911\com\lestarieragemilang\Login.class
+[Wed May 08 18:43:11 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\login.fxml to C:\Users\kiwog\AppData\Local\Temp\classes8841430196574539911\com\lestarieragemilang\login.fxml
+[Wed May 08 18:43:11 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\pembelian.fxml to C:\Users\kiwog\AppData\Local\Temp\classes8841430196574539911\com\lestarieragemilang\pembelian.fxml
+[Wed May 08 18:43:11 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\penerimaan.fxml to C:\Users\kiwog\AppData\Local\Temp\classes8841430196574539911\com\lestarieragemilang\penerimaan.fxml
+[Wed May 08 18:43:11 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\penjualan.fxml to C:\Users\kiwog\AppData\Local\Temp\classes8841430196574539911\com\lestarieragemilang\penjualan.fxml
+[Wed May 08 18:43:11 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Repositories\AuthRepositories.class to C:\Users\kiwog\AppData\Local\Temp\classes8841430196574539911\com\lestarieragemilang\Repositories\AuthRepositories.class
+[Wed May 08 18:43:11 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Repositories\CustomerRepositories.class to C:\Users\kiwog\AppData\Local\Temp\classes8841430196574539911\com\lestarieragemilang\Repositories\CustomerRepositories.class
+[Wed May 08 18:43:11 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Repositories\SupplierRepositories.class to C:\Users\kiwog\AppData\Local\Temp\classes8841430196574539911\com\lestarieragemilang\Repositories\SupplierRepositories.class
+[Wed May 08 18:43:11 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Repositories\SupplierRepositoriesTest.class to C:\Users\kiwog\AppData\Local\Temp\classes8841430196574539911\com\lestarieragemilang\Repositories\SupplierRepositoriesTest.class
+[Wed May 08 18:43:11 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Stock.class to C:\Users\kiwog\AppData\Local\Temp\classes8841430196574539911\com\lestarieragemilang\Stock.class
+[Wed May 08 18:43:11 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\stok-besi.fxml to C:\Users\kiwog\AppData\Local\Temp\classes8841430196574539911\com\lestarieragemilang\stok-besi.fxml
+[Wed May 08 18:43:11 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Supplier$1.class to C:\Users\kiwog\AppData\Local\Temp\classes8841430196574539911\com\lestarieragemilang\Supplier$1.class
+[Wed May 08 18:43:11 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Supplier$2.class to C:\Users\kiwog\AppData\Local\Temp\classes8841430196574539911\com\lestarieragemilang\Supplier$2.class
+[Wed May 08 18:43:11 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Supplier.class to C:\Users\kiwog\AppData\Local\Temp\classes8841430196574539911\com\lestarieragemilang\Supplier.class
+[Wed May 08 18:43:11 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\supplier.fxml to C:\Users\kiwog\AppData\Local\Temp\classes8841430196574539911\com\lestarieragemilang\supplier.fxml
+[Wed May 08 18:43:11 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\SupplierForm.class to C:\Users\kiwog\AppData\Local\Temp\classes8841430196574539911\com\lestarieragemilang\SupplierForm.class
+[Wed May 08 18:43:11 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\supplierForm.fxml to C:\Users\kiwog\AppData\Local\Temp\classes8841430196574539911\com\lestarieragemilang\supplierForm.fxml
+[Wed May 08 18:43:11 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Utilities\CacheService.class to C:\Users\kiwog\AppData\Local\Temp\classes8841430196574539911\com\lestarieragemilang\Utilities\CacheService.class
+[Wed May 08 18:43:11 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Utilities\Redirect.class to C:\Users\kiwog\AppData\Local\Temp\classes8841430196574539911\com\lestarieragemilang\Utilities\Redirect.class
+[Wed May 08 18:43:11 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\module-info.class to C:\Users\kiwog\AppData\Local\Temp\classes8841430196574539911\module-info.class
+[Wed May 08 18:43:12 ICT 2024][FINE] PB Command for jar: F:\command\java\graalvm-jdk-17.0.11\bin\jar.exe cf C:\Users\kiwog\AppData\Local\Temp\classes8841430196574539911\classes.jar -C C:\Users\kiwog\AppData\Local\Temp\classes8841430196574539911 .
+[Wed May 08 18:43:12 ICT 2024][FINE] Start process jar...
+[Wed May 08 18:43:14 ICT 2024][FINE] Result for jar: 0
+[Wed May 08 18:43:14 ICT 2024][FINE] Scanning for init build time files
+[Wed May 08 18:43:14 ICT 2024][FINE] Scanning C:\Users\kiwog\.m2\repository\com\google\protobuf\protobuf-java\3.25.1\protobuf-java-3.25.1.jar
+[Wed May 08 18:43:14 ICT 2024][FINE] Scanning C:\Users\kiwog\.m2\repository\com\mysql\mysql-connector-j\8.3.0\mysql-connector-j-8.3.0.jar
+[Wed May 08 18:43:14 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.base.jar
+[Wed May 08 18:43:14 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.controls.jar
+[Wed May 08 18:43:14 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.fxml.jar
+[Wed May 08 18:43:14 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.graphics.jar
+[Wed May 08 18:43:14 ICT 2024][FINE] Scanning C:\Users\kiwog\AppData\Local\Temp\classes8841430196574539911\classes.jar
+[Wed May 08 18:43:14 ICT 2024][FINE] Scanning for reflection files
+[Wed May 08 18:43:14 ICT 2024][FINE] Scanning C:\Users\kiwog\.m2\repository\com\google\protobuf\protobuf-java\3.25.1\protobuf-java-3.25.1.jar
+[Wed May 08 18:43:14 ICT 2024][FINE] Scanning C:\Users\kiwog\.m2\repository\com\mysql\mysql-connector-j\8.3.0\mysql-connector-j-8.3.0.jar
+[Wed May 08 18:43:14 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.base.jar
+[Wed May 08 18:43:14 ICT 2024][FINE] Adding classes from C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.base.jar::META-INF/substrate/config/reflectionconfig.json
+[Wed May 08 18:43:14 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.controls.jar
+[Wed May 08 18:43:14 ICT 2024][FINE] Adding classes from C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.controls.jar::META-INF/substrate/config/reflectionconfig.json
+[Wed May 08 18:43:14 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.fxml.jar
+[Wed May 08 18:43:14 ICT 2024][FINE] Adding classes from C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.fxml.jar::META-INF/substrate/config/reflectionconfig.json
+[Wed May 08 18:43:14 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.graphics.jar
+[Wed May 08 18:43:14 ICT 2024][FINE] Adding classes from C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.graphics.jar::META-INF/substrate/config/reflectionconfig-x86_64-windows.json
+[Wed May 08 18:43:14 ICT 2024][FINE] Adding classes from C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.graphics.jar::META-INF/substrate/config/reflectionconfig.json
+[Wed May 08 18:43:14 ICT 2024][FINE] Scanning C:\Users\kiwog\AppData\Local\Temp\classes8841430196574539911\classes.jar
+[Wed May 08 18:43:14 ICT 2024][FINE] Scanning for JNI files
+[Wed May 08 18:43:14 ICT 2024][FINE] Scanning C:\Users\kiwog\.m2\repository\com\google\protobuf\protobuf-java\3.25.1\protobuf-java-3.25.1.jar
+[Wed May 08 18:43:14 ICT 2024][FINE] Scanning C:\Users\kiwog\.m2\repository\com\mysql\mysql-connector-j\8.3.0\mysql-connector-j-8.3.0.jar
+[Wed May 08 18:43:14 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.base.jar
+[Wed May 08 18:43:14 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.controls.jar
+[Wed May 08 18:43:14 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.fxml.jar
+[Wed May 08 18:43:14 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.graphics.jar
+[Wed May 08 18:43:14 ICT 2024][FINE] Adding classes from C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.graphics.jar::META-INF/substrate/config/jniconfig-x86_64-windows.json
+[Wed May 08 18:43:14 ICT 2024][FINE] Adding classes from C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.graphics.jar::META-INF/substrate/config/jniconfig.json
+[Wed May 08 18:43:14 ICT 2024][FINE] Scanning C:\Users\kiwog\AppData\Local\Temp\classes8841430196574539911\classes.jar
+[Wed May 08 18:43:14 ICT 2024][FINE] Scanning for resource files
+[Wed May 08 18:43:14 ICT 2024][FINE] Scanning C:\Users\kiwog\.m2\repository\com\google\protobuf\protobuf-java\3.25.1\protobuf-java-3.25.1.jar
+[Wed May 08 18:43:14 ICT 2024][FINE] Scanning C:\Users\kiwog\.m2\repository\com\mysql\mysql-connector-j\8.3.0\mysql-connector-j-8.3.0.jar
+[Wed May 08 18:43:14 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.base.jar
+[Wed May 08 18:43:14 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.controls.jar
+[Wed May 08 18:43:14 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.fxml.jar
+[Wed May 08 18:43:14 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.graphics.jar
+[Wed May 08 18:43:14 ICT 2024][FINE] Scanning C:\Users\kiwog\AppData\Local\Temp\classes8841430196574539911\classes.jar
+[Wed May 08 18:43:14 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\App.class to C:\Users\kiwog\AppData\Local\Temp\classes12724224043612977886\com\lestarieragemilang\App.class
+[Wed May 08 18:43:14 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Configurations\DatabaseConfiguration.class to C:\Users\kiwog\AppData\Local\Temp\classes12724224043612977886\com\lestarieragemilang\Configurations\DatabaseConfiguration.class
+[Wed May 08 18:43:14 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Customer$1.class to C:\Users\kiwog\AppData\Local\Temp\classes12724224043612977886\com\lestarieragemilang\Customer$1.class
+[Wed May 08 18:43:14 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Customer$2.class to C:\Users\kiwog\AppData\Local\Temp\classes12724224043612977886\com\lestarieragemilang\Customer$2.class
+[Wed May 08 18:43:14 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Customer.class to C:\Users\kiwog\AppData\Local\Temp\classes12724224043612977886\com\lestarieragemilang\Customer.class
+[Wed May 08 18:43:14 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\customer.fxml to C:\Users\kiwog\AppData\Local\Temp\classes12724224043612977886\com\lestarieragemilang\customer.fxml
+[Wed May 08 18:43:14 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\CustomerForm.class to C:\Users\kiwog\AppData\Local\Temp\classes12724224043612977886\com\lestarieragemilang\CustomerForm.class
+[Wed May 08 18:43:14 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\customerForm.fxml to C:\Users\kiwog\AppData\Local\Temp\classes12724224043612977886\com\lestarieragemilang\customerForm.fxml
+[Wed May 08 18:43:14 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Dashboard.class to C:\Users\kiwog\AppData\Local\Temp\classes12724224043612977886\com\lestarieragemilang\Dashboard.class
+[Wed May 08 18:43:14 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\dashboard.fxml to C:\Users\kiwog\AppData\Local\Temp\classes12724224043612977886\com\lestarieragemilang\dashboard.fxml
+[Wed May 08 18:43:14 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Entities\CustomerEntity.class to C:\Users\kiwog\AppData\Local\Temp\classes12724224043612977886\com\lestarieragemilang\Entities\CustomerEntity.class
+[Wed May 08 18:43:14 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Entities\Product.class to C:\Users\kiwog\AppData\Local\Temp\classes12724224043612977886\com\lestarieragemilang\Entities\Product.class
+[Wed May 08 18:43:14 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Entities\SupplierEntity.class to C:\Users\kiwog\AppData\Local\Temp\classes12724224043612977886\com\lestarieragemilang\Entities\SupplierEntity.class
+[Wed May 08 18:43:14 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\kategori.fxml to C:\Users\kiwog\AppData\Local\Temp\classes12724224043612977886\com\lestarieragemilang\kategori.fxml
+[Wed May 08 18:43:14 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\laporan.fxml to C:\Users\kiwog\AppData\Local\Temp\classes12724224043612977886\com\lestarieragemilang\laporan.fxml
+[Wed May 08 18:43:14 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Login.class to C:\Users\kiwog\AppData\Local\Temp\classes12724224043612977886\com\lestarieragemilang\Login.class
+[Wed May 08 18:43:14 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\login.fxml to C:\Users\kiwog\AppData\Local\Temp\classes12724224043612977886\com\lestarieragemilang\login.fxml
+[Wed May 08 18:43:14 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\pembelian.fxml to C:\Users\kiwog\AppData\Local\Temp\classes12724224043612977886\com\lestarieragemilang\pembelian.fxml
+[Wed May 08 18:43:14 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\penerimaan.fxml to C:\Users\kiwog\AppData\Local\Temp\classes12724224043612977886\com\lestarieragemilang\penerimaan.fxml
+[Wed May 08 18:43:14 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\penjualan.fxml to C:\Users\kiwog\AppData\Local\Temp\classes12724224043612977886\com\lestarieragemilang\penjualan.fxml
+[Wed May 08 18:43:14 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Repositories\AuthRepositories.class to C:\Users\kiwog\AppData\Local\Temp\classes12724224043612977886\com\lestarieragemilang\Repositories\AuthRepositories.class
+[Wed May 08 18:43:14 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Repositories\CustomerRepositories.class to C:\Users\kiwog\AppData\Local\Temp\classes12724224043612977886\com\lestarieragemilang\Repositories\CustomerRepositories.class
+[Wed May 08 18:43:14 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Repositories\SupplierRepositories.class to C:\Users\kiwog\AppData\Local\Temp\classes12724224043612977886\com\lestarieragemilang\Repositories\SupplierRepositories.class
+[Wed May 08 18:43:14 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Repositories\SupplierRepositoriesTest.class to C:\Users\kiwog\AppData\Local\Temp\classes12724224043612977886\com\lestarieragemilang\Repositories\SupplierRepositoriesTest.class
+[Wed May 08 18:43:14 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Stock.class to C:\Users\kiwog\AppData\Local\Temp\classes12724224043612977886\com\lestarieragemilang\Stock.class
+[Wed May 08 18:43:14 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\stok-besi.fxml to C:\Users\kiwog\AppData\Local\Temp\classes12724224043612977886\com\lestarieragemilang\stok-besi.fxml
+[Wed May 08 18:43:14 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Supplier$1.class to C:\Users\kiwog\AppData\Local\Temp\classes12724224043612977886\com\lestarieragemilang\Supplier$1.class
+[Wed May 08 18:43:14 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Supplier$2.class to C:\Users\kiwog\AppData\Local\Temp\classes12724224043612977886\com\lestarieragemilang\Supplier$2.class
+[Wed May 08 18:43:14 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Supplier.class to C:\Users\kiwog\AppData\Local\Temp\classes12724224043612977886\com\lestarieragemilang\Supplier.class
+[Wed May 08 18:43:14 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\supplier.fxml to C:\Users\kiwog\AppData\Local\Temp\classes12724224043612977886\com\lestarieragemilang\supplier.fxml
+[Wed May 08 18:43:14 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\SupplierForm.class to C:\Users\kiwog\AppData\Local\Temp\classes12724224043612977886\com\lestarieragemilang\SupplierForm.class
+[Wed May 08 18:43:14 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\supplierForm.fxml to C:\Users\kiwog\AppData\Local\Temp\classes12724224043612977886\com\lestarieragemilang\supplierForm.fxml
+[Wed May 08 18:43:14 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Utilities\CacheService.class to C:\Users\kiwog\AppData\Local\Temp\classes12724224043612977886\com\lestarieragemilang\Utilities\CacheService.class
+[Wed May 08 18:43:14 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Utilities\Redirect.class to C:\Users\kiwog\AppData\Local\Temp\classes12724224043612977886\com\lestarieragemilang\Utilities\Redirect.class
+[Wed May 08 18:43:14 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\module-info.class to C:\Users\kiwog\AppData\Local\Temp\classes12724224043612977886\module-info.class
+[Wed May 08 18:43:14 ICT 2024][FINE] PB Command for jar: F:\command\java\graalvm-jdk-17.0.11\bin\jar.exe cf C:\Users\kiwog\AppData\Local\Temp\classes12724224043612977886\classes.jar -C C:\Users\kiwog\AppData\Local\Temp\classes12724224043612977886 .
+[Wed May 08 18:43:14 ICT 2024][FINE] Start process jar...
+[Wed May 08 18:43:15 ICT 2024][FINE] Result for jar: 0
+[Wed May 08 18:43:15 ICT 2024][FINE] Scanning for resource bundles
+[Wed May 08 18:43:15 ICT 2024][FINE] Scanning C:\Users\kiwog\.m2\repository\com\google\protobuf\protobuf-java\3.25.1\protobuf-java-3.25.1.jar
+[Wed May 08 18:43:15 ICT 2024][FINE] Scanning C:\Users\kiwog\.m2\repository\com\mysql\mysql-connector-j\8.3.0\mysql-connector-j-8.3.0.jar
+[Wed May 08 18:43:15 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.base.jar
+[Wed May 08 18:43:15 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.controls.jar
+[Wed May 08 18:43:15 ICT 2024][FINE] Adding classes from C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.controls.jar::META-INF/substrate/config/resourcebundles
+[Wed May 08 18:43:15 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.fxml.jar
+[Wed May 08 18:43:15 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.graphics.jar
+[Wed May 08 18:43:15 ICT 2024][FINE] Adding classes from C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.graphics.jar::META-INF/substrate/config/resourcebundles
+[Wed May 08 18:43:15 ICT 2024][FINE] Adding classes from C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.graphics.jar::META-INF/substrate/config/resourcebundles-x86_64-windows
+[Wed May 08 18:43:15 ICT 2024][FINE] Scanning C:\Users\kiwog\AppData\Local\Temp\classes12724224043612977886\classes.jar
+[Wed May 08 18:43:15 ICT 2024][FINE] Copied resource C:\Users\kiwog\.m2\repository\com\google\protobuf\protobuf-java\3.25.1\protobuf-java-3.25.1.jar to F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\tmp\deps\protobuf-java-3.25.1.jar
+[Wed May 08 18:43:15 ICT 2024][FINE] Copied resource C:\Users\kiwog\.m2\repository\com\mysql\mysql-connector-j\8.3.0\mysql-connector-j-8.3.0.jar to F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\tmp\deps\mysql-connector-j-8.3.0.jar
+[Wed May 08 18:43:15 ICT 2024][FINE] Copied resource C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.base.jar to F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\tmp\deps\javafx.base.jar
+[Wed May 08 18:43:16 ICT 2024][FINE] Copied resource C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.controls.jar to F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\tmp\deps\javafx.controls.jar
+[Wed May 08 18:43:16 ICT 2024][FINE] Copied resource C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.fxml.jar to F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\tmp\deps\javafx.fxml.jar
+[Wed May 08 18:43:16 ICT 2024][FINE] Copied resource C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.graphics.jar to F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\tmp\deps\javafx.graphics.jar
+[Wed May 08 18:43:16 ICT 2024][FINE] Class-Path manifest entry for pathing jar: ..\..\..\..\classes deps\protobuf-java-3.25.1.jar deps\mysql-connector-j-8.3.0.jar deps\javafx.base.jar deps\javafx.controls.jar deps\javafx.fxml.jar deps\javafx.graphics.jar
+[Wed May 08 18:43:16 ICT 2024][FINE] Pathing jar created at F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\tmp\classpathJar.jar
+[Wed May 08 18:43:16 ICT 2024][FINE] PB Command for compile: F:\command\java\graalvm-jdk-17.0.11\bin\native-image.cmd "-Djdk.internal.lambda.eagerlyInitialize=false" --no-server -H:+SharedLibrary -H:+AddAllCharsets -H:+ReportExceptionStackTraces -H:-DeadlockWatchdogExitOnTimeout "-H:DeadlockWatchdogInterval=0" -H:+RemoveSaturatedTypeFlows -H:+ExitAfterRelocatableImageWrite "--features=org.graalvm.home.HomeFinderFeature" "-H:TempDirectory=F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\tmp" "-H:EnableURLProtocols=http,https" "-H:ReflectionConfigurationFiles=F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\reflectionconfig-x86_64-windows.json" "-H:JNIConfigurationFiles=F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\jniconfig-x86_64-windows.json" "-H:ResourceConfigurationFiles=F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\resourceconfig-x86_64-windows.json" "-H:IncludeResourceBundles=com/sun/javafx/scene/control/skin/resources/controls,com/sun/javafx/scene/control/skin/resources/controls-nt,com.sun.javafx.tk.quantum.QuantumMessagesBundle,com/sun/glass/ui/win/themes" "-Dsvm.platform=org.graalvm.nativeimage.Platform$WINDOWS_AMD64" -cp "C:\Users\kiwog\.m2\repository\com\gluonhq\substrate\0.0.61\substrate-0.0.61.jar;F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\tmp\classpathJar.jar" com.lestarieragemilang.App
+[Wed May 08 18:43:16 ICT 2024][FINE] Start process compile...
+[Wed May 08 18:43:30 ICT 2024][INFO] [SUB] Warning: Ignoring server-mode native-image argument --no-server.
+[Wed May 08 18:44:05 ICT 2024][INFO] [SUB] ========================================================================================================================
+[Wed May 08 18:44:05 ICT 2024][INFO] [SUB] GraalVM Native Image: Generating 'com.lestarieragemilang.app' (shared library)...
+[Wed May 08 18:44:05 ICT 2024][INFO] [SUB] ========================================================================================================================
+[Wed May 08 18:44:05 ICT 2024][INFO] [SUB] For detailed information and explanations on the build output, visit:
+[Wed May 08 18:44:05 ICT 2024][INFO] [SUB] https://github.com/oracle/graal/blob/master/docs/reference-manual/native-image/BuildOutput.md
+[Wed May 08 18:44:05 ICT 2024][INFO] [SUB] ------------------------------------------------------------------------------------------------------------------------
+[Wed May 08 18:44:11 ICT 2024][INFO] [SUB] 
+[Wed May 08 18:44:11 ICT 2024][INFO] [SUB] [1/8] Initializing...                                                                                    (0.0s @ 0.12GB)
+[Wed May 08 18:44:11 ICT 2024][INFO] [SUB] Error: Unable to detect supported WINDOWS native software development toolchain.
+[Wed May 08 18:44:11 ICT 2024][INFO] [SUB] Querying with command ''F:\command\msvc\VC\Tools\MSVC\14.39.33519\bin\HostX86\x86\cl.exe' /EP 'F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\tmp\SVM-1715168650414\detect-cl-version-info.c'' prints:
+[Wed May 08 18:44:11 ICT 2024][INFO] [SUB]   Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33523 for x86
+[Wed May 08 18:44:11 ICT 2024][INFO] [SUB]   Copyright (C) Microsoft Corporation.  All rights reserved.
+[Wed May 08 18:44:11 ICT 2024][INFO] [SUB]   
+[Wed May 08 18:44:11 ICT 2024][INFO] [SUB]   detect-cl-version-info.c
+[Wed May 08 18:44:11 ICT 2024][INFO] [SUB]   
+[Wed May 08 18:44:11 ICT 2024][INFO] [SUB]   M_X64=_M_X64
+[Wed May 08 18:44:11 ICT 2024][INFO] [SUB]   M_ARM64EC=_M_ARM64EC
+[Wed May 08 18:44:11 ICT 2024][INFO] [SUB]   MSC_FULL_VER=193933523
+[Wed May 08 18:44:11 ICT 2024][INFO] [SUB] Error: To prevent native-toolchain checking provide command-line option -H:-CheckToolchain
+[Wed May 08 18:44:11 ICT 2024][INFO] [SUB] com.oracle.svm.core.util.UserError$UserException: Unable to detect supported WINDOWS native software development toolchain.
+[Wed May 08 18:44:11 ICT 2024][INFO] [SUB] Querying with command ''F:\command\msvc\VC\Tools\MSVC\14.39.33519\bin\HostX86\x86\cl.exe' /EP 'F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\tmp\SVM-1715168650414\detect-cl-version-info.c'' prints:
+[Wed May 08 18:44:11 ICT 2024][INFO] [SUB]   Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33523 for x86
+[Wed May 08 18:44:11 ICT 2024][INFO] [SUB]   Copyright (C) Microsoft Corporation.  All rights reserved.
+[Wed May 08 18:44:11 ICT 2024][INFO] [SUB]   
+[Wed May 08 18:44:11 ICT 2024][INFO] [SUB]   detect-cl-version-info.c
+[Wed May 08 18:44:11 ICT 2024][INFO] [SUB]   
+[Wed May 08 18:44:11 ICT 2024][INFO] [SUB]   M_X64=_M_X64
+[Wed May 08 18:44:11 ICT 2024][INFO] [SUB]   M_ARM64EC=_M_ARM64EC
+[Wed May 08 18:44:11 ICT 2024][INFO] [SUB]   MSC_FULL_VER=193933523
+[Wed May 08 18:44:11 ICT 2024][INFO] [SUB] To prevent native-toolchain checking provide command-line option -H:-CheckToolchain
+[Wed May 08 18:44:11 ICT 2024][INFO] [SUB] 	at org.graalvm.nativeimage.builder/com.oracle.svm.core.util.UserError.abort(UserError.java:126)
+[Wed May 08 18:44:11 ICT 2024][INFO] [SUB] 	at org.graalvm.nativeimage.builder/com.oracle.svm.hosted.c.codegen.CCompilerInvoker.addSkipCheckingInfo(CCompilerInvoker.java:106)
+[Wed May 08 18:44:11 ICT 2024][INFO] [SUB] 	at org.graalvm.nativeimage.builder/com.oracle.svm.hosted.c.codegen.CCompilerInvoker.<init>(CCompilerInvoker.java:74)
+[Wed May 08 18:44:11 ICT 2024][INFO] [SUB] 	at org.graalvm.nativeimage.builder/com.oracle.svm.hosted.c.codegen.CCompilerInvoker$WindowsCCompilerInvoker.<init>(CCompilerInvoker.java:112)
+[Wed May 08 18:44:11 ICT 2024][INFO] [SUB] 	at org.graalvm.nativeimage.builder/com.oracle.svm.hosted.c.codegen.CCompilerInvoker.create(CCompilerInvoker.java:86)
+[Wed May 08 18:44:11 ICT 2024][INFO] [SUB] 	at org.graalvm.nativeimage.builder/com.oracle.svm.hosted.NativeImageGenerator.setupNativeImage(NativeImageGenerator.java:929)
+[Wed May 08 18:44:11 ICT 2024][INFO] [SUB] 	at org.graalvm.nativeimage.builder/com.oracle.svm.hosted.NativeImageGenerator.doRun(NativeImageGenerator.java:579)
+[Wed May 08 18:44:11 ICT 2024][INFO] [SUB] 	at org.graalvm.nativeimage.builder/com.oracle.svm.hosted.NativeImageGenerator.run(NativeImageGenerator.java:539)
+[Wed May 08 18:44:11 ICT 2024][INFO] [SUB] 	at org.graalvm.nativeimage.builder/com.oracle.svm.hosted.NativeImageGeneratorRunner.buildImage(NativeImageGeneratorRunner.java:408)
+[Wed May 08 18:44:11 ICT 2024][INFO] [SUB] 	at org.graalvm.nativeimage.builder/com.oracle.svm.hosted.NativeImageGeneratorRunner.build(NativeImageGeneratorRunner.java:612)
+[Wed May 08 18:44:11 ICT 2024][INFO] [SUB] 	at org.graalvm.nativeimage.builder/com.oracle.svm.hosted.NativeImageGeneratorRunner.start(NativeImageGeneratorRunner.java:134)
+[Wed May 08 18:44:11 ICT 2024][INFO] [SUB] 	at org.graalvm.nativeimage.builder/com.oracle.svm.hosted.NativeImageGeneratorRunner.main(NativeImageGeneratorRunner.java:94)
+[Wed May 08 18:44:11 ICT 2024][INFO] [SUB] ------------------------------------------------------------------------------------------------------------------------
+[Wed May 08 18:44:11 ICT 2024][INFO] [SUB]                         1.9s (5.8% of total time) in 44 GCs | Peak RSS: 0.49GB | CPU load: 1.34
+[Wed May 08 18:44:11 ICT 2024][INFO] [SUB] ========================================================================================================================
+[Wed May 08 18:44:11 ICT 2024][INFO] [SUB] Finished generating 'com.lestarieragemilang.app' in 19.9s.
+[Wed May 08 18:44:11 ICT 2024][FINE] Result for compile: 1
+[Wed May 08 18:44:11 ICT 2024][SEVERE] Process compile failed with result: 1
+Check the log files under F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\log
+And please check https://docs.gluonhq.com/ for more information.
+[Wed May 08 18:44:11 ICT 2024][INFO] Logging process [compile] to file: F:\projects\application projects\inventory_management_system\target\gluonfx\log\process-compile-1715168651685.log
+[Wed May 08 18:44:11 ICT 2024][SEVERE] Compiling failed.
+Check the log files under F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\log
+And please check https://docs.gluonhq.com/ for more information.
+[Wed May 08 18:53:00 ICT 2024][INFO] ==================== COMPILE TASK ====================
+[Wed May 08 18:53:09 ICT 2024][INFO] We will now compile your code for x86_64-microsoft-windows. This may take some time.
+[Wed May 08 18:53:09 ICT 2024][FINE] Extracting native libs to: F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\lib
+[Wed May 08 18:53:10 ICT 2024][FINE] Looking for resource: /native/windows/launcher.c
+[Wed May 08 18:53:10 ICT 2024][FINE] PB Command for compile-additional-sources: cl -c -DSUBSTRATE /MD /D_UNICODE /DUNICODE /DWIN32 /D_WINDOWS -IF:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\app launcher.c
+[Wed May 08 18:53:10 ICT 2024][FINE] Start process compile-additional-sources...
+[Wed May 08 18:53:12 ICT 2024][FINE] [SUB] Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30154 for x64
+[Wed May 08 18:53:12 ICT 2024][FINE] [SUB] Copyright (C) Microsoft Corporation.  All rights reserved.
+[Wed May 08 18:53:12 ICT 2024][FINE] [SUB] 
+[Wed May 08 18:53:12 ICT 2024][FINE] [SUB] launcher.c
+[Wed May 08 18:53:12 ICT 2024][FINE] [SUB] launcher.c(28): fatal error C1083: Cannot open include file: 'stdio.h': No such file or directory
+[Wed May 08 18:53:14 ICT 2024][FINE] Result for compile-additional-sources: 2
+[Wed May 08 18:53:14 ICT 2024][SEVERE] Process compile-additional-sources failed with result: 2
+Check the log files under F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\log
+And please check https://docs.gluonhq.com/ for more information.
+[Wed May 08 18:53:14 ICT 2024][INFO] Logging process [compile-additional-sources] to file: F:\projects\application projects\inventory_management_system\target\gluonfx\log\process-compile-additional-sources-1715169194487.log
+[Wed May 08 18:53:14 ICT 2024][SEVERE] Compiling failed.
+Check the log files under F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\log
+And please check https://docs.gluonhq.com/ for more information.
+[Wed May 08 18:56:00 ICT 2024][INFO] ==================== COMPILE TASK ====================
+[Wed May 08 18:56:02 ICT 2024][INFO] We will now compile your code for x86_64-microsoft-windows. This may take some time.
+[Wed May 08 18:56:02 ICT 2024][FINE] Extracting native libs to: F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\lib
+[Wed May 08 18:56:02 ICT 2024][FINE] Looking for resource: /native/windows/launcher.c
+[Wed May 08 18:56:02 ICT 2024][FINE] PB Command for compile-additional-sources: cl -c -DSUBSTRATE /MD /D_UNICODE /DUNICODE /DWIN32 /D_WINDOWS -IF:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\app launcher.c
+[Wed May 08 18:56:02 ICT 2024][FINE] Start process compile-additional-sources...
+[Wed May 08 18:56:04 ICT 2024][FINE] [SUB] Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30154 for x64
+[Wed May 08 18:56:04 ICT 2024][FINE] [SUB] Copyright (C) Microsoft Corporation.  All rights reserved.
+[Wed May 08 18:56:04 ICT 2024][FINE] [SUB] 
+[Wed May 08 18:56:04 ICT 2024][FINE] [SUB] launcher.c
+[Wed May 08 18:56:05 ICT 2024][FINE] [SUB] launcher.c(28): fatal error C1083: Cannot open include file: 'stdio.h': No such file or directory
+[Wed May 08 18:56:05 ICT 2024][FINE] Result for compile-additional-sources: 2
+[Wed May 08 18:56:05 ICT 2024][SEVERE] Process compile-additional-sources failed with result: 2
+Check the log files under F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\log
+And please check https://docs.gluonhq.com/ for more information.
+[Wed May 08 18:56:05 ICT 2024][INFO] Logging process [compile-additional-sources] to file: F:\projects\application projects\inventory_management_system\target\gluonfx\log\process-compile-additional-sources-1715169365176.log
+[Wed May 08 18:56:05 ICT 2024][SEVERE] Compiling failed.
+Check the log files under F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\log
+And please check https://docs.gluonhq.com/ for more information.
+[Wed May 08 19:01:25 ICT 2024][INFO] ==================== COMPILE TASK ====================
+[Wed May 08 19:01:35 ICT 2024][INFO] We will now compile your code for x86_64-microsoft-windows. This may take some time.
+[Wed May 08 19:01:35 ICT 2024][FINE] Extracting native libs to: F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\lib
+[Wed May 08 19:01:36 ICT 2024][FINE] Looking for resource: /native/windows/launcher.c
+[Wed May 08 19:01:36 ICT 2024][FINE] PB Command for compile-additional-sources: cl -c -DSUBSTRATE /MD /D_UNICODE /DUNICODE /DWIN32 /D_WINDOWS -IF:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\app launcher.c
+[Wed May 08 19:01:36 ICT 2024][FINE] Start process compile-additional-sources...
+[Wed May 08 19:01:38 ICT 2024][FINE] [SUB] Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30154 for x86
+[Wed May 08 19:01:38 ICT 2024][FINE] [SUB] Copyright (C) Microsoft Corporation.  All rights reserved.
+[Wed May 08 19:01:38 ICT 2024][FINE] [SUB] 
+[Wed May 08 19:01:38 ICT 2024][FINE] [SUB] launcher.c
+[Wed May 08 19:01:38 ICT 2024][FINE] [SUB] launcher.c(28): fatal error C1083: Cannot open include file: 'stdio.h': No such file or directory
+[Wed May 08 19:01:38 ICT 2024][FINE] Result for compile-additional-sources: 2
+[Wed May 08 19:01:38 ICT 2024][SEVERE] Process compile-additional-sources failed with result: 2
+Check the log files under F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\log
+And please check https://docs.gluonhq.com/ for more information.
+[Wed May 08 19:01:38 ICT 2024][INFO] Logging process [compile-additional-sources] to file: F:\projects\application projects\inventory_management_system\target\gluonfx\log\process-compile-additional-sources-1715169698849.log
+[Wed May 08 19:01:38 ICT 2024][SEVERE] Compiling failed.
+Check the log files under F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\log
+And please check https://docs.gluonhq.com/ for more information.
+[Wed May 08 19:05:11 ICT 2024][INFO] ==================== COMPILE TASK ====================
+[Wed May 08 19:05:24 ICT 2024][INFO] We will now compile your code for x86_64-microsoft-windows. This may take some time.
+[Wed May 08 19:05:24 ICT 2024][FINE] Extracting native libs to: F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\lib
+[Wed May 08 19:05:25 ICT 2024][FINE] Looking for resource: /native/windows/launcher.c
+[Wed May 08 19:05:25 ICT 2024][FINE] PB Command for compile-additional-sources: cl -c -DSUBSTRATE /MD /D_UNICODE /DUNICODE /DWIN32 /D_WINDOWS -IF:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\app launcher.c
+[Wed May 08 19:05:25 ICT 2024][FINE] Start process compile-additional-sources...
+[Wed May 08 19:05:27 ICT 2024][FINE] [SUB] Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33523 for x86
+[Wed May 08 19:05:27 ICT 2024][FINE] [SUB] Copyright (C) Microsoft Corporation.  All rights reserved.
+[Wed May 08 19:05:27 ICT 2024][FINE] [SUB] 
+[Wed May 08 19:05:27 ICT 2024][FINE] [SUB] launcher.c
+[Wed May 08 19:05:31 ICT 2024][FINE] Result for compile-additional-sources: 0
+[Wed May 08 19:05:31 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\App.class to C:\Users\kiwog\AppData\Local\Temp\classes14725965013815486368\com\lestarieragemilang\App.class
+[Wed May 08 19:05:31 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Configurations\DatabaseConfiguration.class to C:\Users\kiwog\AppData\Local\Temp\classes14725965013815486368\com\lestarieragemilang\Configurations\DatabaseConfiguration.class
+[Wed May 08 19:05:31 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Customer$1.class to C:\Users\kiwog\AppData\Local\Temp\classes14725965013815486368\com\lestarieragemilang\Customer$1.class
+[Wed May 08 19:05:31 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Customer$2.class to C:\Users\kiwog\AppData\Local\Temp\classes14725965013815486368\com\lestarieragemilang\Customer$2.class
+[Wed May 08 19:05:31 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Customer.class to C:\Users\kiwog\AppData\Local\Temp\classes14725965013815486368\com\lestarieragemilang\Customer.class
+[Wed May 08 19:05:31 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\customer.fxml to C:\Users\kiwog\AppData\Local\Temp\classes14725965013815486368\com\lestarieragemilang\customer.fxml
+[Wed May 08 19:05:31 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\CustomerForm.class to C:\Users\kiwog\AppData\Local\Temp\classes14725965013815486368\com\lestarieragemilang\CustomerForm.class
+[Wed May 08 19:05:31 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\customerForm.fxml to C:\Users\kiwog\AppData\Local\Temp\classes14725965013815486368\com\lestarieragemilang\customerForm.fxml
+[Wed May 08 19:05:31 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Dashboard.class to C:\Users\kiwog\AppData\Local\Temp\classes14725965013815486368\com\lestarieragemilang\Dashboard.class
+[Wed May 08 19:05:31 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\dashboard.fxml to C:\Users\kiwog\AppData\Local\Temp\classes14725965013815486368\com\lestarieragemilang\dashboard.fxml
+[Wed May 08 19:05:31 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Entities\CustomerEntity.class to C:\Users\kiwog\AppData\Local\Temp\classes14725965013815486368\com\lestarieragemilang\Entities\CustomerEntity.class
+[Wed May 08 19:05:31 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Entities\Product.class to C:\Users\kiwog\AppData\Local\Temp\classes14725965013815486368\com\lestarieragemilang\Entities\Product.class
+[Wed May 08 19:05:31 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Entities\SupplierEntity.class to C:\Users\kiwog\AppData\Local\Temp\classes14725965013815486368\com\lestarieragemilang\Entities\SupplierEntity.class
+[Wed May 08 19:05:31 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\kategori.fxml to C:\Users\kiwog\AppData\Local\Temp\classes14725965013815486368\com\lestarieragemilang\kategori.fxml
+[Wed May 08 19:05:31 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\laporan.fxml to C:\Users\kiwog\AppData\Local\Temp\classes14725965013815486368\com\lestarieragemilang\laporan.fxml
+[Wed May 08 19:05:31 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Login.class to C:\Users\kiwog\AppData\Local\Temp\classes14725965013815486368\com\lestarieragemilang\Login.class
+[Wed May 08 19:05:31 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\login.fxml to C:\Users\kiwog\AppData\Local\Temp\classes14725965013815486368\com\lestarieragemilang\login.fxml
+[Wed May 08 19:05:31 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\pembelian.fxml to C:\Users\kiwog\AppData\Local\Temp\classes14725965013815486368\com\lestarieragemilang\pembelian.fxml
+[Wed May 08 19:05:31 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\penerimaan.fxml to C:\Users\kiwog\AppData\Local\Temp\classes14725965013815486368\com\lestarieragemilang\penerimaan.fxml
+[Wed May 08 19:05:31 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\penjualan.fxml to C:\Users\kiwog\AppData\Local\Temp\classes14725965013815486368\com\lestarieragemilang\penjualan.fxml
+[Wed May 08 19:05:31 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Repositories\AuthRepositories.class to C:\Users\kiwog\AppData\Local\Temp\classes14725965013815486368\com\lestarieragemilang\Repositories\AuthRepositories.class
+[Wed May 08 19:05:31 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Repositories\CustomerRepositories.class to C:\Users\kiwog\AppData\Local\Temp\classes14725965013815486368\com\lestarieragemilang\Repositories\CustomerRepositories.class
+[Wed May 08 19:05:31 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Repositories\SupplierRepositories.class to C:\Users\kiwog\AppData\Local\Temp\classes14725965013815486368\com\lestarieragemilang\Repositories\SupplierRepositories.class
+[Wed May 08 19:05:31 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Repositories\SupplierRepositoriesTest.class to C:\Users\kiwog\AppData\Local\Temp\classes14725965013815486368\com\lestarieragemilang\Repositories\SupplierRepositoriesTest.class
+[Wed May 08 19:05:31 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Stock.class to C:\Users\kiwog\AppData\Local\Temp\classes14725965013815486368\com\lestarieragemilang\Stock.class
+[Wed May 08 19:05:32 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\stok-besi.fxml to C:\Users\kiwog\AppData\Local\Temp\classes14725965013815486368\com\lestarieragemilang\stok-besi.fxml
+[Wed May 08 19:05:32 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Supplier$1.class to C:\Users\kiwog\AppData\Local\Temp\classes14725965013815486368\com\lestarieragemilang\Supplier$1.class
+[Wed May 08 19:05:32 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Supplier$2.class to C:\Users\kiwog\AppData\Local\Temp\classes14725965013815486368\com\lestarieragemilang\Supplier$2.class
+[Wed May 08 19:05:32 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Supplier.class to C:\Users\kiwog\AppData\Local\Temp\classes14725965013815486368\com\lestarieragemilang\Supplier.class
+[Wed May 08 19:05:32 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\supplier.fxml to C:\Users\kiwog\AppData\Local\Temp\classes14725965013815486368\com\lestarieragemilang\supplier.fxml
+[Wed May 08 19:05:32 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\SupplierForm.class to C:\Users\kiwog\AppData\Local\Temp\classes14725965013815486368\com\lestarieragemilang\SupplierForm.class
+[Wed May 08 19:05:32 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\supplierForm.fxml to C:\Users\kiwog\AppData\Local\Temp\classes14725965013815486368\com\lestarieragemilang\supplierForm.fxml
+[Wed May 08 19:05:32 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Utilities\CacheService.class to C:\Users\kiwog\AppData\Local\Temp\classes14725965013815486368\com\lestarieragemilang\Utilities\CacheService.class
+[Wed May 08 19:05:32 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Utilities\Redirect.class to C:\Users\kiwog\AppData\Local\Temp\classes14725965013815486368\com\lestarieragemilang\Utilities\Redirect.class
+[Wed May 08 19:05:32 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\module-info.class to C:\Users\kiwog\AppData\Local\Temp\classes14725965013815486368\module-info.class
+[Wed May 08 19:05:32 ICT 2024][FINE] PB Command for jar: F:\command\java\graalvm-jdk-17.0.11\bin\jar.exe cf C:\Users\kiwog\AppData\Local\Temp\classes14725965013815486368\classes.jar -C C:\Users\kiwog\AppData\Local\Temp\classes14725965013815486368 .
+[Wed May 08 19:05:32 ICT 2024][FINE] Start process jar...
+[Wed May 08 19:05:36 ICT 2024][FINE] Result for jar: 0
+[Wed May 08 19:05:37 ICT 2024][FINE] Scanning for init build time files
+[Wed May 08 19:05:37 ICT 2024][FINE] Scanning C:\Users\kiwog\.m2\repository\com\google\protobuf\protobuf-java\3.25.1\protobuf-java-3.25.1.jar
+[Wed May 08 19:05:37 ICT 2024][FINE] Scanning C:\Users\kiwog\.m2\repository\com\mysql\mysql-connector-j\8.3.0\mysql-connector-j-8.3.0.jar
+[Wed May 08 19:05:37 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.base.jar
+[Wed May 08 19:05:37 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.controls.jar
+[Wed May 08 19:05:37 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.fxml.jar
+[Wed May 08 19:05:37 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.graphics.jar
+[Wed May 08 19:05:37 ICT 2024][FINE] Scanning C:\Users\kiwog\AppData\Local\Temp\classes14725965013815486368\classes.jar
+[Wed May 08 19:05:37 ICT 2024][FINE] Scanning for reflection files
+[Wed May 08 19:05:37 ICT 2024][FINE] Scanning C:\Users\kiwog\.m2\repository\com\google\protobuf\protobuf-java\3.25.1\protobuf-java-3.25.1.jar
+[Wed May 08 19:05:37 ICT 2024][FINE] Scanning C:\Users\kiwog\.m2\repository\com\mysql\mysql-connector-j\8.3.0\mysql-connector-j-8.3.0.jar
+[Wed May 08 19:05:37 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.base.jar
+[Wed May 08 19:05:37 ICT 2024][FINE] Adding classes from C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.base.jar::META-INF/substrate/config/reflectionconfig.json
+[Wed May 08 19:05:37 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.controls.jar
+[Wed May 08 19:05:37 ICT 2024][FINE] Adding classes from C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.controls.jar::META-INF/substrate/config/reflectionconfig.json
+[Wed May 08 19:05:37 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.fxml.jar
+[Wed May 08 19:05:37 ICT 2024][FINE] Adding classes from C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.fxml.jar::META-INF/substrate/config/reflectionconfig.json
+[Wed May 08 19:05:37 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.graphics.jar
+[Wed May 08 19:05:37 ICT 2024][FINE] Adding classes from C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.graphics.jar::META-INF/substrate/config/reflectionconfig-x86_64-windows.json
+[Wed May 08 19:05:37 ICT 2024][FINE] Adding classes from C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.graphics.jar::META-INF/substrate/config/reflectionconfig.json
+[Wed May 08 19:05:37 ICT 2024][FINE] Scanning C:\Users\kiwog\AppData\Local\Temp\classes14725965013815486368\classes.jar
+[Wed May 08 19:05:37 ICT 2024][FINE] Scanning for JNI files
+[Wed May 08 19:05:37 ICT 2024][FINE] Scanning C:\Users\kiwog\.m2\repository\com\google\protobuf\protobuf-java\3.25.1\protobuf-java-3.25.1.jar
+[Wed May 08 19:05:37 ICT 2024][FINE] Scanning C:\Users\kiwog\.m2\repository\com\mysql\mysql-connector-j\8.3.0\mysql-connector-j-8.3.0.jar
+[Wed May 08 19:05:37 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.base.jar
+[Wed May 08 19:05:37 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.controls.jar
+[Wed May 08 19:05:37 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.fxml.jar
+[Wed May 08 19:05:37 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.graphics.jar
+[Wed May 08 19:05:37 ICT 2024][FINE] Adding classes from C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.graphics.jar::META-INF/substrate/config/jniconfig-x86_64-windows.json
+[Wed May 08 19:05:37 ICT 2024][FINE] Adding classes from C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.graphics.jar::META-INF/substrate/config/jniconfig.json
+[Wed May 08 19:05:37 ICT 2024][FINE] Scanning C:\Users\kiwog\AppData\Local\Temp\classes14725965013815486368\classes.jar
+[Wed May 08 19:05:37 ICT 2024][FINE] Scanning for resource files
+[Wed May 08 19:05:37 ICT 2024][FINE] Scanning C:\Users\kiwog\.m2\repository\com\google\protobuf\protobuf-java\3.25.1\protobuf-java-3.25.1.jar
+[Wed May 08 19:05:37 ICT 2024][FINE] Scanning C:\Users\kiwog\.m2\repository\com\mysql\mysql-connector-j\8.3.0\mysql-connector-j-8.3.0.jar
+[Wed May 08 19:05:37 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.base.jar
+[Wed May 08 19:05:37 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.controls.jar
+[Wed May 08 19:05:37 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.fxml.jar
+[Wed May 08 19:05:37 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.graphics.jar
+[Wed May 08 19:05:37 ICT 2024][FINE] Scanning C:\Users\kiwog\AppData\Local\Temp\classes14725965013815486368\classes.jar
+[Wed May 08 19:05:37 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\App.class to C:\Users\kiwog\AppData\Local\Temp\classes7610387001234737749\com\lestarieragemilang\App.class
+[Wed May 08 19:05:37 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Configurations\DatabaseConfiguration.class to C:\Users\kiwog\AppData\Local\Temp\classes7610387001234737749\com\lestarieragemilang\Configurations\DatabaseConfiguration.class
+[Wed May 08 19:05:37 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Customer$1.class to C:\Users\kiwog\AppData\Local\Temp\classes7610387001234737749\com\lestarieragemilang\Customer$1.class
+[Wed May 08 19:05:37 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Customer$2.class to C:\Users\kiwog\AppData\Local\Temp\classes7610387001234737749\com\lestarieragemilang\Customer$2.class
+[Wed May 08 19:05:37 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Customer.class to C:\Users\kiwog\AppData\Local\Temp\classes7610387001234737749\com\lestarieragemilang\Customer.class
+[Wed May 08 19:05:37 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\customer.fxml to C:\Users\kiwog\AppData\Local\Temp\classes7610387001234737749\com\lestarieragemilang\customer.fxml
+[Wed May 08 19:05:37 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\CustomerForm.class to C:\Users\kiwog\AppData\Local\Temp\classes7610387001234737749\com\lestarieragemilang\CustomerForm.class
+[Wed May 08 19:05:37 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\customerForm.fxml to C:\Users\kiwog\AppData\Local\Temp\classes7610387001234737749\com\lestarieragemilang\customerForm.fxml
+[Wed May 08 19:05:37 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Dashboard.class to C:\Users\kiwog\AppData\Local\Temp\classes7610387001234737749\com\lestarieragemilang\Dashboard.class
+[Wed May 08 19:05:37 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\dashboard.fxml to C:\Users\kiwog\AppData\Local\Temp\classes7610387001234737749\com\lestarieragemilang\dashboard.fxml
+[Wed May 08 19:05:37 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Entities\CustomerEntity.class to C:\Users\kiwog\AppData\Local\Temp\classes7610387001234737749\com\lestarieragemilang\Entities\CustomerEntity.class
+[Wed May 08 19:05:37 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Entities\Product.class to C:\Users\kiwog\AppData\Local\Temp\classes7610387001234737749\com\lestarieragemilang\Entities\Product.class
+[Wed May 08 19:05:37 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Entities\SupplierEntity.class to C:\Users\kiwog\AppData\Local\Temp\classes7610387001234737749\com\lestarieragemilang\Entities\SupplierEntity.class
+[Wed May 08 19:05:37 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\kategori.fxml to C:\Users\kiwog\AppData\Local\Temp\classes7610387001234737749\com\lestarieragemilang\kategori.fxml
+[Wed May 08 19:05:37 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\laporan.fxml to C:\Users\kiwog\AppData\Local\Temp\classes7610387001234737749\com\lestarieragemilang\laporan.fxml
+[Wed May 08 19:05:37 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Login.class to C:\Users\kiwog\AppData\Local\Temp\classes7610387001234737749\com\lestarieragemilang\Login.class
+[Wed May 08 19:05:37 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\login.fxml to C:\Users\kiwog\AppData\Local\Temp\classes7610387001234737749\com\lestarieragemilang\login.fxml
+[Wed May 08 19:05:37 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\pembelian.fxml to C:\Users\kiwog\AppData\Local\Temp\classes7610387001234737749\com\lestarieragemilang\pembelian.fxml
+[Wed May 08 19:05:37 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\penerimaan.fxml to C:\Users\kiwog\AppData\Local\Temp\classes7610387001234737749\com\lestarieragemilang\penerimaan.fxml
+[Wed May 08 19:05:37 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\penjualan.fxml to C:\Users\kiwog\AppData\Local\Temp\classes7610387001234737749\com\lestarieragemilang\penjualan.fxml
+[Wed May 08 19:05:37 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Repositories\AuthRepositories.class to C:\Users\kiwog\AppData\Local\Temp\classes7610387001234737749\com\lestarieragemilang\Repositories\AuthRepositories.class
+[Wed May 08 19:05:37 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Repositories\CustomerRepositories.class to C:\Users\kiwog\AppData\Local\Temp\classes7610387001234737749\com\lestarieragemilang\Repositories\CustomerRepositories.class
+[Wed May 08 19:05:37 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Repositories\SupplierRepositories.class to C:\Users\kiwog\AppData\Local\Temp\classes7610387001234737749\com\lestarieragemilang\Repositories\SupplierRepositories.class
+[Wed May 08 19:05:37 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Repositories\SupplierRepositoriesTest.class to C:\Users\kiwog\AppData\Local\Temp\classes7610387001234737749\com\lestarieragemilang\Repositories\SupplierRepositoriesTest.class
+[Wed May 08 19:05:37 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Stock.class to C:\Users\kiwog\AppData\Local\Temp\classes7610387001234737749\com\lestarieragemilang\Stock.class
+[Wed May 08 19:05:37 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\stok-besi.fxml to C:\Users\kiwog\AppData\Local\Temp\classes7610387001234737749\com\lestarieragemilang\stok-besi.fxml
+[Wed May 08 19:05:37 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Supplier$1.class to C:\Users\kiwog\AppData\Local\Temp\classes7610387001234737749\com\lestarieragemilang\Supplier$1.class
+[Wed May 08 19:05:37 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Supplier$2.class to C:\Users\kiwog\AppData\Local\Temp\classes7610387001234737749\com\lestarieragemilang\Supplier$2.class
+[Wed May 08 19:05:37 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Supplier.class to C:\Users\kiwog\AppData\Local\Temp\classes7610387001234737749\com\lestarieragemilang\Supplier.class
+[Wed May 08 19:05:37 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\supplier.fxml to C:\Users\kiwog\AppData\Local\Temp\classes7610387001234737749\com\lestarieragemilang\supplier.fxml
+[Wed May 08 19:05:37 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\SupplierForm.class to C:\Users\kiwog\AppData\Local\Temp\classes7610387001234737749\com\lestarieragemilang\SupplierForm.class
+[Wed May 08 19:05:37 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\supplierForm.fxml to C:\Users\kiwog\AppData\Local\Temp\classes7610387001234737749\com\lestarieragemilang\supplierForm.fxml
+[Wed May 08 19:05:37 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Utilities\CacheService.class to C:\Users\kiwog\AppData\Local\Temp\classes7610387001234737749\com\lestarieragemilang\Utilities\CacheService.class
+[Wed May 08 19:05:37 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Utilities\Redirect.class to C:\Users\kiwog\AppData\Local\Temp\classes7610387001234737749\com\lestarieragemilang\Utilities\Redirect.class
+[Wed May 08 19:05:37 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\module-info.class to C:\Users\kiwog\AppData\Local\Temp\classes7610387001234737749\module-info.class
+[Wed May 08 19:05:37 ICT 2024][FINE] PB Command for jar: F:\command\java\graalvm-jdk-17.0.11\bin\jar.exe cf C:\Users\kiwog\AppData\Local\Temp\classes7610387001234737749\classes.jar -C C:\Users\kiwog\AppData\Local\Temp\classes7610387001234737749 .
+[Wed May 08 19:05:37 ICT 2024][FINE] Start process jar...
+[Wed May 08 19:05:38 ICT 2024][FINE] Result for jar: 0
+[Wed May 08 19:05:38 ICT 2024][FINE] Scanning for resource bundles
+[Wed May 08 19:05:38 ICT 2024][FINE] Scanning C:\Users\kiwog\.m2\repository\com\google\protobuf\protobuf-java\3.25.1\protobuf-java-3.25.1.jar
+[Wed May 08 19:05:38 ICT 2024][FINE] Scanning C:\Users\kiwog\.m2\repository\com\mysql\mysql-connector-j\8.3.0\mysql-connector-j-8.3.0.jar
+[Wed May 08 19:05:38 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.base.jar
+[Wed May 08 19:05:38 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.controls.jar
+[Wed May 08 19:05:38 ICT 2024][FINE] Adding classes from C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.controls.jar::META-INF/substrate/config/resourcebundles
+[Wed May 08 19:05:38 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.fxml.jar
+[Wed May 08 19:05:38 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.graphics.jar
+[Wed May 08 19:05:38 ICT 2024][FINE] Adding classes from C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.graphics.jar::META-INF/substrate/config/resourcebundles
+[Wed May 08 19:05:38 ICT 2024][FINE] Adding classes from C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.graphics.jar::META-INF/substrate/config/resourcebundles-x86_64-windows
+[Wed May 08 19:05:38 ICT 2024][FINE] Scanning C:\Users\kiwog\AppData\Local\Temp\classes7610387001234737749\classes.jar
+[Wed May 08 19:05:38 ICT 2024][FINE] Copied resource C:\Users\kiwog\.m2\repository\com\google\protobuf\protobuf-java\3.25.1\protobuf-java-3.25.1.jar to F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\tmp\deps\protobuf-java-3.25.1.jar
+[Wed May 08 19:05:38 ICT 2024][FINE] Copied resource C:\Users\kiwog\.m2\repository\com\mysql\mysql-connector-j\8.3.0\mysql-connector-j-8.3.0.jar to F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\tmp\deps\mysql-connector-j-8.3.0.jar
+[Wed May 08 19:05:38 ICT 2024][FINE] Copied resource C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.base.jar to F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\tmp\deps\javafx.base.jar
+[Wed May 08 19:05:39 ICT 2024][FINE] Copied resource C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.controls.jar to F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\tmp\deps\javafx.controls.jar
+[Wed May 08 19:05:39 ICT 2024][FINE] Copied resource C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.fxml.jar to F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\tmp\deps\javafx.fxml.jar
+[Wed May 08 19:05:39 ICT 2024][FINE] Copied resource C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.graphics.jar to F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\tmp\deps\javafx.graphics.jar
+[Wed May 08 19:05:39 ICT 2024][FINE] Class-Path manifest entry for pathing jar: ..\..\..\..\classes deps\protobuf-java-3.25.1.jar deps\mysql-connector-j-8.3.0.jar deps\javafx.base.jar deps\javafx.controls.jar deps\javafx.fxml.jar deps\javafx.graphics.jar
+[Wed May 08 19:05:39 ICT 2024][FINE] Pathing jar created at F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\tmp\classpathJar.jar
+[Wed May 08 19:05:39 ICT 2024][FINE] PB Command for compile: F:\command\java\graalvm-jdk-17.0.11\bin\native-image.cmd "-Djdk.internal.lambda.eagerlyInitialize=false" --no-server -H:+SharedLibrary -H:+AddAllCharsets -H:+ReportExceptionStackTraces -H:-DeadlockWatchdogExitOnTimeout "-H:DeadlockWatchdogInterval=0" -H:+RemoveSaturatedTypeFlows -H:+ExitAfterRelocatableImageWrite "--features=org.graalvm.home.HomeFinderFeature" "-H:TempDirectory=F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\tmp" "-H:EnableURLProtocols=http,https" "-H:ReflectionConfigurationFiles=F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\reflectionconfig-x86_64-windows.json" "-H:JNIConfigurationFiles=F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\jniconfig-x86_64-windows.json" "-H:ResourceConfigurationFiles=F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\resourceconfig-x86_64-windows.json" "-H:IncludeResourceBundles=com/sun/javafx/scene/control/skin/resources/controls,com/sun/javafx/scene/control/skin/resources/controls-nt,com.sun.javafx.tk.quantum.QuantumMessagesBundle,com/sun/glass/ui/win/themes" "-Dsvm.platform=org.graalvm.nativeimage.Platform$WINDOWS_AMD64" -cp "C:\Users\kiwog\.m2\repository\com\gluonhq\substrate\0.0.61\substrate-0.0.61.jar;F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\tmp\classpathJar.jar" com.lestarieragemilang.App
+[Wed May 08 19:05:39 ICT 2024][FINE] Start process compile...
+[Wed May 08 19:05:50 ICT 2024][INFO] [SUB] Warning: Ignoring server-mode native-image argument --no-server.
+[Wed May 08 19:07:03 ICT 2024][INFO] [SUB] ========================================================================================================================
+[Wed May 08 19:07:03 ICT 2024][INFO] [SUB] GraalVM Native Image: Generating 'com.lestarieragemilang.app' (shared library)...
+[Wed May 08 19:07:03 ICT 2024][INFO] [SUB] ========================================================================================================================
+[Wed May 08 19:07:03 ICT 2024][INFO] [SUB] For detailed information and explanations on the build output, visit:
+[Wed May 08 19:07:03 ICT 2024][INFO] [SUB] https://github.com/oracle/graal/blob/master/docs/reference-manual/native-image/BuildOutput.md
+[Wed May 08 19:07:03 ICT 2024][INFO] [SUB] ------------------------------------------------------------------------------------------------------------------------
+[Wed May 08 19:07:21 ICT 2024][INFO] [SUB] 
+[Wed May 08 19:07:21 ICT 2024][INFO] [SUB] [1/8] Initializing...                                                                                    (0.0s @ 0.12GB)
+[Wed May 08 19:07:21 ICT 2024][INFO] [SUB] Error: Unable to detect supported WINDOWS native software development toolchain.
+[Wed May 08 19:07:21 ICT 2024][INFO] [SUB] Querying with command ''F:\command\msvc\VC\Tools\MSVC\14.39.33519\bin\HostX86\x86\cl.exe' /EP 'F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\tmp\SVM-1715170037370\detect-cl-version-info.c'' prints:
+[Wed May 08 19:07:21 ICT 2024][INFO] [SUB]   Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33523 for x86
+[Wed May 08 19:07:21 ICT 2024][INFO] [SUB]   Copyright (C) Microsoft Corporation.  All rights reserved.
+[Wed May 08 19:07:21 ICT 2024][INFO] [SUB]   
+[Wed May 08 19:07:21 ICT 2024][INFO] [SUB]   detect-cl-version-info.c
+[Wed May 08 19:07:21 ICT 2024][INFO] [SUB]   
+[Wed May 08 19:07:21 ICT 2024][INFO] [SUB]   M_X64=_M_X64
+[Wed May 08 19:07:21 ICT 2024][INFO] [SUB]   M_ARM64EC=_M_ARM64EC
+[Wed May 08 19:07:21 ICT 2024][INFO] [SUB]   MSC_FULL_VER=193933523
+[Wed May 08 19:07:21 ICT 2024][INFO] [SUB] Error: To prevent native-toolchain checking provide command-line option -H:-CheckToolchain
+[Wed May 08 19:07:21 ICT 2024][INFO] [SUB] com.oracle.svm.core.util.UserError$UserException: Unable to detect supported WINDOWS native software development toolchain.
+[Wed May 08 19:07:21 ICT 2024][INFO] [SUB] Querying with command ''F:\command\msvc\VC\Tools\MSVC\14.39.33519\bin\HostX86\x86\cl.exe' /EP 'F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\tmp\SVM-1715170037370\detect-cl-version-info.c'' prints:
+[Wed May 08 19:07:21 ICT 2024][INFO] [SUB]   Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33523 for x86
+[Wed May 08 19:07:21 ICT 2024][INFO] [SUB]   Copyright (C) Microsoft Corporation.  All rights reserved.
+[Wed May 08 19:07:21 ICT 2024][INFO] [SUB]   
+[Wed May 08 19:07:21 ICT 2024][INFO] [SUB]   detect-cl-version-info.c
+[Wed May 08 19:07:21 ICT 2024][INFO] [SUB]   
+[Wed May 08 19:07:21 ICT 2024][INFO] [SUB]   M_X64=_M_X64
+[Wed May 08 19:07:21 ICT 2024][INFO] [SUB]   M_ARM64EC=_M_ARM64EC
+[Wed May 08 19:07:21 ICT 2024][INFO] [SUB]   MSC_FULL_VER=193933523
+[Wed May 08 19:07:21 ICT 2024][INFO] [SUB] To prevent native-toolchain checking provide command-line option -H:-CheckToolchain
+[Wed May 08 19:07:21 ICT 2024][INFO] [SUB] 	at org.graalvm.nativeimage.builder/com.oracle.svm.core.util.UserError.abort(UserError.java:126)
+[Wed May 08 19:07:21 ICT 2024][INFO] [SUB] 	at org.graalvm.nativeimage.builder/com.oracle.svm.hosted.c.codegen.CCompilerInvoker.addSkipCheckingInfo(CCompilerInvoker.java:106)
+[Wed May 08 19:07:21 ICT 2024][INFO] [SUB] 	at org.graalvm.nativeimage.builder/com.oracle.svm.hosted.c.codegen.CCompilerInvoker.<init>(CCompilerInvoker.java:74)
+[Wed May 08 19:07:21 ICT 2024][INFO] [SUB] 	at org.graalvm.nativeimage.builder/com.oracle.svm.hosted.c.codegen.CCompilerInvoker$WindowsCCompilerInvoker.<init>(CCompilerInvoker.java:112)
+[Wed May 08 19:07:21 ICT 2024][INFO] [SUB] 	at org.graalvm.nativeimage.builder/com.oracle.svm.hosted.c.codegen.CCompilerInvoker.create(CCompilerInvoker.java:86)
+[Wed May 08 19:07:21 ICT 2024][INFO] [SUB] 	at org.graalvm.nativeimage.builder/com.oracle.svm.hosted.NativeImageGenerator.setupNativeImage(NativeImageGenerator.java:929)
+[Wed May 08 19:07:21 ICT 2024][INFO] [SUB] 	at org.graalvm.nativeimage.builder/com.oracle.svm.hosted.NativeImageGenerator.doRun(NativeImageGenerator.java:579)
+[Wed May 08 19:07:21 ICT 2024][INFO] [SUB] 	at org.graalvm.nativeimage.builder/com.oracle.svm.hosted.NativeImageGenerator.run(NativeImageGenerator.java:539)
+[Wed May 08 19:07:21 ICT 2024][INFO] [SUB] 	at org.graalvm.nativeimage.builder/com.oracle.svm.hosted.NativeImageGeneratorRunner.buildImage(NativeImageGeneratorRunner.java:408)
+[Wed May 08 19:07:21 ICT 2024][INFO] [SUB] 	at org.graalvm.nativeimage.builder/com.oracle.svm.hosted.NativeImageGeneratorRunner.build(NativeImageGeneratorRunner.java:612)
+[Wed May 08 19:07:21 ICT 2024][INFO] [SUB] 	at org.graalvm.nativeimage.builder/com.oracle.svm.hosted.NativeImageGeneratorRunner.start(NativeImageGeneratorRunner.java:134)
+[Wed May 08 19:07:21 ICT 2024][INFO] [SUB] 	at org.graalvm.nativeimage.builder/com.oracle.svm.hosted.NativeImageGeneratorRunner.main(NativeImageGeneratorRunner.java:94)
+[Wed May 08 19:07:21 ICT 2024][INFO] [SUB] ------------------------------------------------------------------------------------------------------------------------
+[Wed May 08 19:07:22 ICT 2024][INFO] [SUB]                         1.8s (2.4% of total time) in 39 GCs | Peak RSS: 0.51GB | CPU load: 0.54
+[Wed May 08 19:07:22 ICT 2024][INFO] [SUB] ========================================================================================================================
+[Wed May 08 19:07:22 ICT 2024][INFO] [SUB] Finished generating 'com.lestarieragemilang.app' in 46.1s.
+[Wed May 08 19:07:23 ICT 2024][FINE] Result for compile: 1
+[Wed May 08 19:07:23 ICT 2024][SEVERE] Process compile failed with result: 1
+Check the log files under F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\log
+And please check https://docs.gluonhq.com/ for more information.
+[Wed May 08 19:07:23 ICT 2024][INFO] Logging process [compile] to file: F:\projects\application projects\inventory_management_system\target\gluonfx\log\process-compile-1715170043241.log
+[Wed May 08 19:07:23 ICT 2024][SEVERE] Compiling failed.
+Check the log files under F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\log
+And please check https://docs.gluonhq.com/ for more information.
+[Wed May 08 19:12:32 ICT 2024][INFO] ==================== COMPILE TASK ====================
+[Wed May 08 19:12:38 ICT 2024][INFO] We will now compile your code for x86_64-microsoft-windows. This may take some time.
+[Wed May 08 19:12:39 ICT 2024][FINE] Extracting native libs to: F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\lib
+[Wed May 08 19:12:39 ICT 2024][FINE] Looking for resource: /native/windows/launcher.c
+[Wed May 08 19:12:39 ICT 2024][FINE] PB Command for compile-additional-sources: cl -c -DSUBSTRATE /MD /D_UNICODE /DUNICODE /DWIN32 /D_WINDOWS -IF:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\app launcher.c
+[Wed May 08 19:12:39 ICT 2024][FINE] Start process compile-additional-sources...
+[Wed May 08 19:12:40 ICT 2024][FINE] [SUB] Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33523 for x86
+[Wed May 08 19:12:40 ICT 2024][FINE] [SUB] Copyright (C) Microsoft Corporation.  All rights reserved.
+[Wed May 08 19:12:40 ICT 2024][FINE] [SUB] 
+[Wed May 08 19:12:40 ICT 2024][FINE] [SUB] launcher.c
+[Wed May 08 19:12:47 ICT 2024][FINE] Result for compile-additional-sources: 0
+[Wed May 08 19:12:48 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\App.class to C:\Users\kiwog\AppData\Local\Temp\classes14993725986669239937\com\lestarieragemilang\App.class
+[Wed May 08 19:12:48 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Configurations\DatabaseConfiguration.class to C:\Users\kiwog\AppData\Local\Temp\classes14993725986669239937\com\lestarieragemilang\Configurations\DatabaseConfiguration.class
+[Wed May 08 19:12:48 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Customer$1.class to C:\Users\kiwog\AppData\Local\Temp\classes14993725986669239937\com\lestarieragemilang\Customer$1.class
+[Wed May 08 19:12:48 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Customer$2.class to C:\Users\kiwog\AppData\Local\Temp\classes14993725986669239937\com\lestarieragemilang\Customer$2.class
+[Wed May 08 19:12:48 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Customer.class to C:\Users\kiwog\AppData\Local\Temp\classes14993725986669239937\com\lestarieragemilang\Customer.class
+[Wed May 08 19:12:48 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\customer.fxml to C:\Users\kiwog\AppData\Local\Temp\classes14993725986669239937\com\lestarieragemilang\customer.fxml
+[Wed May 08 19:12:48 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\CustomerForm.class to C:\Users\kiwog\AppData\Local\Temp\classes14993725986669239937\com\lestarieragemilang\CustomerForm.class
+[Wed May 08 19:12:48 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\customerForm.fxml to C:\Users\kiwog\AppData\Local\Temp\classes14993725986669239937\com\lestarieragemilang\customerForm.fxml
+[Wed May 08 19:12:48 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Dashboard.class to C:\Users\kiwog\AppData\Local\Temp\classes14993725986669239937\com\lestarieragemilang\Dashboard.class
+[Wed May 08 19:12:48 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\dashboard.fxml to C:\Users\kiwog\AppData\Local\Temp\classes14993725986669239937\com\lestarieragemilang\dashboard.fxml
+[Wed May 08 19:12:48 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Entities\CustomerEntity.class to C:\Users\kiwog\AppData\Local\Temp\classes14993725986669239937\com\lestarieragemilang\Entities\CustomerEntity.class
+[Wed May 08 19:12:48 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Entities\Product.class to C:\Users\kiwog\AppData\Local\Temp\classes14993725986669239937\com\lestarieragemilang\Entities\Product.class
+[Wed May 08 19:12:48 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Entities\SupplierEntity.class to C:\Users\kiwog\AppData\Local\Temp\classes14993725986669239937\com\lestarieragemilang\Entities\SupplierEntity.class
+[Wed May 08 19:12:48 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\kategori.fxml to C:\Users\kiwog\AppData\Local\Temp\classes14993725986669239937\com\lestarieragemilang\kategori.fxml
+[Wed May 08 19:12:48 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\laporan.fxml to C:\Users\kiwog\AppData\Local\Temp\classes14993725986669239937\com\lestarieragemilang\laporan.fxml
+[Wed May 08 19:12:48 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Login.class to C:\Users\kiwog\AppData\Local\Temp\classes14993725986669239937\com\lestarieragemilang\Login.class
+[Wed May 08 19:12:48 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\login.fxml to C:\Users\kiwog\AppData\Local\Temp\classes14993725986669239937\com\lestarieragemilang\login.fxml
+[Wed May 08 19:12:48 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\pembelian.fxml to C:\Users\kiwog\AppData\Local\Temp\classes14993725986669239937\com\lestarieragemilang\pembelian.fxml
+[Wed May 08 19:12:48 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\penerimaan.fxml to C:\Users\kiwog\AppData\Local\Temp\classes14993725986669239937\com\lestarieragemilang\penerimaan.fxml
+[Wed May 08 19:12:48 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\penjualan.fxml to C:\Users\kiwog\AppData\Local\Temp\classes14993725986669239937\com\lestarieragemilang\penjualan.fxml
+[Wed May 08 19:12:48 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Repositories\AuthRepositories.class to C:\Users\kiwog\AppData\Local\Temp\classes14993725986669239937\com\lestarieragemilang\Repositories\AuthRepositories.class
+[Wed May 08 19:12:48 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Repositories\CustomerRepositories.class to C:\Users\kiwog\AppData\Local\Temp\classes14993725986669239937\com\lestarieragemilang\Repositories\CustomerRepositories.class
+[Wed May 08 19:12:48 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Repositories\SupplierRepositories.class to C:\Users\kiwog\AppData\Local\Temp\classes14993725986669239937\com\lestarieragemilang\Repositories\SupplierRepositories.class
+[Wed May 08 19:12:48 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Repositories\SupplierRepositoriesTest.class to C:\Users\kiwog\AppData\Local\Temp\classes14993725986669239937\com\lestarieragemilang\Repositories\SupplierRepositoriesTest.class
+[Wed May 08 19:12:48 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Stock.class to C:\Users\kiwog\AppData\Local\Temp\classes14993725986669239937\com\lestarieragemilang\Stock.class
+[Wed May 08 19:12:48 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\stok-besi.fxml to C:\Users\kiwog\AppData\Local\Temp\classes14993725986669239937\com\lestarieragemilang\stok-besi.fxml
+[Wed May 08 19:12:48 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Supplier$1.class to C:\Users\kiwog\AppData\Local\Temp\classes14993725986669239937\com\lestarieragemilang\Supplier$1.class
+[Wed May 08 19:12:48 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Supplier$2.class to C:\Users\kiwog\AppData\Local\Temp\classes14993725986669239937\com\lestarieragemilang\Supplier$2.class
+[Wed May 08 19:12:48 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Supplier.class to C:\Users\kiwog\AppData\Local\Temp\classes14993725986669239937\com\lestarieragemilang\Supplier.class
+[Wed May 08 19:12:48 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\supplier.fxml to C:\Users\kiwog\AppData\Local\Temp\classes14993725986669239937\com\lestarieragemilang\supplier.fxml
+[Wed May 08 19:12:48 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\SupplierForm.class to C:\Users\kiwog\AppData\Local\Temp\classes14993725986669239937\com\lestarieragemilang\SupplierForm.class
+[Wed May 08 19:12:49 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\supplierForm.fxml to C:\Users\kiwog\AppData\Local\Temp\classes14993725986669239937\com\lestarieragemilang\supplierForm.fxml
+[Wed May 08 19:12:49 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Utilities\CacheService.class to C:\Users\kiwog\AppData\Local\Temp\classes14993725986669239937\com\lestarieragemilang\Utilities\CacheService.class
+[Wed May 08 19:12:49 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Utilities\Redirect.class to C:\Users\kiwog\AppData\Local\Temp\classes14993725986669239937\com\lestarieragemilang\Utilities\Redirect.class
+[Wed May 08 19:12:49 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\module-info.class to C:\Users\kiwog\AppData\Local\Temp\classes14993725986669239937\module-info.class
+[Wed May 08 19:12:49 ICT 2024][FINE] PB Command for jar: F:\command\java\graalvm-jdk-17.0.11\bin\jar.exe cf C:\Users\kiwog\AppData\Local\Temp\classes14993725986669239937\classes.jar -C C:\Users\kiwog\AppData\Local\Temp\classes14993725986669239937 .
+[Wed May 08 19:12:49 ICT 2024][FINE] Start process jar...
+[Wed May 08 19:12:52 ICT 2024][FINE] Result for jar: 0
+[Wed May 08 19:12:53 ICT 2024][FINE] Scanning for init build time files
+[Wed May 08 19:12:53 ICT 2024][FINE] Scanning C:\Users\kiwog\.m2\repository\com\google\protobuf\protobuf-java\3.25.1\protobuf-java-3.25.1.jar
+[Wed May 08 19:12:53 ICT 2024][FINE] Scanning C:\Users\kiwog\.m2\repository\com\mysql\mysql-connector-j\8.3.0\mysql-connector-j-8.3.0.jar
+[Wed May 08 19:12:53 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.base.jar
+[Wed May 08 19:12:53 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.controls.jar
+[Wed May 08 19:12:53 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.fxml.jar
+[Wed May 08 19:12:53 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.graphics.jar
+[Wed May 08 19:12:53 ICT 2024][FINE] Scanning C:\Users\kiwog\AppData\Local\Temp\classes14993725986669239937\classes.jar
+[Wed May 08 19:12:53 ICT 2024][FINE] Scanning for reflection files
+[Wed May 08 19:12:53 ICT 2024][FINE] Scanning C:\Users\kiwog\.m2\repository\com\google\protobuf\protobuf-java\3.25.1\protobuf-java-3.25.1.jar
+[Wed May 08 19:12:53 ICT 2024][FINE] Scanning C:\Users\kiwog\.m2\repository\com\mysql\mysql-connector-j\8.3.0\mysql-connector-j-8.3.0.jar
+[Wed May 08 19:12:53 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.base.jar
+[Wed May 08 19:12:53 ICT 2024][FINE] Adding classes from C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.base.jar::META-INF/substrate/config/reflectionconfig.json
+[Wed May 08 19:12:53 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.controls.jar
+[Wed May 08 19:12:53 ICT 2024][FINE] Adding classes from C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.controls.jar::META-INF/substrate/config/reflectionconfig.json
+[Wed May 08 19:12:53 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.fxml.jar
+[Wed May 08 19:12:53 ICT 2024][FINE] Adding classes from C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.fxml.jar::META-INF/substrate/config/reflectionconfig.json
+[Wed May 08 19:12:53 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.graphics.jar
+[Wed May 08 19:12:53 ICT 2024][FINE] Adding classes from C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.graphics.jar::META-INF/substrate/config/reflectionconfig-x86_64-windows.json
+[Wed May 08 19:12:53 ICT 2024][FINE] Adding classes from C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.graphics.jar::META-INF/substrate/config/reflectionconfig.json
+[Wed May 08 19:12:53 ICT 2024][FINE] Scanning C:\Users\kiwog\AppData\Local\Temp\classes14993725986669239937\classes.jar
+[Wed May 08 19:12:53 ICT 2024][FINE] Scanning for JNI files
+[Wed May 08 19:12:53 ICT 2024][FINE] Scanning C:\Users\kiwog\.m2\repository\com\google\protobuf\protobuf-java\3.25.1\protobuf-java-3.25.1.jar
+[Wed May 08 19:12:53 ICT 2024][FINE] Scanning C:\Users\kiwog\.m2\repository\com\mysql\mysql-connector-j\8.3.0\mysql-connector-j-8.3.0.jar
+[Wed May 08 19:12:53 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.base.jar
+[Wed May 08 19:12:53 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.controls.jar
+[Wed May 08 19:12:53 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.fxml.jar
+[Wed May 08 19:12:53 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.graphics.jar
+[Wed May 08 19:12:53 ICT 2024][FINE] Adding classes from C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.graphics.jar::META-INF/substrate/config/jniconfig-x86_64-windows.json
+[Wed May 08 19:12:53 ICT 2024][FINE] Adding classes from C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.graphics.jar::META-INF/substrate/config/jniconfig.json
+[Wed May 08 19:12:53 ICT 2024][FINE] Scanning C:\Users\kiwog\AppData\Local\Temp\classes14993725986669239937\classes.jar
+[Wed May 08 19:12:53 ICT 2024][FINE] Scanning for resource files
+[Wed May 08 19:12:53 ICT 2024][FINE] Scanning C:\Users\kiwog\.m2\repository\com\google\protobuf\protobuf-java\3.25.1\protobuf-java-3.25.1.jar
+[Wed May 08 19:12:53 ICT 2024][FINE] Scanning C:\Users\kiwog\.m2\repository\com\mysql\mysql-connector-j\8.3.0\mysql-connector-j-8.3.0.jar
+[Wed May 08 19:12:53 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.base.jar
+[Wed May 08 19:12:53 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.controls.jar
+[Wed May 08 19:12:53 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.fxml.jar
+[Wed May 08 19:12:53 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.graphics.jar
+[Wed May 08 19:12:53 ICT 2024][FINE] Scanning C:\Users\kiwog\AppData\Local\Temp\classes14993725986669239937\classes.jar
+[Wed May 08 19:12:53 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\App.class to C:\Users\kiwog\AppData\Local\Temp\classes17343904974684891607\com\lestarieragemilang\App.class
+[Wed May 08 19:12:53 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Configurations\DatabaseConfiguration.class to C:\Users\kiwog\AppData\Local\Temp\classes17343904974684891607\com\lestarieragemilang\Configurations\DatabaseConfiguration.class
+[Wed May 08 19:12:53 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Customer$1.class to C:\Users\kiwog\AppData\Local\Temp\classes17343904974684891607\com\lestarieragemilang\Customer$1.class
+[Wed May 08 19:12:53 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Customer$2.class to C:\Users\kiwog\AppData\Local\Temp\classes17343904974684891607\com\lestarieragemilang\Customer$2.class
+[Wed May 08 19:12:53 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Customer.class to C:\Users\kiwog\AppData\Local\Temp\classes17343904974684891607\com\lestarieragemilang\Customer.class
+[Wed May 08 19:12:53 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\customer.fxml to C:\Users\kiwog\AppData\Local\Temp\classes17343904974684891607\com\lestarieragemilang\customer.fxml
+[Wed May 08 19:12:53 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\CustomerForm.class to C:\Users\kiwog\AppData\Local\Temp\classes17343904974684891607\com\lestarieragemilang\CustomerForm.class
+[Wed May 08 19:12:53 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\customerForm.fxml to C:\Users\kiwog\AppData\Local\Temp\classes17343904974684891607\com\lestarieragemilang\customerForm.fxml
+[Wed May 08 19:12:53 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Dashboard.class to C:\Users\kiwog\AppData\Local\Temp\classes17343904974684891607\com\lestarieragemilang\Dashboard.class
+[Wed May 08 19:12:53 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\dashboard.fxml to C:\Users\kiwog\AppData\Local\Temp\classes17343904974684891607\com\lestarieragemilang\dashboard.fxml
+[Wed May 08 19:12:53 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Entities\CustomerEntity.class to C:\Users\kiwog\AppData\Local\Temp\classes17343904974684891607\com\lestarieragemilang\Entities\CustomerEntity.class
+[Wed May 08 19:12:53 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Entities\Product.class to C:\Users\kiwog\AppData\Local\Temp\classes17343904974684891607\com\lestarieragemilang\Entities\Product.class
+[Wed May 08 19:12:53 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Entities\SupplierEntity.class to C:\Users\kiwog\AppData\Local\Temp\classes17343904974684891607\com\lestarieragemilang\Entities\SupplierEntity.class
+[Wed May 08 19:12:53 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\kategori.fxml to C:\Users\kiwog\AppData\Local\Temp\classes17343904974684891607\com\lestarieragemilang\kategori.fxml
+[Wed May 08 19:12:53 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\laporan.fxml to C:\Users\kiwog\AppData\Local\Temp\classes17343904974684891607\com\lestarieragemilang\laporan.fxml
+[Wed May 08 19:12:53 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Login.class to C:\Users\kiwog\AppData\Local\Temp\classes17343904974684891607\com\lestarieragemilang\Login.class
+[Wed May 08 19:12:53 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\login.fxml to C:\Users\kiwog\AppData\Local\Temp\classes17343904974684891607\com\lestarieragemilang\login.fxml
+[Wed May 08 19:12:53 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\pembelian.fxml to C:\Users\kiwog\AppData\Local\Temp\classes17343904974684891607\com\lestarieragemilang\pembelian.fxml
+[Wed May 08 19:12:53 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\penerimaan.fxml to C:\Users\kiwog\AppData\Local\Temp\classes17343904974684891607\com\lestarieragemilang\penerimaan.fxml
+[Wed May 08 19:12:53 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\penjualan.fxml to C:\Users\kiwog\AppData\Local\Temp\classes17343904974684891607\com\lestarieragemilang\penjualan.fxml
+[Wed May 08 19:12:53 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Repositories\AuthRepositories.class to C:\Users\kiwog\AppData\Local\Temp\classes17343904974684891607\com\lestarieragemilang\Repositories\AuthRepositories.class
+[Wed May 08 19:12:53 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Repositories\CustomerRepositories.class to C:\Users\kiwog\AppData\Local\Temp\classes17343904974684891607\com\lestarieragemilang\Repositories\CustomerRepositories.class
+[Wed May 08 19:12:53 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Repositories\SupplierRepositories.class to C:\Users\kiwog\AppData\Local\Temp\classes17343904974684891607\com\lestarieragemilang\Repositories\SupplierRepositories.class
+[Wed May 08 19:12:53 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Repositories\SupplierRepositoriesTest.class to C:\Users\kiwog\AppData\Local\Temp\classes17343904974684891607\com\lestarieragemilang\Repositories\SupplierRepositoriesTest.class
+[Wed May 08 19:12:53 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Stock.class to C:\Users\kiwog\AppData\Local\Temp\classes17343904974684891607\com\lestarieragemilang\Stock.class
+[Wed May 08 19:12:53 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\stok-besi.fxml to C:\Users\kiwog\AppData\Local\Temp\classes17343904974684891607\com\lestarieragemilang\stok-besi.fxml
+[Wed May 08 19:12:53 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Supplier$1.class to C:\Users\kiwog\AppData\Local\Temp\classes17343904974684891607\com\lestarieragemilang\Supplier$1.class
+[Wed May 08 19:12:53 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Supplier$2.class to C:\Users\kiwog\AppData\Local\Temp\classes17343904974684891607\com\lestarieragemilang\Supplier$2.class
+[Wed May 08 19:12:53 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Supplier.class to C:\Users\kiwog\AppData\Local\Temp\classes17343904974684891607\com\lestarieragemilang\Supplier.class
+[Wed May 08 19:12:53 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\supplier.fxml to C:\Users\kiwog\AppData\Local\Temp\classes17343904974684891607\com\lestarieragemilang\supplier.fxml
+[Wed May 08 19:12:53 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\SupplierForm.class to C:\Users\kiwog\AppData\Local\Temp\classes17343904974684891607\com\lestarieragemilang\SupplierForm.class
+[Wed May 08 19:12:53 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\supplierForm.fxml to C:\Users\kiwog\AppData\Local\Temp\classes17343904974684891607\com\lestarieragemilang\supplierForm.fxml
+[Wed May 08 19:12:53 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Utilities\CacheService.class to C:\Users\kiwog\AppData\Local\Temp\classes17343904974684891607\com\lestarieragemilang\Utilities\CacheService.class
+[Wed May 08 19:12:53 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\com\lestarieragemilang\Utilities\Redirect.class to C:\Users\kiwog\AppData\Local\Temp\classes17343904974684891607\com\lestarieragemilang\Utilities\Redirect.class
+[Wed May 08 19:12:53 ICT 2024][FINE] Copied resource F:\projects\application projects\inventory_management_system\target\classes\module-info.class to C:\Users\kiwog\AppData\Local\Temp\classes17343904974684891607\module-info.class
+[Wed May 08 19:12:53 ICT 2024][FINE] PB Command for jar: F:\command\java\graalvm-jdk-17.0.11\bin\jar.exe cf C:\Users\kiwog\AppData\Local\Temp\classes17343904974684891607\classes.jar -C C:\Users\kiwog\AppData\Local\Temp\classes17343904974684891607 .
+[Wed May 08 19:12:53 ICT 2024][FINE] Start process jar...
+[Wed May 08 19:12:54 ICT 2024][FINE] Result for jar: 0
+[Wed May 08 19:12:54 ICT 2024][FINE] Scanning for resource bundles
+[Wed May 08 19:12:54 ICT 2024][FINE] Scanning C:\Users\kiwog\.m2\repository\com\google\protobuf\protobuf-java\3.25.1\protobuf-java-3.25.1.jar
+[Wed May 08 19:12:54 ICT 2024][FINE] Scanning C:\Users\kiwog\.m2\repository\com\mysql\mysql-connector-j\8.3.0\mysql-connector-j-8.3.0.jar
+[Wed May 08 19:12:54 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.base.jar
+[Wed May 08 19:12:54 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.controls.jar
+[Wed May 08 19:12:54 ICT 2024][FINE] Adding classes from C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.controls.jar::META-INF/substrate/config/resourcebundles
+[Wed May 08 19:12:54 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.fxml.jar
+[Wed May 08 19:12:54 ICT 2024][FINE] Scanning C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.graphics.jar
+[Wed May 08 19:12:54 ICT 2024][FINE] Adding classes from C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.graphics.jar::META-INF/substrate/config/resourcebundles
+[Wed May 08 19:12:54 ICT 2024][FINE] Adding classes from C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.graphics.jar::META-INF/substrate/config/resourcebundles-x86_64-windows
+[Wed May 08 19:12:54 ICT 2024][FINE] Scanning C:\Users\kiwog\AppData\Local\Temp\classes17343904974684891607\classes.jar
+[Wed May 08 19:12:55 ICT 2024][FINE] Copied resource C:\Users\kiwog\.m2\repository\com\google\protobuf\protobuf-java\3.25.1\protobuf-java-3.25.1.jar to F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\tmp\deps\protobuf-java-3.25.1.jar
+[Wed May 08 19:12:55 ICT 2024][FINE] Copied resource C:\Users\kiwog\.m2\repository\com\mysql\mysql-connector-j\8.3.0\mysql-connector-j-8.3.0.jar to F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\tmp\deps\mysql-connector-j-8.3.0.jar
+[Wed May 08 19:12:55 ICT 2024][FINE] Copied resource C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.base.jar to F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\tmp\deps\javafx.base.jar
+[Wed May 08 19:12:55 ICT 2024][FINE] Copied resource C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.controls.jar to F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\tmp\deps\javafx.controls.jar
+[Wed May 08 19:12:55 ICT 2024][FINE] Copied resource C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.fxml.jar to F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\tmp\deps\javafx.fxml.jar
+[Wed May 08 19:12:56 ICT 2024][FINE] Copied resource C:\Users\kiwog\.gluon\substrate\javafxStaticSdk\21-ea+11.1\windows-x86_64\sdk\lib\javafx.graphics.jar to F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\tmp\deps\javafx.graphics.jar
+[Wed May 08 19:12:56 ICT 2024][FINE] Class-Path manifest entry for pathing jar: ..\..\..\..\classes deps\protobuf-java-3.25.1.jar deps\mysql-connector-j-8.3.0.jar deps\javafx.base.jar deps\javafx.controls.jar deps\javafx.fxml.jar deps\javafx.graphics.jar
+[Wed May 08 19:12:56 ICT 2024][FINE] Pathing jar created at F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\tmp\classpathJar.jar
+[Wed May 08 19:12:56 ICT 2024][FINE] PB Command for compile: F:\command\java\graalvm-jdk-17.0.11\bin\native-image.cmd "-Djdk.internal.lambda.eagerlyInitialize=false" --no-server -H:+SharedLibrary -H:+AddAllCharsets -H:+ReportExceptionStackTraces -H:-DeadlockWatchdogExitOnTimeout "-H:DeadlockWatchdogInterval=0" -H:+RemoveSaturatedTypeFlows -H:+ExitAfterRelocatableImageWrite "--features=org.graalvm.home.HomeFinderFeature" "-H:TempDirectory=F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\tmp" "-H:EnableURLProtocols=http,https" "-H:ReflectionConfigurationFiles=F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\reflectionconfig-x86_64-windows.json" "-H:JNIConfigurationFiles=F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\jniconfig-x86_64-windows.json" "-H:ResourceConfigurationFiles=F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\resourceconfig-x86_64-windows.json" "-H:IncludeResourceBundles=com/sun/javafx/scene/control/skin/resources/controls,com/sun/javafx/scene/control/skin/resources/controls-nt,com.sun.javafx.tk.quantum.QuantumMessagesBundle,com/sun/glass/ui/win/themes" "-Dsvm.platform=org.graalvm.nativeimage.Platform$WINDOWS_AMD64" -cp "C:\Users\kiwog\.m2\repository\com\gluonhq\substrate\0.0.61\substrate-0.0.61.jar;F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\tmp\classpathJar.jar" com.lestarieragemilang.App
+[Wed May 08 19:12:56 ICT 2024][FINE] Start process compile...
+[Wed May 08 19:12:59 ICT 2024][INFO] [SUB] Warning: Ignoring server-mode native-image argument --no-server.
+[Wed May 08 19:13:54 ICT 2024][INFO] [SUB] ========================================================================================================================
+[Wed May 08 19:13:54 ICT 2024][INFO] [SUB] GraalVM Native Image: Generating 'com.lestarieragemilang.app' (shared library)...
+[Wed May 08 19:13:54 ICT 2024][INFO] [SUB] ========================================================================================================================
+[Wed May 08 19:13:54 ICT 2024][INFO] [SUB] For detailed information and explanations on the build output, visit:
+[Wed May 08 19:13:54 ICT 2024][INFO] [SUB] https://github.com/oracle/graal/blob/master/docs/reference-manual/native-image/BuildOutput.md
+[Wed May 08 19:13:54 ICT 2024][INFO] [SUB] ------------------------------------------------------------------------------------------------------------------------
+[Wed May 08 19:14:06 ICT 2024][INFO] [SUB] 
+[Wed May 08 19:14:07 ICT 2024][INFO] [SUB] [1/8] Initializing...                                                                                    (0.0s @ 0.12GB)
+[Wed May 08 19:14:07 ICT 2024][INFO] [SUB] Error: Unable to detect supported WINDOWS native software development toolchain.
+[Wed May 08 19:14:07 ICT 2024][INFO] [SUB] Querying with command ''F:\command\msvc\VC\Tools\MSVC\14.39.33519\bin\HostX86\x86\cl.exe' /EP 'F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\tmp\SVM-1715170443025\detect-cl-version-info.c'' prints:
+[Wed May 08 19:14:07 ICT 2024][INFO] [SUB]   Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33523 for x86
+[Wed May 08 19:14:07 ICT 2024][INFO] [SUB]   Copyright (C) Microsoft Corporation.  All rights reserved.
+[Wed May 08 19:14:07 ICT 2024][INFO] [SUB]   
+[Wed May 08 19:14:07 ICT 2024][INFO] [SUB]   detect-cl-version-info.c
+[Wed May 08 19:14:07 ICT 2024][INFO] [SUB]   
+[Wed May 08 19:14:07 ICT 2024][INFO] [SUB]   M_X64=_M_X64
+[Wed May 08 19:14:07 ICT 2024][INFO] [SUB]   M_ARM64EC=_M_ARM64EC
+[Wed May 08 19:14:07 ICT 2024][INFO] [SUB]   MSC_FULL_VER=193933523
+[Wed May 08 19:14:07 ICT 2024][INFO] [SUB] Error: To prevent native-toolchain checking provide command-line option -H:-CheckToolchain
+[Wed May 08 19:14:07 ICT 2024][INFO] [SUB] com.oracle.svm.core.util.UserError$UserException: Unable to detect supported WINDOWS native software development toolchain.
+[Wed May 08 19:14:07 ICT 2024][INFO] [SUB] Querying with command ''F:\command\msvc\VC\Tools\MSVC\14.39.33519\bin\HostX86\x86\cl.exe' /EP 'F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\tmp\SVM-1715170443025\detect-cl-version-info.c'' prints:
+[Wed May 08 19:14:07 ICT 2024][INFO] [SUB]   Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33523 for x86
+[Wed May 08 19:14:07 ICT 2024][INFO] [SUB]   Copyright (C) Microsoft Corporation.  All rights reserved.
+[Wed May 08 19:14:07 ICT 2024][INFO] [SUB]   
+[Wed May 08 19:14:07 ICT 2024][INFO] [SUB]   detect-cl-version-info.c
+[Wed May 08 19:14:07 ICT 2024][INFO] [SUB]   
+[Wed May 08 19:14:07 ICT 2024][INFO] [SUB]   M_X64=_M_X64
+[Wed May 08 19:14:07 ICT 2024][INFO] [SUB]   M_ARM64EC=_M_ARM64EC
+[Wed May 08 19:14:07 ICT 2024][INFO] [SUB]   MSC_FULL_VER=193933523
+[Wed May 08 19:14:07 ICT 2024][INFO] [SUB] To prevent native-toolchain checking provide command-line option -H:-CheckToolchain
+[Wed May 08 19:14:07 ICT 2024][INFO] [SUB] 	at org.graalvm.nativeimage.builder/com.oracle.svm.core.util.UserError.abort(UserError.java:126)
+[Wed May 08 19:14:07 ICT 2024][INFO] [SUB] 	at org.graalvm.nativeimage.builder/com.oracle.svm.hosted.c.codegen.CCompilerInvoker.addSkipCheckingInfo(CCompilerInvoker.java:106)
+[Wed May 08 19:14:07 ICT 2024][INFO] [SUB] 	at org.graalvm.nativeimage.builder/com.oracle.svm.hosted.c.codegen.CCompilerInvoker.<init>(CCompilerInvoker.java:74)
+[Wed May 08 19:14:07 ICT 2024][INFO] [SUB] 	at org.graalvm.nativeimage.builder/com.oracle.svm.hosted.c.codegen.CCompilerInvoker$WindowsCCompilerInvoker.<init>(CCompilerInvoker.java:112)
+[Wed May 08 19:14:07 ICT 2024][INFO] [SUB] 	at org.graalvm.nativeimage.builder/com.oracle.svm.hosted.c.codegen.CCompilerInvoker.create(CCompilerInvoker.java:86)
+[Wed May 08 19:14:07 ICT 2024][INFO] [SUB] 	at org.graalvm.nativeimage.builder/com.oracle.svm.hosted.NativeImageGenerator.setupNativeImage(NativeImageGenerator.java:929)
+[Wed May 08 19:14:07 ICT 2024][INFO] [SUB] 	at org.graalvm.nativeimage.builder/com.oracle.svm.hosted.NativeImageGenerator.doRun(NativeImageGenerator.java:579)
+[Wed May 08 19:14:07 ICT 2024][INFO] [SUB] 	at org.graalvm.nativeimage.builder/com.oracle.svm.hosted.NativeImageGenerator.run(NativeImageGenerator.java:539)
+[Wed May 08 19:14:07 ICT 2024][INFO] [SUB] 	at org.graalvm.nativeimage.builder/com.oracle.svm.hosted.NativeImageGeneratorRunner.buildImage(NativeImageGeneratorRunner.java:408)
+[Wed May 08 19:14:07 ICT 2024][INFO] [SUB] 	at org.graalvm.nativeimage.builder/com.oracle.svm.hosted.NativeImageGeneratorRunner.build(NativeImageGeneratorRunner.java:612)
+[Wed May 08 19:14:07 ICT 2024][INFO] [SUB] 	at org.graalvm.nativeimage.builder/com.oracle.svm.hosted.NativeImageGeneratorRunner.start(NativeImageGeneratorRunner.java:134)
+[Wed May 08 19:14:07 ICT 2024][INFO] [SUB] 	at org.graalvm.nativeimage.builder/com.oracle.svm.hosted.NativeImageGeneratorRunner.main(NativeImageGeneratorRunner.java:94)
+[Wed May 08 19:14:07 ICT 2024][INFO] [SUB] ------------------------------------------------------------------------------------------------------------------------
+[Wed May 08 19:14:07 ICT 2024][INFO] [SUB]                         1.8s (2.8% of total time) in 36 GCs | Peak RSS: 0.50GB | CPU load: 0.67
+[Wed May 08 19:14:07 ICT 2024][INFO] [SUB] ========================================================================================================================
+[Wed May 08 19:14:07 ICT 2024][INFO] [SUB] Finished generating 'com.lestarieragemilang.app' in 50.2s.
+[Wed May 08 19:14:07 ICT 2024][FINE] Result for compile: 1
+[Wed May 08 19:14:07 ICT 2024][SEVERE] Process compile failed with result: 1
+Check the log files under F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\log
+And please check https://docs.gluonhq.com/ for more information.
+[Wed May 08 19:14:07 ICT 2024][INFO] Logging process [compile] to file: F:\projects\application projects\inventory_management_system\target\gluonfx\log\process-compile-1715170447558.log
+[Wed May 08 19:14:07 ICT 2024][SEVERE] Compiling failed.
+Check the log files under F:\projects\application projects\inventory_management_system\target\gluonfx\x86_64-windows\gvm\log
+And please check https://docs.gluonhq.com/ for more information.

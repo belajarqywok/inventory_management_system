@@ -171,7 +171,6 @@
             <description>appDescription</description>
             <vendor>vendor</vendor>
           </releaseConfiguration>
-          <compiler>clang</compiler>
         </configuration>
       </plugin>
       <plugin>

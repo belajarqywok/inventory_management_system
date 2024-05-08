@@ -14,7 +14,7 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
 
-        <java.home>F:\command\java\graalvm-jdk-17.0.11</java.home>
+        <java.home>${env.GRAALVM_HOME}</java.home>
 
         <main.class>com.lestarieragemilang.App</main.class>
 
@@ -57,11 +57,13 @@
 			</properties>
 		</profile>
 		<profile>
-            <id>graal</id>
-            <properties>
-                <java.home>F:\command\java\graalvm-jdk-17.0.11</java.home>
-            </properties>
-        </profile>
+			<id>graal</id>
+			<activation>
+				<file>
+					<exists>${java.home}</exists>
+				</file>
+			</activation>
+		</profile>
 	</profiles>
 
     <dependencyManagement>
@@ -133,11 +135,25 @@
         
 
     <dependencies>
-        <!-- JavaFX Controls -->
         <dependency>
-            <groupId>org.openjfx</groupId>
-            <artifactId>javafx-controls</artifactId>
-        </dependency>
+			<groupId>org.jfxtras</groupId>
+			<artifactId>jmetro</artifactId>
+			<version>11.6.16</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.openjfx</groupId>
+					<artifactId>javafx-controls</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.openjfx</groupId>
+					<artifactId>javafx-graphics</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.openjfx</groupId>
+					<artifactId>javafx-base</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
 
         <!-- JavaFX FXML -->
         <dependency>
@@ -168,6 +184,41 @@
 
     <build>
         <plugins>
+            <plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-enforcer-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>enforcer-enforce</id>
+						<goals>
+							<goal>enforce</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<rules>
+						<requireMavenVersion>
+							<version>3.5</version>
+						</requireMavenVersion>
+						<requirePluginVersions />
+						<bannedDependencies>
+							<excludes>
+								<exclude>*:*:*:*:system</exclude>
+							</excludes>
+						</bannedDependencies>
+						<reactorModuleConvergence />
+						<banDuplicatePomDependencyVersions />
+					</rules>
+				</configuration>
+				<dependencies>
+					<dependency>
+						<groupId>de.smartics.rules</groupId>
+						<artifactId>smartics-enforcer-rules</artifactId>
+						<version>1.0.2</version>
+					</dependency>
+				</dependencies>
+			</plugin>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>

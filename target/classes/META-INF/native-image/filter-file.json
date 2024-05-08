@@ -1,0 +1,18 @@
+{ "rules": [
+    {"excludeClasses" : "com.sun.glass.ui.mac.*"},
+    {"excludeClasses" : "com.sun.prism.es2.MacGLFactory"},
+    {"excludeClasses" : "com.sun.glass.ui.gtk.*"},
+    {"excludeClasses" : "com.sun.prism.es2.ES2Pipeline"},
+    {"excludeClasses" : "com.sun.prism.es2.X11GLFactory"},
+    {"excludeClasses" : "com.gluonhq.attach.**"},
+    {"excludeClasses" : "org.apache.maven.surefire.**"},
+    {"excludeClasses" : "net.bytebuddy.**"},
+    {"excludeClasses" : "org.apiguardian.**"},
+    {"excludeClasses" : "org.junit.**"},
+    {"excludeClasses" : "org.mockito.**"},
+    {"excludeClasses" : "org.springframework.test.**"},
+    {"excludeClasses" : "org.springframework.boot.test.**"},
+    {"excludeClasses" : "gitfx.test.**"},
+    {"excludeClasses" : "sun.management.**"}
+  ]
+}

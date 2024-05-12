@@ -11,7 +11,7 @@
     <maven.compiler.source>17</maven.compiler.source>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <javafx.version>21</javafx.version>
-    <java.home>F:\command\java\graalvm-jdk-17.0.11</java.home>
+    <java.home>${env.GRAALVM_HOME}</java.home>
   </properties>
   <dependencyManagement>
     <dependencies>
@@ -63,8 +63,23 @@
   </dependencyManagement>
   <dependencies>
     <dependency>
-      <groupId>org.openjfx</groupId>
-      <artifactId>javafx-controls</artifactId>
+      <groupId>org.jfxtras</groupId>
+      <artifactId>jmetro</artifactId>
+      <version>11.6.16</version>
+      <exclusions>
+        <exclusion>
+          <groupId>org.openjfx</groupId>
+          <artifactId>javafx-controls</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.openjfx</groupId>
+          <artifactId>javafx-graphics</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.openjfx</groupId>
+          <artifactId>javafx-base</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>org.openjfx</groupId>
@@ -159,6 +174,9 @@
             </configuration>
           </execution>
         </executions>
+        <configuration>
+          <executable>${java.home}/bin/java.exe</executable>
+        </configuration>
       </plugin>
       <plugin>
         <groupId>com.gluonhq</groupId>
@@ -227,9 +245,11 @@
     </profile>
     <profile>
       <id>graal</id>
-      <properties>
-        <java.home>F:\command\java\graalvm-jdk-17.0.11</java.home>
-      </properties>
+      <activation>
+        <file>
+          <exists>${java.home}</exists>
+        </file>
+      </activation>
     </profile>
   </profiles>
 </project>

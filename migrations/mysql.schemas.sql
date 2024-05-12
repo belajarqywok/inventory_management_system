@@ -21,7 +21,7 @@ USE iron_sales_db;
     default => user: admin; pass: user246
 */
 SET @username = "admin";
-SET @password = SHA2("user246", 256);
+SET @password = "user246";
 
 CREATE TABLE admin_auth (
   auth_meta_id   VARCHAR(36)  DEFAULT (UUID()) PRIMARY KEY,

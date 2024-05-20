@@ -46,7 +46,7 @@ public class Dashboard {
 
     @FXML
     void setSceneKategoriBesi(MouseEvent event) {
-        Redirect.page("kategori", setScene, getClass());
+        Redirect.page("category", setScene, getClass());
         CacheService.clear();
     }
 
@@ -82,7 +82,7 @@ public class Dashboard {
 
     @FXML
     void setSceneStokBesi(MouseEvent event) {
-        Redirect.page("stok-besi", setScene, getClass());
+        Redirect.page("stock", setScene, getClass());
         CacheService.clear();
     }
 
@@ -206,7 +206,7 @@ public class Dashboard {
         });
         
 
-        Redirect.page("stok-besi", setScene, getClass());
+        Redirect.page("stock", setScene, getClass());
         CacheService.clear();
     }
 

@@ -75,18 +75,17 @@ INSERT INTO stocks (
   category_id,
 
   stock_sell_price,
-  stock_purchace_price,
+  stock_purchase_price,
 
   stock_size,
   stock_amount,
-  stock_unit,
-  stock_image
+  stock_unit
 ) VALUES
-("STK-1", "CT-1", 150000, 120000, "10 mm", 50, "batang", "image1.jpg"),
-("STK-2", "CT-1", 160000, 130000, "10 mm", 40, "batang", "image2.jpg"),
-("STK-3", "CT-1", 170000, 140000, "10 mm", 30, "batang", "image3.jpg"),
-("STK-4", "CT-1", 180000, 150000, "10 mm", 20, "batang", "image4.jpg"),
-("STK-5", "CT-1", 190000, 160000, "10 mm", 15, "batang", "image5.jpg");
+("STK-1", "CT-1", 150000, 120000, "10 mm", 50, "batang"),
+("STK-2", "CT-1", 160000, 130000, "10 mm", 40, "batang"),
+("STK-3", "CT-1", 170000, 140000, "10 mm", 30, "batang"),
+("STK-4", "CT-1", 180000, 150000, "10 mm", 20, "batang"),
+("STK-5", "CT-1", 190000, 160000, "10 mm", 15, "batang");
 
 -- Insert Sales Datas
 INSERT INTO sales (

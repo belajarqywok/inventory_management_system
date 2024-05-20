@@ -16,7 +16,7 @@ USE iron_sales_db;
 
 
 /*
-    Create Admin Auth Table
+    Table: Admin Auth Table
     design ref: Login
     default => user: admin; pass: user246
 */
@@ -49,7 +49,7 @@ DESCRIBE admin_auth; SELECT " ";
 
 
 /*
-    Create Category Table
+    Table: Category Table
     design ref: Kategori
 */
 CREATE TABLE categories (
@@ -66,13 +66,16 @@ CREATE INDEX idx_category_brand
 CREATE INDEX idx_category_type
   ON categories (category_type);
 
+CREATE INDEX idx_category_desc
+  ON categories (category_desc);
+
 DESCRIBE categories; SELECT " ";
 
 
 
 
 /*
-    Create Supplier Table
+    Table: Supplier Table
     design ref: Supplier
 */
 CREATE TABLE suppliers (
@@ -98,7 +101,7 @@ DESCRIBE suppliers; SELECT " ";
 
 
 /*
-    Create Customer Table
+    Table: Customer Table
     design ref: Pelanggan
 */
 CREATE TABLE customers (
@@ -124,7 +127,7 @@ DESCRIBE customers; SELECT " ";
 
 
 /*
-    Create Purchasing Table
+    Table: Purchasing Table
     design ref: Pembelian
 */
 CREATE TABLE purchasings (
@@ -161,7 +164,7 @@ DESCRIBE purchasings; SELECT " ";
 
 
 /*
-    Create Reception Table
+    Table: Reception Table
     design ref: Penerimaan
 */
 CREATE TABLE receptions (
@@ -189,7 +192,7 @@ DESCRIBE receptions; SELECT " ";
 
 
 /*
-    Create Stock Table
+    Table: Stock Table
     design ref: Stok
 */
 CREATE TABLE stocks (
@@ -197,12 +200,11 @@ CREATE TABLE stocks (
   category_id            VARCHAR(16) NOT NULL,
 
   stock_sell_price       BIGINT NOT NULL,
-  stock_purchace_price   BIGINT NOT NULL,
+  stock_purchase_price   BIGINT NOT NULL,
 
-  stock_size             VARCHAR(16)   NOT NULL,
+  stock_size             VARCHAR(16)  NOT NULL,
   stock_amount           INT          NOT NULL,
   stock_unit             VARCHAR(16)  NOT NULL,
-  stock_image            VARCHAR(64) NOT NULL,
 
   FOREIGN KEY (category_id)
   REFERENCES categories(category_id)
@@ -216,8 +218,8 @@ CREATE INDEX idx_stock_size
 CREATE INDEX idx_stock_sell_price
   ON stocks (stock_sell_price);
 
-CREATE INDEX idx_stock_purchace_price
-  ON stocks (stock_purchace_price);
+CREATE INDEX idx_stock_purchase_price
+  ON stocks (stock_purchase_price);
 
 CREATE INDEX idx_stock_amount
   ON stocks (stock_amount);
@@ -230,7 +232,7 @@ DESCRIBE stocks; SELECT " ";
 
 
 /*
-    Create Sales Table
+    Table: Sales Table
     design ref: Penjualan
 */
 CREATE TABLE sales (

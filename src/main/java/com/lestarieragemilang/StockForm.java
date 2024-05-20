@@ -15,72 +15,88 @@ import javafx.scene.layout.AnchorPane;
 
 import com.lestarieragemilang.Utilities.Redirect;
 import com.lestarieragemilang.Utilities.CacheService;
-import com.lestarieragemilang.Entities.SupplierEntity;
-import com.lestarieragemilang.Repositories.SupplierRepositories;
+
+import com.lestarieragemilang.Entities.StockEntity;
+import com.lestarieragemilang.Repositories.StockRepositories;
 
 
 
 /**
- * 	Supplier Form
+ *  Stock Form Handler
  */
-public class SupplierForm extends SupplierRepositories {
-
+public class StockForm extends StockRepositories {
+  
   @FXML
   private AnchorPane anchorPane;
 
   @FXML
-  private Button supplierActionButton;
+  private Button stockActionButton;
+
+
 
   @FXML
-  private TextField supplierIdField;
+  private TextField stockIdField;
 
   @FXML
-  private TextField supplierNameField;
+  private TextField categoryIdField;
 
   @FXML
-  private TextField supplierContactField;
+  private TextField stockSellPriceField;
 
   @FXML
-  private TextField supplierAddressField;
+  private TextField stockPurchasePriceField;
 
   @FXML
-  private TextField supplierEmailField;
+  private TextField stockSizeField;
+
+  @FXML
+  private TextField stockAmountField;
+
+  @FXML
+  private TextField stockUnitField;
+
 
   @FXML
   void clearButton (MouseEvent event) {
-    supplierIdField.setText("");
-    supplierNameField.setText("");
-    supplierContactField.setText("");
-    supplierAddressField.setText("");
-    supplierEmailField.setText("");
+    stockIdField.setText("");
+    categoryIdField.setText("");
+    stockSellPriceField.setText("");
+    stockPurchasePriceField.setText("");
+    stockSizeField.setText("");
+    stockAmountField.setText("");
+    stockUnitField.setText("");
 
     CacheService.clear();
   }
+
 
   @FXML
   void backButton (MouseEvent event) {
-    Redirect.page("supplier", anchorPane, getClass());
+    Redirect.page("stock", anchorPane, getClass());
     CacheService.clear();
   }
 
+
   @FXML
-  void supplierActionButton (MouseEvent event) {
-    SupplierEntity entity = new SupplierEntity();
+  void stockActionButton(MouseEvent event) {
+    StockEntity entity = new StockEntity();
 
-    entity.setSupplierId(supplierIdField.getText());
-    entity.setSupplierName(supplierNameField.getText());
-    entity.setSupplierContact(supplierContactField.getText());
-    entity.setSupplierAddress(supplierAddressField.getText());
-    entity.setSupplierEmail(supplierEmailField.getText());
+    entity.setStockId(stockIdField.getText());
+    entity.setCategoryId(categoryIdField.getText());
+    entity.setStockSellPrice(stockSellPriceField.getText());
+    entity.setStockPurchasePrice(stockPurchasePriceField.getText());
+    entity.setStockSize(stockSizeField.getText());
+    entity.setStockAmount(stockAmountField.getText());
+    entity.setStockUnit(stockUnitField.getText());
 
-    // Update Supplier Data
-    if (supplierActionButton.getText().equals("Update")) {
+    // Update Stock Data
+    if (stockActionButton.getText().equals("Update")) {
       Map<String, Object> response = this
-        .updateSupplierRepository(entity);
+        .updateStockRepository(entity);
 
       if ((boolean) response.get("result")) {
         Alert confirmationDialog = new Alert(Alert.AlertType.INFORMATION);
-      	confirmationDialog.getDialogPane().setPrefSize(450, 250);
+        confirmationDialog.getDialogPane().setPrefSize(450, 250);
 
         confirmationDialog.setTitle("Berhasil Memperbarui Data.");
         confirmationDialog.setHeaderText((String) response.get("message"));
@@ -90,11 +106,11 @@ public class SupplierForm extends SupplierRepositories {
     
         confirmationDialog.showAndWait().ifPresent(buttonType -> {
           if (buttonType == ButtonType.YES) {
-            Redirect.page("supplier", anchorPane, getClass());
+            Redirect.page("stock", anchorPane, getClass());
             CacheService.clear();
           }
         });
-            
+    
       } else {
         Alert confirmationDialog = new Alert(Alert.AlertType.ERROR);
         confirmationDialog.getDialogPane().setPrefSize(450, 250);
@@ -106,10 +122,11 @@ public class SupplierForm extends SupplierRepositories {
         confirmationDialog.showAndWait();
       }
 
-    // Add Supplier Data
-    } else if (supplierActionButton.getText().equals("Tambah")) {
+
+    // Add Stock Data
+    } else if (stockActionButton.getText().equals("Tambah")) {
       Map<String, Object> response = this
-        .createSupplierRepository(entity);
+        .createStockRepository(entity);
 
       if ((boolean) response.get("result")) {
         Alert confirmationDialog = new Alert(Alert.AlertType.INFORMATION);
@@ -123,7 +140,7 @@ public class SupplierForm extends SupplierRepositories {
 
         confirmationDialog.showAndWait().ifPresent(buttonType -> {
           if (buttonType == ButtonType.YES) {
-            Redirect.page("supplier", anchorPane, getClass());
+            Redirect.page("stock", anchorPane, getClass());
             CacheService.clear();
           }
         });
@@ -141,25 +158,29 @@ public class SupplierForm extends SupplierRepositories {
     }
   }
 
+
   private void inputHandler() {
-  	String supplierId = (String) CacheService.get("supplierId");
-    if (supplierId != null) {
-      supplierIdField.setText(supplierId);
-      supplierNameField.setText((String) CacheService.get("supplierName"));
-      supplierContactField.setText((String) CacheService.get("supplierContact"));
-      supplierAddressField.setText((String) CacheService.get("supplierAddress"));
-      supplierEmailField.setText((String) CacheService.get("supplierEmail"));
+    String stockId = (String) CacheService.get("stockId");
+    if (stockId != null) {
+      stockIdField.setText(stockId);
+      categoryIdField.setText((String) CacheService.get("categoryId"));
+      stockSellPriceField.setText((String) CacheService.get("stockSellPrice"));
+      stockPurchasePriceField.setText((String) CacheService.get("stockPurchasePrice"));
+      stockSizeField.setText((String) CacheService.get("stockSize"));
+      stockAmountField.setText((String) CacheService.get("stockAmount"));
+      stockUnitField.setText((String) CacheService.get("stockUnit"));
     }
-	}
+  }
+
 
   @FXML
   public void initialize() {
-    if (CacheService.get("supplierId") != null) {
-      supplierActionButton.setText("Update");
-      supplierIdField.setEditable(false);
+    if (CacheService.get("stockId") != null) {
+      stockActionButton.setText("Update");
+      stockIdField.setEditable(false);
 
     } else {
-      supplierActionButton.setText("Tambah");
+      stockActionButton.setText("Tambah");
     }
 
     inputHandler();

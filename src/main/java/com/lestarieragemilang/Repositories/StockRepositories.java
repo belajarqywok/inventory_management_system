@@ -11,27 +11,27 @@ import java.sql.SQLException;
 import java.sql.PreparedStatement;
 import java.sql.SQLIntegrityConstraintViolationException;
 
-import com.lestarieragemilang.Entities.CustomerEntity;
+import com.lestarieragemilang.Entities.StockEntity;
 import com.lestarieragemilang.Configurations.DatabaseConfiguration;
 
 
 
 /**
- *  Customer Repositories
+ *  Stock Repositories
  */
-public class CustomerRepositories extends DatabaseConfiguration {
+public class StockRepositories extends DatabaseConfiguration {
 
   // Table Name
-  private final String TABLENAME = "customers";
+  private final String TABLENAME = "stocks";
 
   /**
-   * Get Customers Repository
+   * Get Stock Repository
    * 
    * @return List<Object[]>
    * 
    */
-  protected List<Object[]> getCustomersRepository () {
-    List<Object[]> customersDataList = new ArrayList<>();
+  protected List<Object[]> getStocksRepository () {
+    List<Object[]> stocksDataList = new ArrayList<>();
     Connection connection = getConnection();
     String queryString = String.format(
       "SELECT * FROM %s", this.TABLENAME
@@ -44,56 +44,62 @@ public class CustomerRepositories extends DatabaseConfiguration {
       ResultSet resultSet = statement.executeQuery();
 
       while (resultSet.next()) {
-        String customerId = resultSet
-          .getString("customer_id");
-        String customerName = resultSet
-          .getString("customer_name");
-        String customerContact = resultSet
-          .getString("customer_contact");
-        String customerAddress = resultSet
-          .getString("customer_address");
-        String customerEmail = resultSet
-          .getString("customer_email");
+        String stockId = resultSet
+          .getString("stock_id");
+        String categoryId = resultSet
+          .getString("category_id");
+        String stockSellPrice = Integer.toString(resultSet
+          .getInt("stock_sell_price"));
+        String stockPurchasePrice = Integer.toString(resultSet
+          .getInt("stock_purchase_price"));
+        String stockSize = resultSet
+          .getString("stock_size");
+        String stockAmount = Integer.toString(resultSet
+          .getInt("stock_amount"));
+        String stockUnit = resultSet
+          .getString("stock_unit");
 
         Object[] rowData = {
-          customerId, customerName,
-          customerContact, customerAddress,
-          customerEmail
+          stockId, categoryId,
+          stockSellPrice, stockPurchasePrice,
+          stockSize, stockAmount, stockUnit
         };
 
-        customersDataList.add(rowData);
+        stocksDataList.add(rowData);
       }
 
-      return (List<Object[]>) customersDataList;
+      return (List<Object[]>) stocksDataList;
 
     } catch (SQLException exception) {
       exception.printStackTrace();
-      return customersDataList;
+      return (List<Object[]>) stocksDataList;
     }
   }
 
 
 
   /**
-   * Create Customer Repository
+   * Create Stock Repository
    * 
-   * @param entity CustomerEntity
+   * @param entity StockEntity
    * @return Map<String, Object>
    * 
    */
-  protected Map<String, Object> createCustomerRepository (CustomerEntity entity) {
+  protected Map<String, Object> createStockRepository (StockEntity entity) {
     Map<String, Object> response = new HashMap<>();
 
     Connection connection = getConnection();
     String queryString = String.format(
-      "INSERT INTO %s ( " +
-        "customer_id,      "     +
-        "customer_name,    "     +
-        "customer_contact, "     +
-        "customer_address, "     +
-        "customer_email    "     +
-      ")"                        +
-      "VALUES (?, ?, ?, ?, ?)", this.TABLENAME
+      "INSERT INTO %s (        "   +
+        "stock_id,             "   +
+        "category_id,          "   +
+        "stock_sell_price,     "   +
+        "stock_purchase_price, "   +
+        "stock_size,           "   +
+        "stock_amount,         "   +
+        "stock_unit            "   +
+      ")"                          +
+      "VALUES (?, ?, ?, ?, ?, ?, ?)", this.TABLENAME
     );
         
     try {
@@ -104,11 +110,15 @@ public class CustomerRepositories extends DatabaseConfiguration {
         .prepareStatement(queryString);
 
       Object[] entities = {
-        entity.getCustomerId(),
-        entity.getCustomerName(),
-        entity.getCustomerContact(),
-        entity.getCustomerAddress(),
-        entity.getCustomerEmail(),
+        entity.getStockId(),
+        entity.getCategoryId(),
+
+        entity.getStockSellPrice(),
+        entity.getStockPurchasePrice(),
+
+        entity.getStockSize(),
+        entity.getStockAmount(),
+        entity.getStockUnit()
       };
       
       for (int index = 0; index < entities.length; index ++) 
@@ -140,7 +150,7 @@ public class CustomerRepositories extends DatabaseConfiguration {
       }
 
       response.put("result", false);
-      response.put("message", "ID, Email, atau Kontak Mungkin Telah Digunakan, Coba Yang Lain.");
+      response.put("message", "ID Mungkin Telah Digunakan, Coba Yang Lain.");
       
       return (Map<String, Object>) response;
 
@@ -164,25 +174,27 @@ public class CustomerRepositories extends DatabaseConfiguration {
   }
 
 
-  
+
   /**
-   * Update Customer Repository
+   * Update Stock Repository
    * 
-   * @param entity CustomerEntity
+   * @param entity StockEntity
    * @return Map<String, Object>
    * 
    */
-  protected Map<String, Object> updateCustomerRepository (CustomerEntity entity) {
+  protected Map<String, Object> updateStockRepository (StockEntity entity) {
     Map<String, Object> response = new HashMap<>();
 
     Connection connection = getConnection();
     String queryString = String.format(
       "UPDATE %s SET "       +
-        "customer_name      = ?, "  +
-        "customer_contact   = ?, "  +
-        "customer_address   = ?, "  +
-        "customer_email     = ?  "  +
-      "WHERE customer_id    = ?  ", this.TABLENAME
+        "category_id           = ?, "  +
+        "stock_sell_price      = ?, "  +
+        "stock_purchase_price  = ?, "  +
+        "stock_size            = ?, "  +
+        "stock_amount          = ?, "  +
+        "stock_unit            = ?  "  +
+      "WHERE stock_id  = ? ", this.TABLENAME
     );
         
     try {
@@ -192,13 +204,18 @@ public class CustomerRepositories extends DatabaseConfiguration {
       PreparedStatement statement = connection
         .prepareStatement(queryString);
 
-      Object[] entities = {
-        entity.getCustomerName(),
-        entity.getCustomerContact(),
-        entity.getCustomerAddress(),
-        entity.getCustomerEmail(),
-        entity.getCustomerId()
-      };
+        Object[] entities = {
+          entity.getCategoryId(),
+  
+          entity.getStockSellPrice(),
+          entity.getStockPurchasePrice(),
+  
+          entity.getStockSize(),
+          entity.getStockAmount(),
+          entity.getStockUnit(),
+
+          entity.getStockId()
+        };
       
       for (int index = 0; index < entities.length; index ++) 
         statement.setString(index + 1, (String) entities[index]);
@@ -229,7 +246,7 @@ public class CustomerRepositories extends DatabaseConfiguration {
       }
 
       response.put("result", false);
-      response.put("message", "ID, Email, dan Kontak Mungkin Telah Digunakan, Coba Yang Lain.");
+      response.put("message", "ID Mungkin Telah Digunakan, Coba Yang Lain.");
       
       return (Map<String, Object>) response;
 
@@ -255,16 +272,16 @@ public class CustomerRepositories extends DatabaseConfiguration {
 
 
   /**
-   * Delete Customer Repository
+   * Delete Stock Repository
    * 
-   * @param customerId String
+   * @param stockId String
    * @return boolean
    * 
    */
-  protected boolean deleteCustomerRepository (String customerId) {
+  protected boolean deleteStockRepository (String stockId) {
     Connection connection = getConnection();
     String queryString = String.format(
-      "DELETE FROM %s WHERE customer_id = ?", this.TABLENAME
+      "DELETE FROM %s WHERE stock_id = ?", this.TABLENAME
     );
         
     try {
@@ -274,7 +291,7 @@ public class CustomerRepositories extends DatabaseConfiguration {
       PreparedStatement statement = connection
         .prepareStatement(queryString);
 
-      statement.setString(1, customerId);
+      statement.setString(1, stockId);
 
       if (statement.executeUpdate() > 0) {
         connection.commit();
@@ -296,9 +313,7 @@ public class CustomerRepositories extends DatabaseConfiguration {
       return false;
 
     } finally {
-      try { 
-        connection.setAutoCommit(true);
-      }
+      try { connection.setAutoCommit(true); }
       catch (SQLException exception) { exception.printStackTrace(); }
     }
   }
@@ -306,23 +321,26 @@ public class CustomerRepositories extends DatabaseConfiguration {
 
 
   /**
-   * Search Customer Repository
+   * Search Stocks Repository
    * 
    * @return List<Object[]>
    * 
    */
-  protected List<Object[]> searchCustomersRepository (String key) {
-    List<Object[]> customersDataList = new ArrayList<>();
+  protected List<Object[]> searchStocksRepository (String key) {
+    List<Object[]> stocksDataList = new ArrayList<>();
     Connection connection = getConnection();
+
     String queryString = String.format(
-      "SELECT * FROM %s WHERE (  " + 
-        "customer_id      LIKE '%%%s%%' OR " +
-        "customer_name    LIKE '%%%s%%' OR " +
-        "customer_contact LIKE '%%%s%%' OR " +
-        "customer_address LIKE '%%%s%%' OR " +
-        "customer_email   LIKE '%%%s%%'    " +
+      "SELECT * FROM %s WHERE (                " + 
+        "stock_id             LIKE '%%%s%%' OR " +
+        "category_id          LIKE '%%%s%%' OR " +
+        "stock_sell_price     LIKE '%%%s%%' OR " +
+        "stock_purchase_price LIKE '%%%s%%' OR " +
+        "stock_size           LIKE '%%%s%%' OR " +
+        "stock_amount         LIKE '%%%s%%' OR " +
+        "stock_unit           LIKE '%%%s%%'    " +
       ")", this.TABLENAME,
-      key, key, key, key, key
+      key, key, key, key, key, key, key
     );
 
     try {
@@ -332,32 +350,35 @@ public class CustomerRepositories extends DatabaseConfiguration {
       ResultSet resultSet = statement.executeQuery();
 
       while (resultSet.next()) {
-        String customerId = resultSet
-          .getString("customer_id");
-        String customerName = resultSet
-          .getString("customer_name");
-        String customerContact = resultSet
-          .getString("customer_contact");
-        String customerAddress = resultSet
-          .getString("customer_address");
-        String customerEmail = resultSet
-          .getString("customer_email");
+        String stockId = resultSet
+          .getString("stock_id");
+        String categoryId = resultSet
+          .getString("category_id");
+        String stockSellPrice = Integer.toString(resultSet
+          .getInt("stock_sell_price"));
+        String stockPurchasePrice = Integer.toString(resultSet
+          .getInt("stock_purchase_price"));
+        String stockSize = resultSet
+          .getString("stock_size");
+        String stockAmount = Integer.toString(resultSet
+          .getInt("stock_amount"));
+        String stockUnit = resultSet
+          .getString("stock_unit");
 
         Object[] rowData = {
-          customerId, customerName,
-          customerContact, customerAddress,
-          customerEmail
+          stockId, categoryId,
+          stockSellPrice, stockPurchasePrice,
+          stockSize, stockAmount, stockUnit
         };
 
-        customersDataList.add(rowData);
+        stocksDataList.add(rowData);
       }
 
-      return (List<Object[]>) customersDataList;
+      return (List<Object[]>) stocksDataList;
 
     } catch (SQLException exception) {
       exception.printStackTrace();
-      return customersDataList;
+      return (List<Object[]>) stocksDataList;
     }
   }
-
 }

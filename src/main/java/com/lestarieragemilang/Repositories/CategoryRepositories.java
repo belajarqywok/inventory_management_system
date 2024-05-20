@@ -11,27 +11,27 @@ import java.sql.SQLException;
 import java.sql.PreparedStatement;
 import java.sql.SQLIntegrityConstraintViolationException;
 
-import com.lestarieragemilang.Entities.CustomerEntity;
+import com.lestarieragemilang.Entities.CategoryEntity;
 import com.lestarieragemilang.Configurations.DatabaseConfiguration;
 
 
 
 /**
- *  Customer Repositories
+ *  Category Repositories
  */
-public class CustomerRepositories extends DatabaseConfiguration {
+public class CategoryRepositories extends DatabaseConfiguration {
 
   // Table Name
-  private final String TABLENAME = "customers";
+  private final String TABLENAME = "categories";
 
   /**
-   * Get Customers Repository
+   * Get Category Repository
    * 
    * @return List<Object[]>
    * 
    */
-  protected List<Object[]> getCustomersRepository () {
-    List<Object[]> customersDataList = new ArrayList<>();
+  protected List<Object[]> getCategoriesRepository () {
+    List<Object[]> categoriesDataList = new ArrayList<>();
     Connection connection = getConnection();
     String queryString = String.format(
       "SELECT * FROM %s", this.TABLENAME
@@ -44,56 +44,52 @@ public class CustomerRepositories extends DatabaseConfiguration {
       ResultSet resultSet = statement.executeQuery();
 
       while (resultSet.next()) {
-        String customerId = resultSet
-          .getString("customer_id");
-        String customerName = resultSet
-          .getString("customer_name");
-        String customerContact = resultSet
-          .getString("customer_contact");
-        String customerAddress = resultSet
-          .getString("customer_address");
-        String customerEmail = resultSet
-          .getString("customer_email");
+        String categoryId = resultSet
+          .getString("category_id");
+        String categoryBrand = resultSet
+          .getString("category_brand");
+        String categoryType = resultSet
+          .getString("category_type");
+        String categoryDescription = resultSet
+          .getString("category_desc");
 
         Object[] rowData = {
-          customerId, customerName,
-          customerContact, customerAddress,
-          customerEmail
+          categoryId, categoryBrand,
+          categoryType, categoryDescription
         };
 
-        customersDataList.add(rowData);
+        categoriesDataList.add(rowData);
       }
 
-      return (List<Object[]>) customersDataList;
+      return (List<Object[]>) categoriesDataList;
 
     } catch (SQLException exception) {
       exception.printStackTrace();
-      return customersDataList;
+      return categoriesDataList;
     }
   }
 
 
 
   /**
-   * Create Customer Repository
+   * Create Category Repository
    * 
-   * @param entity CustomerEntity
+   * @param entity CategoryEntity
    * @return Map<String, Object>
    * 
    */
-  protected Map<String, Object> createCustomerRepository (CustomerEntity entity) {
+  protected Map<String, Object> createCategoryRepository (CategoryEntity entity) {
     Map<String, Object> response = new HashMap<>();
 
     Connection connection = getConnection();
     String queryString = String.format(
-      "INSERT INTO %s ( " +
-        "customer_id,      "     +
-        "customer_name,    "     +
-        "customer_contact, "     +
-        "customer_address, "     +
-        "customer_email    "     +
-      ")"                        +
-      "VALUES (?, ?, ?, ?, ?)", this.TABLENAME
+      "INSERT INTO %s (    "  +
+        "category_id,      "  +
+        "category_brand,   "  +
+        "category_type,    "  +
+        "category_desc     "  +
+      ")"                     +
+      "VALUES (?, ?, ?, ?)", this.TABLENAME
     );
         
     try {
@@ -104,11 +100,10 @@ public class CustomerRepositories extends DatabaseConfiguration {
         .prepareStatement(queryString);
 
       Object[] entities = {
-        entity.getCustomerId(),
-        entity.getCustomerName(),
-        entity.getCustomerContact(),
-        entity.getCustomerAddress(),
-        entity.getCustomerEmail(),
+        entity.getCategoryId(),
+        entity.getCategoryBrand(),
+        entity.getCategoryType(),
+        entity.getCategoryDescription()
       };
       
       for (int index = 0; index < entities.length; index ++) 
@@ -140,7 +135,7 @@ public class CustomerRepositories extends DatabaseConfiguration {
       }
 
       response.put("result", false);
-      response.put("message", "ID, Email, atau Kontak Mungkin Telah Digunakan, Coba Yang Lain.");
+      response.put("message", "ID Mungkin Telah Digunakan, Coba Yang Lain.");
       
       return (Map<String, Object>) response;
 
@@ -164,25 +159,24 @@ public class CustomerRepositories extends DatabaseConfiguration {
   }
 
 
-  
+
   /**
-   * Update Customer Repository
+   * Update Category Repository
    * 
-   * @param entity CustomerEntity
+   * @param entity CategoryEntity
    * @return Map<String, Object>
    * 
    */
-  protected Map<String, Object> updateCustomerRepository (CustomerEntity entity) {
+  protected Map<String, Object> updateCategoryRepository (CategoryEntity entity) {
     Map<String, Object> response = new HashMap<>();
 
     Connection connection = getConnection();
     String queryString = String.format(
-      "UPDATE %s SET "       +
-        "customer_name      = ?, "  +
-        "customer_contact   = ?, "  +
-        "customer_address   = ?, "  +
-        "customer_email     = ?  "  +
-      "WHERE customer_id    = ?  ", this.TABLENAME
+      "UPDATE %s SET "              +
+        "category_brand     = ?, "  +
+        "category_type      = ?, "  +
+        "category_desc      = ? "  +
+      "WHERE category_id    = ?  ", this.TABLENAME
     );
         
     try {
@@ -192,13 +186,12 @@ public class CustomerRepositories extends DatabaseConfiguration {
       PreparedStatement statement = connection
         .prepareStatement(queryString);
 
-      Object[] entities = {
-        entity.getCustomerName(),
-        entity.getCustomerContact(),
-        entity.getCustomerAddress(),
-        entity.getCustomerEmail(),
-        entity.getCustomerId()
-      };
+        Object[] entities = {
+          entity.getCategoryBrand(),
+          entity.getCategoryType(),
+          entity.getCategoryDescription(),
+          entity.getCategoryId()
+        };
       
       for (int index = 0; index < entities.length; index ++) 
         statement.setString(index + 1, (String) entities[index]);
@@ -229,7 +222,7 @@ public class CustomerRepositories extends DatabaseConfiguration {
       }
 
       response.put("result", false);
-      response.put("message", "ID, Email, dan Kontak Mungkin Telah Digunakan, Coba Yang Lain.");
+      response.put("message", "ID Mungkin Telah Digunakan, Coba Yang Lain.");
       
       return (Map<String, Object>) response;
 
@@ -255,16 +248,16 @@ public class CustomerRepositories extends DatabaseConfiguration {
 
 
   /**
-   * Delete Customer Repository
+   * Delete Category Repository
    * 
-   * @param customerId String
+   * @param categoryId String
    * @return boolean
    * 
    */
-  protected boolean deleteCustomerRepository (String customerId) {
+  protected boolean deleteCategoryRepository (String categoryId) {
     Connection connection = getConnection();
     String queryString = String.format(
-      "DELETE FROM %s WHERE customer_id = ?", this.TABLENAME
+      "DELETE FROM %s WHERE category_id = ?", this.TABLENAME
     );
         
     try {
@@ -274,7 +267,7 @@ public class CustomerRepositories extends DatabaseConfiguration {
       PreparedStatement statement = connection
         .prepareStatement(queryString);
 
-      statement.setString(1, customerId);
+      statement.setString(1, categoryId);
 
       if (statement.executeUpdate() > 0) {
         connection.commit();
@@ -306,23 +299,22 @@ public class CustomerRepositories extends DatabaseConfiguration {
 
 
   /**
-   * Search Customer Repository
+   * Search Category Repository
    * 
    * @return List<Object[]>
    * 
    */
-  protected List<Object[]> searchCustomersRepository (String key) {
-    List<Object[]> customersDataList = new ArrayList<>();
+  protected List<Object[]> searchCategoriesRepository (String key) {
+    List<Object[]> categoriesDataList = new ArrayList<>();
     Connection connection = getConnection();
     String queryString = String.format(
       "SELECT * FROM %s WHERE (  " + 
-        "customer_id      LIKE '%%%s%%' OR " +
-        "customer_name    LIKE '%%%s%%' OR " +
-        "customer_contact LIKE '%%%s%%' OR " +
-        "customer_address LIKE '%%%s%%' OR " +
-        "customer_email   LIKE '%%%s%%'    " +
+        "category_id      LIKE '%%%s%%' OR " +
+        "category_brand   LIKE '%%%s%%' OR " +
+        "category_type    LIKE '%%%s%%' OR " +
+        "category_desc    LIKE '%%%s%%'    " +
       ")", this.TABLENAME,
-      key, key, key, key, key
+      key, key, key, key
     );
 
     try {
@@ -332,31 +324,28 @@ public class CustomerRepositories extends DatabaseConfiguration {
       ResultSet resultSet = statement.executeQuery();
 
       while (resultSet.next()) {
-        String customerId = resultSet
-          .getString("customer_id");
-        String customerName = resultSet
-          .getString("customer_name");
-        String customerContact = resultSet
-          .getString("customer_contact");
-        String customerAddress = resultSet
-          .getString("customer_address");
-        String customerEmail = resultSet
-          .getString("customer_email");
+        String categoryId = resultSet
+          .getString("category_id");
+        String categoryBrand = resultSet
+          .getString("category_brand");
+        String categoryType = resultSet
+          .getString("category_type");
+        String categoryDescription = resultSet
+          .getString("category_desc");
 
         Object[] rowData = {
-          customerId, customerName,
-          customerContact, customerAddress,
-          customerEmail
+          categoryId, categoryBrand,
+          categoryType, categoryDescription
         };
 
-        customersDataList.add(rowData);
+        categoriesDataList.add(rowData);
       }
 
-      return (List<Object[]>) customersDataList;
+      return (List<Object[]>) categoriesDataList;
 
     } catch (SQLException exception) {
       exception.printStackTrace();
-      return customersDataList;
+      return categoriesDataList;
     }
   }
 

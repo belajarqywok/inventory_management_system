@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  mariadb:
+    image: mariadb:10.5
+    container_name: viz_prog_assignment_db
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: iron_sales_db
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+    volumes:
+      - mariadb_volume:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    networks:
+      - mariadb_network
+
+  migration:
+    image: mariadb:10.5
+    container_name: migration
+    depends_on:
+      - mariadb
+    volumes:
+      - ./migrations/migration.sh:/docker-entrypoint-initdb.d/migration.sh
+    entrypoint: /docker-entrypoint-initdb.d/migration.sh
+    networks:
+      - mariadb_network
+
+volumes:
+  mariadb_volume:
+
+networks:
+  mariadb_network:
+    driver: bridge

@@ -15,72 +15,73 @@ import javafx.scene.layout.AnchorPane;
 
 import com.lestarieragemilang.Utilities.Redirect;
 import com.lestarieragemilang.Utilities.CacheService;
-import com.lestarieragemilang.Entities.SupplierEntity;
-import com.lestarieragemilang.Repositories.SupplierRepositories;
+
+import com.lestarieragemilang.Entities.CategoryEntity;
+import com.lestarieragemilang.Repositories.CategoryRepositories;
 
 
 
 /**
- * 	Supplier Form
+ *  Category Form
  */
-public class SupplierForm extends SupplierRepositories {
-
+public class CategoryForm extends CategoryRepositories {
+  
   @FXML
   private AnchorPane anchorPane;
 
   @FXML
-  private Button supplierActionButton;
+  private Button categoryActionButton;
+
+
 
   @FXML
-  private TextField supplierIdField;
+  private TextField categoryIdField;
 
   @FXML
-  private TextField supplierNameField;
+  private TextField categoryBrandField;
 
   @FXML
-  private TextField supplierContactField;
+  private TextField categoryTypeField;
 
   @FXML
-  private TextField supplierAddressField;
+  private TextField categoryDescriptionField;
 
-  @FXML
-  private TextField supplierEmailField;
 
   @FXML
   void clearButton (MouseEvent event) {
-    supplierIdField.setText("");
-    supplierNameField.setText("");
-    supplierContactField.setText("");
-    supplierAddressField.setText("");
-    supplierEmailField.setText("");
+    categoryIdField.setText("");
+    categoryBrandField.setText("");
+    categoryTypeField.setText("");
+    categoryDescriptionField.setText("");
 
     CacheService.clear();
   }
+
 
   @FXML
   void backButton (MouseEvent event) {
-    Redirect.page("supplier", anchorPane, getClass());
+    Redirect.page("category", anchorPane, getClass());
     CacheService.clear();
   }
 
+
   @FXML
-  void supplierActionButton (MouseEvent event) {
-    SupplierEntity entity = new SupplierEntity();
+  void categoryActionButton(MouseEvent event) {
+    CategoryEntity entity = new CategoryEntity();
 
-    entity.setSupplierId(supplierIdField.getText());
-    entity.setSupplierName(supplierNameField.getText());
-    entity.setSupplierContact(supplierContactField.getText());
-    entity.setSupplierAddress(supplierAddressField.getText());
-    entity.setSupplierEmail(supplierEmailField.getText());
+    entity.setCategoryId(categoryIdField.getText());
+    entity.setCategoryBrand(categoryBrandField.getText());
+    entity.setCategoryType(categoryTypeField.getText());
+    entity.setCategoryDescription(categoryDescriptionField.getText());
 
-    // Update Supplier Data
-    if (supplierActionButton.getText().equals("Update")) {
+    // Update Category Data
+    if (categoryActionButton.getText().equals("Update")) {
       Map<String, Object> response = this
-        .updateSupplierRepository(entity);
+        .updateCategoryRepository(entity);
 
       if ((boolean) response.get("result")) {
         Alert confirmationDialog = new Alert(Alert.AlertType.INFORMATION);
-      	confirmationDialog.getDialogPane().setPrefSize(450, 250);
+        confirmationDialog.getDialogPane().setPrefSize(450, 250);
 
         confirmationDialog.setTitle("Berhasil Memperbarui Data.");
         confirmationDialog.setHeaderText((String) response.get("message"));
@@ -90,11 +91,11 @@ public class SupplierForm extends SupplierRepositories {
     
         confirmationDialog.showAndWait().ifPresent(buttonType -> {
           if (buttonType == ButtonType.YES) {
-            Redirect.page("supplier", anchorPane, getClass());
+            Redirect.page("category", anchorPane, getClass());
             CacheService.clear();
           }
         });
-            
+    
       } else {
         Alert confirmationDialog = new Alert(Alert.AlertType.ERROR);
         confirmationDialog.getDialogPane().setPrefSize(450, 250);
@@ -106,10 +107,11 @@ public class SupplierForm extends SupplierRepositories {
         confirmationDialog.showAndWait();
       }
 
-    // Add Supplier Data
-    } else if (supplierActionButton.getText().equals("Tambah")) {
+
+    // Add Customer Data
+    } else if (categoryActionButton.getText().equals("Tambah")) {
       Map<String, Object> response = this
-        .createSupplierRepository(entity);
+        .createCategoryRepository(entity);
 
       if ((boolean) response.get("result")) {
         Alert confirmationDialog = new Alert(Alert.AlertType.INFORMATION);
@@ -123,7 +125,7 @@ public class SupplierForm extends SupplierRepositories {
 
         confirmationDialog.showAndWait().ifPresent(buttonType -> {
           if (buttonType == ButtonType.YES) {
-            Redirect.page("supplier", anchorPane, getClass());
+            Redirect.page("category", anchorPane, getClass());
             CacheService.clear();
           }
         });
@@ -141,25 +143,27 @@ public class SupplierForm extends SupplierRepositories {
     }
   }
 
+
+
   private void inputHandler() {
-  	String supplierId = (String) CacheService.get("supplierId");
-    if (supplierId != null) {
-      supplierIdField.setText(supplierId);
-      supplierNameField.setText((String) CacheService.get("supplierName"));
-      supplierContactField.setText((String) CacheService.get("supplierContact"));
-      supplierAddressField.setText((String) CacheService.get("supplierAddress"));
-      supplierEmailField.setText((String) CacheService.get("supplierEmail"));
+    String categoryId = (String) CacheService.get("categoryId");
+    if (categoryId != null) {
+      categoryIdField.setText(categoryId);
+      categoryBrandField.setText((String) CacheService.get("categoryBrand"));
+      categoryTypeField.setText((String) CacheService.get("categoryType"));
+      categoryDescriptionField.setText((String) CacheService.get("categoryDescription"));
     }
-	}
+  }
+
 
   @FXML
   public void initialize() {
-    if (CacheService.get("supplierId") != null) {
-      supplierActionButton.setText("Update");
-      supplierIdField.setEditable(false);
+    if (CacheService.get("categoryId") != null) {
+      categoryActionButton.setText("Update");
+      categoryIdField.setEditable(false);
 
     } else {
-      supplierActionButton.setText("Tambah");
+      categoryActionButton.setText("Tambah");
     }
 
     inputHandler();

@@ -1,119 +1,240 @@
 package com.lestarieragemilang;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-
-import com.lestarieragemilang.Entities.Product;
+import java.util.List;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+
 import javafx.fxml.FXML;
+import javafx.scene.control.Label;
+
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.BorderPane;
+
+import javafx.scene.control.Alert;
+import javafx.scene.control.ButtonType;
+import javafx.scene.control.TextField;
+import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 
-public class Stock {
+import javafx.event.EventHandler;
+import javafx.scene.input.MouseEvent;
 
-    @FXML
-    private TableColumn<Product, String> hargaBeli;
+import com.lestarieragemilang.Utilities.Redirect;
+import com.lestarieragemilang.Utilities.CacheService;
 
-    @FXML
-    private TableColumn<Product, String> hargaJual;
+import com.lestarieragemilang.Entities.StockEntity;
+import com.lestarieragemilang.Repositories.StockRepositories;
 
-    @FXML
-    private TableColumn<Product, String> idKategori;
 
-    @FXML
-    private TableColumn<Product, String> jenis;
 
-    @FXML
-    private TableColumn<Product, String> merek;
+/**
+ *  Stock Handler
+ */
+public class Stock extends StockRepositories {
 
-    @FXML
-    private TableColumn<Product, String> satuan;
+	@FXML
+  private TableView<StockEntity> stocksTable;
 
-    @FXML
-    private TableColumn<Product, String> stok;
 
-    @FXML
-    private TableView<Product> tabelDatabaseStokBesi;
+  @FXML
+  private TableColumn<StockEntity, String> stockId;
 
-    @FXML
-    private TableColumn<Product, String> ukuran;
+  @FXML
+  private TableColumn<StockEntity, String> categoryId;
 
-    // JDBC driver name and database URL
-    static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";  
-    static final String DB_URL = "jdbc:mysql://localhost/inventory";
+  @FXML
+  private TableColumn<StockEntity, String> stockSellPrice;
 
-    //  Database credentials
-    static final String USER = "root";
-    static final String PASS = "";
+  @FXML
+  private TableColumn<StockEntity, String> stockPurchasePrice;
 
-    Connection conn = null;
-    private ObservableList<Product> data;
+	@FXML
+  private TableColumn<StockEntity, String> stockSize;
 
-    public void connectAndReadFromDatabase() {
-        try {
-            // Register JDBC driver
-            Class.forName(JDBC_DRIVER);
+	@FXML
+  private TableColumn<StockEntity, String> stockAmount;
 
-            // Open a connection
-            System.out.println("Connecting to database...");
-            conn = DriverManager.getConnection(DB_URL, USER, PASS);
+	@FXML
+  private TableColumn<StockEntity, String> stockUnit;
 
-            // Execute a query
-            String sql = "SELECT * FROM steel_stocks";
-            PreparedStatement stmt = conn.prepareStatement(sql);
-            ResultSet rs = stmt.executeQuery();
 
-            // Extract data from result set and store it in an ObservableList
-            data = FXCollections.observableArrayList();
-            while(rs.next()){
-                // Assuming you have a Product class with a constructor that matches the columns in your database
-                data.add(new Product(rs.getString("harga_beli"), rs.getString("harga_jual"), rs.getString("id_kategori"), rs.getString("jenis"), rs.getString("merek"), rs.getString("satuan"), rs.getString("stok"), rs.getString("ukuran")));
-            }
+	@FXML
+  private AnchorPane anchorPane;
 
-            // Clean-up environment
-            rs.close();
-            stmt.close();
-            conn.close();
-        } catch(SQLException se) {
-            //Handle errors for JDBC
-            se.printStackTrace();
-        } catch(Exception e) {
-            //Handle errors for Class.forName
-            e.printStackTrace();
-        } finally {
-            //finally block used to close resources
-            try {
-                if(conn!=null)
-                    conn.close();
-            } catch(SQLException se) {
-                se.printStackTrace();
-            }
+  @FXML
+  private Label featureLabel;
+
+  @FXML
+  private TextField searchTextField;
+
+  @FXML
+  private Button editStock;
+
+  @FXML
+  private Button addStock;
+
+  @FXML
+  private Button deleteStock;
+
+
+	@FXML
+  private BorderPane bp;
+
+  private ObservableList<StockEntity> data;
+
+
+	@FXML
+  void searchStockAction(MouseEvent event) {
+    addStock.setVisible(true);
+    editStock.setVisible(false);
+    deleteStock.setVisible(false);
+
+    CacheService.clear();
+
+    data = FXCollections.observableArrayList();
+
+    List<Object[]> searchStocks = this
+      .searchStocksRepository(searchTextField.getText());
+
+    for (Object[] rowData : searchStocks) {
+      StockEntity entity = new StockEntity();
+
+			entity.setStockId((String) rowData[0]);
+      entity.setCategoryId((String) rowData[1]);
+			entity.setStockSellPrice((String) rowData[2]);
+			entity.setStockPurchasePrice((String) rowData[3]);
+			entity.setStockSize((String) rowData[4]);
+			entity.setStockAmount((String) rowData[5]);
+			entity.setStockUnit((String) rowData[6]);
+
+      data.add(entity);
+      stocksTable.setItems(data);
+    }
+  }
+
+
+	@FXML
+  void addStockAction (MouseEvent event) {
+    Redirect.page("stockForm", anchorPane, getClass());
+  }
+
+
+  @FXML
+  void editStockAction (MouseEvent event) {
+    Redirect.page("stockForm", anchorPane, getClass());
+  }
+
+
+
+	@FXML
+  void deleteStockAction (MouseEvent event) {
+    Alert confirmationDialog = new Alert(Alert.AlertType.CONFIRMATION);
+    confirmationDialog.getDialogPane().setPrefSize(450, 250);
+    
+    confirmationDialog.setTitle("Konfirmasi");
+    confirmationDialog.setHeaderText("hapus Stok");
+    confirmationDialog.setContentText("Apakah anda yakin ?.");
+
+    confirmationDialog.getButtonTypes().setAll(ButtonType.YES, ButtonType.NO);
+
+    confirmationDialog.showAndWait().ifPresent(buttonType -> {
+        if (buttonType == ButtonType.YES) {
+            deleteStockRepository((String) CacheService.get("stockId"));
+            Redirect.page("stock", anchorPane, getClass());
         }
-        System.out.println("Goodbye!");
+    });
+  }
+
+
+	private void connectAndReadFromDatabase() {
+    data = FXCollections.observableArrayList();
+
+    List<Object[]> getStocks = this
+      .getStocksRepository();
+
+    for (Object[] rowData : getStocks) {
+      StockEntity entity = new StockEntity();
+
+      entity.setStockId((String) rowData[0]);
+      entity.setCategoryId((String) rowData[1]);
+			entity.setStockSellPrice((String) rowData[2]);
+			entity.setStockPurchasePrice((String) rowData[3]);
+			entity.setStockSize((String) rowData[4]);
+			entity.setStockAmount((String) rowData[5]);
+			entity.setStockUnit((String) rowData[6]);
+
+      data.add(entity);
     }
+  }
 
-    @FXML
-    public void initialize() {
-        hargaBeli.setCellValueFactory(new PropertyValueFactory<Product, String>("harga_beli"));
-        hargaJual.setCellValueFactory(new PropertyValueFactory<Product, String>("harga_jual"));
-        idKategori.setCellValueFactory(new PropertyValueFactory<Product, String>("id_kategori"));
-        jenis.setCellValueFactory(new PropertyValueFactory<Product, String>("jenis"));
-        merek.setCellValueFactory(new PropertyValueFactory<Product, String>("merek"));
-        satuan.setCellValueFactory(new PropertyValueFactory<Product, String>("satuan"));
-        stok.setCellValueFactory(new PropertyValueFactory<Product, String>("stok"));
-        ukuran.setCellValueFactory(new PropertyValueFactory<Product, String>("ukuran"));
 
-        // Call the method to connect to the database and read data
-        connectAndReadFromDatabase();
+	private void clickHandler () {
+    EventHandler<MouseEvent> handler = new EventHandler<MouseEvent>() {
+      @Override
+      public void handle(MouseEvent event) {
+        addStock.setVisible(true);
+        editStock.setVisible(false);
+        deleteStock.setVisible(false);
 
-        // Add the data to the table
-        tabelDatabaseStokBesi.setItems(data);
-    }
+        CacheService.clear();
+      }
+    };
+
+    anchorPane.setOnMouseClicked(handler);
+    featureLabel.setOnMouseClicked(handler);
+    searchTextField.setOnMouseClicked(handler);
+  }
+
+
+	@FXML
+  public void initialize() {
+		stockId.setCellValueFactory(
+      new PropertyValueFactory<StockEntity, String>("stockId"));
+    categoryId.setCellValueFactory(
+      new PropertyValueFactory<StockEntity, String>("categoryId"));
+		stockSellPrice.setCellValueFactory(
+      new PropertyValueFactory<StockEntity, String>("stockSellPrice"));
+		stockPurchasePrice.setCellValueFactory(
+      new PropertyValueFactory<StockEntity, String>("stockPurchasePrice"));
+		stockSize.setCellValueFactory(
+      new PropertyValueFactory<StockEntity, String>("stockSize"));
+		stockAmount.setCellValueFactory(
+			new PropertyValueFactory<StockEntity, String>("stockAmount"));
+		stockUnit.setCellValueFactory(
+			new PropertyValueFactory<StockEntity, String>("stockUnit"));
+
+    CacheService.clear();
+    connectAndReadFromDatabase();
+    clickHandler();
+
+    stocksTable.setOnMouseClicked(new EventHandler<MouseEvent>() {
+      @Override
+      public void handle(MouseEvent event) {
+        if (event.getClickCount() == 1) {
+          StockEntity selectedStock = stocksTable
+            .getSelectionModel().getSelectedItem();
+
+          if (selectedStock != null) {
+            CacheService.put("stockId", selectedStock.getStockId());
+            CacheService.put("categoryId", selectedStock.getCategoryId());
+            CacheService.put("stockSellPrice", selectedStock.getStockSellPrice());
+            CacheService.put("stockPurchasePrice", selectedStock.getStockPurchasePrice());
+						CacheService.put("stockSize", selectedStock.getStockSize());
+						CacheService.put("stockAmount", selectedStock.getStockAmount());
+						CacheService.put("stockUnit", selectedStock.getStockUnit());
+
+            addStock.setVisible(false);
+            editStock.setVisible(true);
+            deleteStock.setVisible(true);
+          }
+        }
+      }
+    });
+
+    stocksTable.setItems(data);
+  }
 }
 

@@ -24,9 +24,14 @@ import javafx.scene.input.MouseEvent;
 
 import com.lestarieragemilang.Utilities.Redirect;
 import com.lestarieragemilang.Utilities.CacheService;
+
 import com.lestarieragemilang.Entities.CustomerEntity;
 import com.lestarieragemilang.Repositories.CustomerRepositories;
 
+
+/**
+ *  Customer Handler
+ */
 public class Customer extends CustomerRepositories {
 
   @FXML

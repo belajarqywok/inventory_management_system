@@ -94,116 +94,116 @@ public class Dashboard {
 
     @FXML
     public void initialize() {
-        // Stock Button
-        stockNavBtn.setOnMouseEntered(event -> {
-            stockNavBtn.setStyle(
-                "-fx-font-size: 20px; -fx-background-color: #5C5470; -fx-cursor: hand; -fx-font-weight: bold;"
-            );
-        });
+        // // Stock Button
+        // stockNavBtn.setOnMouseEntered(event -> {
+        //     stockNavBtn.setStyle(
+        //         "-fx-font-size: 20px; -fx-background-color: #5C5470; -fx-cursor: hand; -fx-font-weight: bold;"
+        //     );
+        // });
 
-        stockNavBtn.setOnMouseExited(event -> {
-            stockNavBtn.setStyle(
-                "-fx-font-size: 18px; -fx-background-color: #5C5470; -fx-cursor: hand; -fx-font-weight: normal;"
-            );
-        });
-
-
-        // Supplier Button
-        supplierNavBtn.setOnMouseEntered(event -> {
-            supplierNavBtn.setStyle(
-                "-fx-font-size: 20px; -fx-background-color: #5C5470; -fx-cursor: hand; -fx-font-weight: bold;"
-            );
-        });
-
-        supplierNavBtn.setOnMouseExited(event -> {
-            supplierNavBtn.setStyle(
-                "-fx-font-size: 18px; -fx-background-color: #5C5470; -fx-cursor: hand; -fx-font-weight: normal;"
-            );
-        });
+        // stockNavBtn.setOnMouseExited(event -> {
+        //     stockNavBtn.setStyle(
+        //         "-fx-font-size: 18px; -fx-background-color: #5C5470; -fx-cursor: hand; -fx-font-weight: normal;"
+        //     );
+        // });
 
 
-        // Category Button
-        categoryNavBtn.setOnMouseEntered(event -> {
-            categoryNavBtn.setStyle(
-                "-fx-font-size: 20px; -fx-background-color: #5C5470; -fx-cursor: hand; -fx-font-weight: bold;"
-            );
-        });
+        // // Supplier Button
+        // supplierNavBtn.setOnMouseEntered(event -> {
+        //     supplierNavBtn.setStyle(
+        //         "-fx-font-size: 20px; -fx-background-color: #5C5470; -fx-cursor: hand; -fx-font-weight: bold;"
+        //     );
+        // });
 
-        categoryNavBtn.setOnMouseExited(event -> {
-            categoryNavBtn.setStyle(
-                "-fx-font-size: 18px; -fx-background-color: #5C5470; -fx-cursor: hand; -fx-font-weight: normal;"
-            );
-        });
-
-
-        // Customer Button
-        customerNavBtn.setOnMouseEntered(event -> {
-            customerNavBtn.setStyle(
-                "-fx-font-size: 20px; -fx-background-color: #5C5470; -fx-cursor: hand; -fx-font-weight: bold;"
-            );
-        });
-
-        customerNavBtn.setOnMouseExited(event -> {
-            customerNavBtn.setStyle(
-                "-fx-font-size: 18px; -fx-background-color: #5C5470; -fx-cursor: hand; -fx-font-weight: normal;"
-            );
-        });
+        // supplierNavBtn.setOnMouseExited(event -> {
+        //     supplierNavBtn.setStyle(
+        //         "-fx-font-size: 18px; -fx-background-color: #5C5470; -fx-cursor: hand; -fx-font-weight: normal;"
+        //     );
+        // });
 
 
-        // Purchasing Button
-        purchasingNavBtn.setOnMouseEntered(event -> {
-            purchasingNavBtn.setStyle(
-                "-fx-font-size: 20px; -fx-background-color: #5C5470; -fx-cursor: hand; -fx-font-weight: bold;"
-            );
-        });
+        // // Category Button
+        // categoryNavBtn.setOnMouseEntered(event -> {
+        //     categoryNavBtn.setStyle(
+        //         "-fx-font-size: 20px; -fx-background-color: #5C5470; -fx-cursor: hand; -fx-font-weight: bold;"
+        //     );
+        // });
 
-        purchasingNavBtn.setOnMouseExited(event -> {
-            purchasingNavBtn.setStyle(
-                "-fx-font-size: 18px; -fx-background-color: #5C5470; -fx-cursor: hand; -fx-font-weight: normal;"
-            );
-        });
-
-
-        // Penjualan Button
-        penjualanNavBtn.setOnMouseEntered(event -> {
-            penjualanNavBtn.setStyle(
-                "-fx-font-size: 20px; -fx-background-color: #5C5470; -fx-cursor: hand; -fx-font-weight: bold;"
-            );
-        });
-
-        penjualanNavBtn.setOnMouseExited(event -> {
-            penjualanNavBtn.setStyle(
-                "-fx-font-size: 18px; -fx-background-color: #5C5470; -fx-cursor: hand; -fx-font-weight: normal;"
-            );
-        });
+        // categoryNavBtn.setOnMouseExited(event -> {
+        //     categoryNavBtn.setStyle(
+        //         "-fx-font-size: 18px; -fx-background-color: #5C5470; -fx-cursor: hand; -fx-font-weight: normal;"
+        //     );
+        // });
 
 
-        // Penerimaan Button
-        penerimaanNavBtn.setOnMouseEntered(event -> {
-            penerimaanNavBtn.setStyle(
-                "-fx-font-size: 20px; -fx-background-color: #5C5470; -fx-cursor: hand; -fx-font-weight: bold;"
-            );
-        });
+        // // Customer Button
+        // customerNavBtn.setOnMouseEntered(event -> {
+        //     customerNavBtn.setStyle(
+        //         "-fx-font-size: 20px; -fx-background-color: #5C5470; -fx-cursor: hand; -fx-font-weight: bold;"
+        //     );
+        // });
 
-        penerimaanNavBtn.setOnMouseExited(event -> {
-            penerimaanNavBtn.setStyle(
-                "-fx-font-size: 18px; -fx-background-color: #5C5470; -fx-cursor: hand; -fx-font-weight: normal;"
-            );
-        });
+        // customerNavBtn.setOnMouseExited(event -> {
+        //     customerNavBtn.setStyle(
+        //         "-fx-font-size: 18px; -fx-background-color: #5C5470; -fx-cursor: hand; -fx-font-weight: normal;"
+        //     );
+        // });
 
 
-        // Report Button
-        reportNavBtn.setOnMouseEntered(event -> {
-            reportNavBtn.setStyle(
-                "-fx-font-size: 20px; -fx-background-color: #5C5470; -fx-cursor: hand; -fx-font-weight: bold;"
-            );
-        });
+        // // Purchasing Button
+        // purchasingNavBtn.setOnMouseEntered(event -> {
+        //     purchasingNavBtn.setStyle(
+        //         "-fx-font-size: 20px; -fx-background-color: #5C5470; -fx-cursor: hand; -fx-font-weight: bold;"
+        //     );
+        // });
 
-        reportNavBtn.setOnMouseExited(event -> {
-            reportNavBtn.setStyle(
-                "-fx-font-size: 18px; -fx-background-color: #5C5470; -fx-cursor: hand; -fx-font-weight: normal;"
-            );
-        });
+        // purchasingNavBtn.setOnMouseExited(event -> {
+        //     purchasingNavBtn.setStyle(
+        //         "-fx-font-size: 18px; -fx-background-color: #5C5470; -fx-cursor: hand; -fx-font-weight: normal;"
+        //     );
+        // });
+
+
+        // // Penjualan Button
+        // penjualanNavBtn.setOnMouseEntered(event -> {
+        //     penjualanNavBtn.setStyle(
+        //         "-fx-font-size: 20px; -fx-background-color: #5C5470; -fx-cursor: hand; -fx-font-weight: bold;"
+        //     );
+        // });
+
+        // penjualanNavBtn.setOnMouseExited(event -> {
+        //     penjualanNavBtn.setStyle(
+        //         "-fx-font-size: 18px; -fx-background-color: #5C5470; -fx-cursor: hand; -fx-font-weight: normal;"
+        //     );
+        // });
+
+
+        // // Penerimaan Button
+        // penerimaanNavBtn.setOnMouseEntered(event -> {
+        //     penerimaanNavBtn.setStyle(
+        //         "-fx-font-size: 20px; -fx-background-color: #5C5470; -fx-cursor: hand; -fx-font-weight: bold;"
+        //     );
+        // });
+
+        // penerimaanNavBtn.setOnMouseExited(event -> {
+        //     penerimaanNavBtn.setStyle(
+        //         "-fx-font-size: 18px; -fx-background-color: #5C5470; -fx-cursor: hand; -fx-font-weight: normal;"
+        //     );
+        // });
+
+
+        // // Report Button
+        // reportNavBtn.setOnMouseEntered(event -> {
+        //     reportNavBtn.setStyle(
+        //         "-fx-font-size: 20px; -fx-background-color: #5C5470; -fx-cursor: hand; -fx-font-weight: bold;"
+        //     );
+        // });
+
+        // reportNavBtn.setOnMouseExited(event -> {
+        //     reportNavBtn.setStyle(
+        //         "-fx-font-size: 18px; -fx-background-color: #5C5470; -fx-cursor: hand; -fx-font-weight: normal;"
+        //     );
+        // });
         
 
         Redirect.page("stock", setScene, getClass());

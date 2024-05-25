@@ -1,0 +1,14 @@
+/* JavaFX CSS */
+
+.navText {
+    /* make hover */
+    -fx-background-color: #efefef;
+    -fx-text-fill: #0b1215;
+    -fx-font-size: 18px;
+}
+
+.navText:hover {
+    /* make hover */
+    -fx-background-color: #111111;
+    -fx-text-fill: white;
+}

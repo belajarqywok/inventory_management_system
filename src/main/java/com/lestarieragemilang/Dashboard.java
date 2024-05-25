@@ -7,6 +7,9 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 
 import com.lestarieragemilang.Utilities.Redirect;
+
+import javax.swing.JOptionPane;
+
 import com.lestarieragemilang.Utilities.CacheService;
 
 public class Dashboard {
@@ -16,8 +19,6 @@ public class Dashboard {
 
     @FXML
     private AnchorPane setScene;
-
-
 
     @FXML
     private Button stockNavBtn;
@@ -212,7 +213,10 @@ public class Dashboard {
 
     @FXML
     private void exitApp() {
-        System.exit(0);
+        int dialogResult = JOptionPane.showConfirmDialog(null, "Apakah Anda yakin ingin keluar?", "Peringatan", JOptionPane.YES_NO_OPTION);
+        if (dialogResult == JOptionPane.YES_OPTION) {
+            System.exit(0);
+        }
     }
     
 }

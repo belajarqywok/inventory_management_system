@@ -4,6 +4,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.Glow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -14,16 +15,25 @@
 
 <BorderPane fx:id="bp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lestarieragemilang.Dashboard">
    <left>
-      <VBox alignment="CENTER" prefHeight="575.0" prefWidth="230.0" spacing="10.0" style="-fx-background-color: #f8feff;" BorderPane.alignment="CENTER">
+      <VBox alignment="CENTER" prefHeight="575.0" prefWidth="230.0" spacing="10.0" style="-fx-background-color: #f8feff; -fx-border-color: #dbd8e3;" BorderPane.alignment="CENTER">
          <children>
-            <Label style="-fx-font-weight: bold;" text="Admin" textFill="#0b1215">
-               <font>
-                  <Font size="22.0" />
-               </font>
-               <padding>
-                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-               </padding>
-            </Label>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="230.0" spacing="5.0">
+               <children>
+                  <ImageView fitHeight="35.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Assets/Icons/shirt_.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="BASELINE_LEFT" style="-fx-font-weight: bold;" text="Admin" textFill="#0b1215">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
             <Separator prefWidth="200.0" />
             <HBox alignment="CENTER" prefHeight="50.0" prefWidth="230.0" spacing="5.0">
                <children>
@@ -154,14 +164,17 @@
                <graphic>
                   <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@Assets/Icons/x-circle-16-solid_.png" />
+                        <Image url="@Assets/Icons/times_.png" />
                      </image>
+                     <effect>
+                        <Glow level="1.0" />
+                     </effect>
                   </ImageView>
                </graphic></Button>
          </children>
       </AnchorPane>
    </top>
    <center>
-      <AnchorPane fx:id="setScene" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #f9fdfe;" BorderPane.alignment="CENTER" />
+      <AnchorPane fx:id="setScene" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #f9fdfe; -fx-border-color: #dbd8e3;" BorderPane.alignment="CENTER" />
    </center>
 </BorderPane>

@@ -150,7 +150,7 @@
       </VBox>
    </left>
    <top>
-      <AnchorPane prefHeight="75.0" prefWidth="200.0" style="-fx-background-color: #2A2438;" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="75.0" prefWidth="200.0" style="-fx-background-color: #2A2438;" styleClass="headerImage" stylesheets="@style.css" BorderPane.alignment="CENTER">
          <children>
             <Label layoutX="109.0" layoutY="21.0" text="PT LESTARI ERA GEMILANG" textFill="#dbd8e3" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
                <font>
@@ -175,6 +175,6 @@
       </AnchorPane>
    </top>
    <center>
-      <AnchorPane fx:id="setScene" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #f9fdfe; -fx-border-color: #dbd8e3;" BorderPane.alignment="CENTER" />
+      <AnchorPane fx:id="setScene" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #dbd8e3; -fx-background-color: white;" styleClass="backgroundImage" stylesheets="@style.css" BorderPane.alignment="CENTER" />
    </center>
 </BorderPane>

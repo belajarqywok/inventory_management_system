@@ -5,11 +5,13 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
 <?import javafx.scene.text.Font?>
 
-<VBox fx:controller="com.lestarieragemilang.Stock" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="970.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="970.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lestarieragemilang.Stock">
    <children>
       <AnchorPane fx:id="anchorPane" prefHeight="585.0" prefWidth="970.0">
          <children>
@@ -18,9 +20,33 @@
                   <Font size="28.0" />
                </font>
             </Label>
-            <TextField fx:id="searchTextField" layoutX="655.0" layoutY="48.0" prefHeight="40.0" prefWidth="573.0" AnchorPane.rightAnchor="102.0" AnchorPane.topAnchor="20.0" />
-            <Button fx:id="editStock" onMouseClicked="#editStockAction" layoutX="884.0" layoutY="97.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="66.0" style="-fx-cursor: hand;" text="Edit" visible="false" AnchorPane.rightAnchor="20.0" />
-            <Button fx:id="addStock" onMouseClicked="#addStockAction" layoutX="884.0" layoutY="97.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="66.0" style="-fx-cursor: hand;" text="Add" visible="true" AnchorPane.rightAnchor="20.0" />
+            <TextField fx:id="searchTextField" layoutX="655.0" layoutY="48.0" prefHeight="40.0" prefWidth="573.0" styleClass="textFieldStyle" stylesheets="@style.css" AnchorPane.rightAnchor="102.0" AnchorPane.topAnchor="20.0">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="10.0" offsetX="-1.0" offsetY="3.0" radius="4.5" width="10.0">
+                     <color>
+                        <Color opacity="0.20000000298023224" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </TextField>
+            <Button fx:id="editStock" layoutX="884.0" layoutY="97.0" mnemonicParsing="false" onMouseClicked="#editStockAction" prefHeight="40.0" prefWidth="66.0" style="-fx-cursor: hand;" styleClass="buttonStyle" stylesheets="@style.css" text="Edit" visible="false" AnchorPane.rightAnchor="20.0">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="10.0" offsetX="-1.0" offsetY="3.0" radius="4.5" width="10.0">
+                     <color>
+                        <Color opacity="0.20000000298023224" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+            <Button fx:id="addStock" layoutX="884.0" layoutY="97.0" mnemonicParsing="false" onMouseClicked="#addStockAction" prefHeight="40.0" prefWidth="66.0" style="-fx-cursor: hand;" styleClass="buttonStyle" stylesheets="@style.css" text="Add" visible="true" AnchorPane.rightAnchor="20.0">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="10.0" offsetX="-1.0" offsetY="3.0" radius="4.5" width="10.0">
+                     <color>
+                        <Color opacity="0.20000000298023224" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
             <TableView fx:id="stocksTable" layoutX="314.0" layoutY="147.0" style="-fx-cursor: hand;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
                <columns>
                   <TableColumn fx:id="stockId" prefWidth="75.0" text="ID Stok" />
@@ -34,9 +60,32 @@
                <columnResizePolicy>
                   <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
                </columnResizePolicy>
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="10.0" offsetX="-1.0" offsetY="3.0" radius="4.5" width="10.0">
+                     <color>
+                        <Color opacity="0.20000000298023224" />
+                     </color>
+                  </DropShadow>
+               </effect>
             </TableView>
-            <Button onMouseClicked="#searchStockAction" layoutX="884.0" layoutY="20.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="66.0" style="-fx-cursor: hand;" text="Search" />
-            <Button fx:id="deleteStock" onMouseClicked="#deleteStockAction" layoutX="802.0" layoutY="97.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="66.0" style="-fx-cursor: hand;" text="Delete" visible="false" />
+            <Button layoutX="884.0" layoutY="20.0" mnemonicParsing="false" onMouseClicked="#searchStockAction" prefHeight="40.0" prefWidth="66.0" style="-fx-cursor: hand;" styleClass="buttonStyle" stylesheets="@style.css" text="Cari">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="10.0" offsetX="-1.0" offsetY="3.0" radius="4.5" width="10.0">
+                     <color>
+                        <Color opacity="0.20000000298023224" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+            <Button fx:id="deleteStock" layoutX="802.0" layoutY="97.0" mnemonicParsing="false" onMouseClicked="#deleteStockAction" prefHeight="40.0" prefWidth="66.0" style="-fx-cursor: hand;" styleClass="buttonStyle" stylesheets="@style.css" text="Delete" visible="false">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="10.0" offsetX="-1.0" offsetY="3.0" radius="4.5" width="10.0">
+                     <color>
+                        <Color opacity="0.20000000298023224" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
          </children>
       </AnchorPane>
    </children>

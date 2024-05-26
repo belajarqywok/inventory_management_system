@@ -1,79 +1,180 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:controller="com.lestarieragemilang.Dashboard" fx:id="bp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane fx:id="bp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lestarieragemilang.Dashboard">
    <left>
-      <VBox alignment="CENTER" prefHeight="575.0" prefWidth="230.0" spacing="10.0" style="-fx-background-color: #5C5470;" BorderPane.alignment="CENTER">
+      <VBox alignment="CENTER" prefHeight="575.0" prefWidth="230.0" spacing="10.0" style="-fx-background-color: #f8feff; -fx-border-color: #dbd8e3;" BorderPane.alignment="CENTER">
          <children>
-            <Label text="Admin" style="-fx-font-weight: bold;" textFill="#dbd8e3">
-               <font>
-                  <Font size="22.0" />
-               </font>
-            </Label>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="230.0" spacing="5.0">
+               <children>
+                  <ImageView fitHeight="35.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Assets/Icons/shirt_.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="BASELINE_LEFT" style="-fx-font-weight: bold;" text="Admin" textFill="#0b1215">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
             <Separator prefWidth="200.0" />
-            <Button fx:id="stockNavBtn" mnemonicParsing="false" onMouseClicked="#setSceneStokBesi" prefHeight="50.0" prefWidth="260.0" style="-fx-background-color: #5C5470; -fx-cursor: hand;" text="Stok Besi" textFill="#dbd8e3">
-               <font>
-                  <Font size="18.0" />
-               </font></Button>
-            <Button fx:id="supplierNavBtn" mnemonicParsing="false" onMouseClicked="#setSceneSupplierBesi" prefHeight="50.0" prefWidth="245.0" style="-fx-background-color: #5C5470; -fx-cursor: hand;" text="Supplier Besi" textFill="#dbd8e3">
-               <font>
-                  <Font size="18.0" />
-               </font></Button>
-            <Button fx:id="categoryNavBtn" mnemonicParsing="false" onMouseClicked="#setSceneKategoriBesi" prefHeight="50.0" prefWidth="237.0" style="-fx-background-color: #5C5470; -fx-cursor: hand;" text="Kategori Besi" textFill="#dbd8e3">
-               <font>
-                  <Font size="18.0" />
-               </font></Button>
-            <Button fx:id="customerNavBtn" layoutX="10.0" layoutY="125.0" mnemonicParsing="false" onMouseClicked="#setScenePelanggan" prefHeight="50.0" prefWidth="237.0" style="-fx-background-color: #5C5470; -fx-cursor: hand;" text="Pelanggan Besi" textFill="#dbd8e3">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Button>
-            <Button fx:id="purchasingNavBtn" layoutX="10.0" layoutY="182.0" mnemonicParsing="false" onMouseClicked="#setScenePembelianBesi" prefHeight="50.0" prefWidth="237.0" style="-fx-background-color: #5C5470; -fx-cursor: hand;" text="Pembelian Besi" textFill="#dbd8e3">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Button>
-            <Button fx:id="penjualanNavBtn" layoutX="10.0" layoutY="239.0" mnemonicParsing="false" onMouseClicked="#setScenePenjualanBesi" prefHeight="50.0" prefWidth="237.0" style="-fx-background-color: #5C5470; -fx-cursor: hand;" text="Penjualan Besi" textFill="#dbd8e3">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Button>
-            <Button fx:id="penerimaanNavBtn" layoutX="10.0" layoutY="297.0" mnemonicParsing="false" onMouseClicked="#setScenePenerimaanBesi" prefHeight="50.0" prefWidth="237.0" style="-fx-background-color: #5C5470; -fx-cursor: hand;" text="Penerimaan Besi" textFill="#dbd8e3">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Button>
-            <Button fx:id="reportNavBtn" layoutX="10.0" layoutY="354.0" mnemonicParsing="false" onMouseClicked="#setSceneLaporan" prefHeight="50.0" prefWidth="237.0" style="-fx-background-color: #5C5470; -fx-cursor: hand;" text="Laporan" textFill="#dbd8e3">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Button>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="230.0" spacing="5.0">
+               <children>
+                  <ImageView cache="true" fitHeight="35.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-color: #dbd8e3;" styleClass="navText">
+                     <image>
+                        <Image url="@Assets/Icons/box-3d_.png" />
+                     </image></ImageView>
+                  <Button fx:id="stockNavBtn" alignment="BASELINE_LEFT" mnemonicParsing="false" onMouseClicked="#setSceneStokBesi" prefHeight="50.0" prefWidth="155.0" styleClass="navText" stylesheets="@style.css" text="Stok Besi" textFill="#dbd8e3">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="230.0" spacing="5.0">
+               <children>
+                  <ImageView fitHeight="35.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" styleClass="navText">
+                     <image>
+                        <Image url="@Assets/Icons/box-3d-download-fill_.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="supplierNavBtn" alignment="BASELINE_LEFT" mnemonicParsing="false" onMouseClicked="#setSceneSupplierBesi" prefHeight="50.0" prefWidth="155.0" styleClass="navText" stylesheets="@style.css" text="Supplier Besi" textFill="#dbd8e3">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="230.0" spacing="5.0">
+               <children>
+                  <ImageView fitHeight="35.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" styleClass="navText">
+                     <image>
+                        <Image url="@Assets/Icons/checklist-note_.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="categoryNavBtn" alignment="BASELINE_LEFT" mnemonicParsing="false" onMouseClicked="#setSceneKategoriBesi" prefHeight="50.0" prefWidth="155.0" styleClass="navText" stylesheets="@style.css" text="Kategori Besi" textFill="#dbd8e3">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="230.0" spacing="5.0">
+               <children>
+                  <ImageView fitHeight="35.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" styleClass="navText">
+                     <image>
+                        <Image url="@Assets/Icons/users_.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="customerNavBtn" alignment="BASELINE_LEFT" mnemonicParsing="false" onMouseClicked="#setScenePelanggan" prefHeight="50.0" prefWidth="155.0" styleClass="navText" stylesheets="@style.css" text="Pelanggan Besi" textFill="#dbd8e3">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="230.0" spacing="5.0">
+               <children>
+                  <ImageView fitHeight="35.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" styleClass="navText">
+                     <image>
+                        <Image url="@Assets/Icons/round-double-alt-arrow-right-broken_.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="purchasingNavBtn" alignment="BASELINE_LEFT" mnemonicParsing="false" onMouseClicked="#setScenePembelianBesi" prefHeight="50.0" prefWidth="155.0" styleClass="navText" stylesheets="@style.css" text="Pembelian Besi" textFill="#dbd8e3">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="230.0" spacing="5.0">
+               <children>
+                  <ImageView fitHeight="35.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" styleClass="navText">
+                     <image>
+                        <Image url="@Assets/Icons/round-double-alt-arrow-left-broken_.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="penjualanNavBtn" alignment="BASELINE_LEFT" mnemonicParsing="false" onMouseClicked="#setScenePenjualanBesi" prefHeight="50.0" prefWidth="155.0" styleClass="navText" stylesheets="@style.css" text="Penjualan Besi" textFill="#dbd8e3">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="230.0" spacing="5.0">
+               <children>
+                  <ImageView fitHeight="35.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" styleClass="navText">
+                     <image>
+                        <Image url="@Assets/Icons/box-bold-duotone_.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="penerimaanNavBtn" alignment="BASELINE_LEFT" mnemonicParsing="false" onMouseClicked="#setScenePenerimaanBesi" prefHeight="50.0" prefWidth="155.0" styleClass="navText" stylesheets="@style.css" text="Penerimaan Besi" textFill="#dbd8e3">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="230.0" spacing="5.0">
+               <children>
+                  <ImageView fitHeight="35.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" styleClass="navText">
+                     <image>
+                        <Image url="@Assets/Icons/document-text_.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="reportNavBtn" alignment="BASELINE_LEFT" mnemonicParsing="false" onMouseClicked="#setSceneLaporan" prefHeight="50.0" prefWidth="155.0" styleClass="navText" stylesheets="@style.css" text="Laporan" textFill="#dbd8e3">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
          </children>
       </VBox>
    </left>
    <top>
-      <AnchorPane prefHeight="75.0" prefWidth="200.0" style="-fx-background-color: #2A2438;" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="75.0" prefWidth="200.0" style="-fx-background-color: #2A2438;" styleClass="headerImage" stylesheets="@style.css" BorderPane.alignment="CENTER">
          <children>
             <Label layoutX="109.0" layoutY="21.0" text="PT LESTARI ERA GEMILANG" textFill="#dbd8e3" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
                <font>
-                  <Font size="24.0" />
+                  <Font name="System Bold" size="24.0" />
                </font>
             </Label>
-            <Button alignment="CENTER" layoutX="1126.0" layoutY="12.0" mnemonicParsing="false" onAction="#exitApp" prefHeight="40.0" prefWidth="35.0" style="-fx-background-radius: 30; -fx-background-color: red; -fx-cursor: hand;" text="X" textFill="WHITE" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+            <Button alignment="CENTER" layoutX="1126.0" layoutY="12.0" mnemonicParsing="false" onAction="#exitApp" prefHeight="40.0" prefWidth="35.0" style="-fx-background-radius: 30; -fx-background-color: red; -fx-cursor: hand;" textFill="WHITE" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
                <font>
                   <Font name="System Bold" size="12.0" />
-               </font></Button>
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Assets/Icons/times_.png" />
+                     </image>
+                     <effect>
+                        <Glow level="1.0" />
+                     </effect>
+                  </ImageView>
+               </graphic></Button>
          </children>
       </AnchorPane>
    </top>
    <center>
-      <AnchorPane fx:id="setScene" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+      <AnchorPane fx:id="setScene" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #dbd8e3; -fx-background-color: white;" styleClass="backgroundImage" stylesheets="@style.css" BorderPane.alignment="CENTER" />
    </center>
 </BorderPane>

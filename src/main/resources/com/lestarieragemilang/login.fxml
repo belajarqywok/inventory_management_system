@@ -33,7 +33,7 @@
       </HBox>
       <BorderPane layoutX="16.0" layoutY="76.0" prefHeight="384.0" prefWidth="724.0" style="-fx-background-color: #f9fdfe;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="76.0">
          <top>
-            <Label alignment="CENTER" prefHeight="85.0" prefWidth="757.0" text="Manajemen Persediaan dan Penjualan Besi" BorderPane.alignment="CENTER">
+            <Label alignment="CENTER" prefHeight="85.0" prefWidth="900.0" text="Aplikasi Manajemen Persediaan dan Penjualan Besi" BorderPane.alignment="CENTER">
                <font>
                   <Font name="System Bold" size="36.0" />
                </font>
@@ -49,12 +49,14 @@
                </effect>
             </Label>
          </top>
-         <right>
-            <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
-         </right>
          <center>
-            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="100.0" BorderPane.alignment="CENTER">
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="60.0" BorderPane.alignment="CENTER">
                <children>
+                  <ImageView fitHeight="300.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Assets/Images/photo_6240183307941821545_x.jpg" />
+                     </image>
+                  </ImageView>
                   <VBox alignment="CENTER" prefHeight="0.0" prefWidth="390.0" spacing="80.0" style="-fx-background-color: #f8feff; -fx-background-radius: 20;">
                      <children>
                         <Label text="LOGIN ADMIN" textFill="#0c0c0c">
@@ -206,15 +208,17 @@
                         </DropShadow>
                      </effect>
                   </VBox>
+                  <ImageView fitHeight="300.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Assets/Images/photo_6240183307941821544_x.jpg" />
+                     </image>
+                  </ImageView>
                </children>
             </HBox>
          </center>
          <bottom>
             <Pane prefHeight="32.0" prefWidth="1280.0" BorderPane.alignment="CENTER" />
          </bottom>
-         <left>
-            <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
-         </left>
       </BorderPane>
    </children>
 </AnchorPane>

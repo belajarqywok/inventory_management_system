@@ -11,59 +11,43 @@
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
-   prefHeight="570.0" prefWidth="970.0" xmlns="http://javafx.com/javafx/22"
-   xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lestarieragemilang.Supplier">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="970.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lestarieragemilang.Supplier">
    <children>
       <AnchorPane fx:id="anchorPane" prefHeight="585.0" prefWidth="970.0">
          <children>
-            <Label fx:id="featureLabel" layoutX="108.0" layoutY="49.0" text="Laporan"
-               AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+            <Label fx:id="featureLabel" layoutX="108.0" layoutY="49.0" text="Laporan" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
                <font>
                   <Font size="28.0" />
                </font>
             </Label>
-            <TextField fx:id="CariTextField" layoutX="655.0" layoutY="48.0" prefHeight="40.0"
-               prefWidth="573.0" styleClass="textFieldStyle" stylesheets="@style.css"
-               AnchorPane.rightAnchor="102.0" AnchorPane.topAnchor="20.0">
+            <TextField fx:id="searchTextField" layoutX="655.0" layoutY="48.0" prefHeight="40.0" prefWidth="573.0" styleClass="textFieldStyle" stylesheets="@style.css" AnchorPane.rightAnchor="102.0" AnchorPane.topAnchor="20.0">
                <effect>
-                  <DropShadow blurType="GAUSSIAN" height="10.0" offsetX="-1.0" offsetY="3.0"
-                     radius="4.5" width="10.0">
+                  <DropShadow blurType="GAUSSIAN" height="10.0" offsetX="-1.0" offsetY="3.0" radius="4.5" width="10.0">
                      <color>
                         <Color opacity="0.20000000298023224" />
                      </color>
                   </DropShadow>
                </effect>
             </TextField>
-            <Button fx:id="editSupplier" layoutX="884.0" layoutY="97.0" mnemonicParsing="false"
-               onMouseClicked="#editSupplierAction" prefHeight="40.0" prefWidth="66.0"
-               style="-fx-cursor: hand;" styleClass="buttonStyle" stylesheets="@style.css"
-               text="Edit" visible="false" AnchorPane.rightAnchor="20.0">
+            <Button fx:id="editSupplier" layoutX="884.0" layoutY="97.0" mnemonicParsing="false" onMouseClicked="#editSupplierAction" prefHeight="40.0" prefWidth="66.0" style="-fx-cursor: hand;" styleClass="buttonStyle" stylesheets="@style.css" text="Edit" visible="false" AnchorPane.rightAnchor="20.0">
                <effect>
-                  <DropShadow blurType="GAUSSIAN" height="10.0" offsetX="-1.0" offsetY="3.0"
-                     radius="4.5" width="10.0">
+                  <DropShadow blurType="GAUSSIAN" height="10.0" offsetX="-1.0" offsetY="3.0" radius="4.5" width="10.0">
                      <color>
                         <Color opacity="0.20000000298023224" />
                      </color>
                   </DropShadow>
                </effect>
             </Button>
-            <Button fx:id="addSupplier" layoutX="884.0" layoutY="97.0" mnemonicParsing="false"
-               onMouseClicked="#addSupplierAction" prefHeight="40.0" prefWidth="66.0"
-               style="-fx-cursor: hand;" styleClass="buttonStyle" stylesheets="@style.css"
-               text="Add" visible="true" AnchorPane.rightAnchor="20.0">
+            <Button fx:id="addSupplier" layoutX="884.0" layoutY="97.0" mnemonicParsing="false" onMouseClicked="#addSupplierAction" prefHeight="40.0" prefWidth="66.0" style="-fx-cursor: hand;" styleClass="buttonStyle" stylesheets="@style.css" text="Add" visible="true" AnchorPane.rightAnchor="20.0">
                <effect>
-                  <DropShadow blurType="GAUSSIAN" height="10.0" offsetX="-1.0" offsetY="3.0"
-                     radius="4.5" width="10.0">
+                  <DropShadow blurType="GAUSSIAN" height="10.0" offsetX="-1.0" offsetY="3.0" radius="4.5" width="10.0">
                      <color>
                         <Color opacity="0.20000000298023224" />
                      </color>
                   </DropShadow>
                </effect>
             </Button>
-            <TableView fx:id="suppliersTable" layoutX="314.0" layoutY="147.0"
-               style="-fx-cursor: hand;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0"
-               AnchorPane.rightAnchor="20.0">
+            <TableView fx:id="suppliersTable" layoutX="314.0" layoutY="147.0" style="-fx-cursor: hand;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
                <columns>
                   <TableColumn fx:id="supplierId" prefWidth="75.0" text="ID Supplier" />
                   <TableColumn fx:id="supplierName" prefWidth="75.0" text="Nama Supplier" />
@@ -75,21 +59,16 @@
                   <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
                </columnResizePolicy>
                <effect>
-                  <DropShadow blurType="GAUSSIAN" height="10.0" offsetX="-1.0" offsetY="3.0"
-                     radius="4.5" width="10.0">
+                  <DropShadow blurType="GAUSSIAN" height="10.0" offsetX="-1.0" offsetY="3.0" radius="4.5" width="10.0">
                      <color>
                         <Color opacity="0.20000000298023224" />
                      </color>
                   </DropShadow>
                </effect>
             </TableView>
-            <Button layoutX="884.0" layoutY="20.0" mnemonicParsing="false"
-               onMouseClicked="#searchSupplierAction" prefHeight="40.0" prefWidth="66.0"
-               style="-fx-cursor: hand;" styleClass="buttonStyle" stylesheets="@style.css"
-               text="Search">
+            <Button layoutX="884.0" layoutY="20.0" mnemonicParsing="false" onMouseClicked="#searchSupplierAction" prefHeight="40.0" prefWidth="66.0" style="-fx-cursor: hand;" styleClass="buttonStyle" stylesheets="@style.css" text="Search">
                <effect>
-                  <DropShadow blurType="GAUSSIAN" height="10.0" offsetX="-1.0" offsetY="3.0"
-                     radius="4.5" width="10.0">
+                  <DropShadow blurType="GAUSSIAN" height="10.0" offsetX="-1.0" offsetY="3.0" radius="4.5" width="10.0">
                      <color>
                         <Color opacity="0.20000000298023224" />
                      </color>

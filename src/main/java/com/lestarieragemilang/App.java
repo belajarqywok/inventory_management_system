@@ -8,6 +8,7 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 import java.io.IOException;
+import java.net.URL;
 
 /**
  * JavaFX App
@@ -15,10 +16,11 @@ import java.io.IOException;
 public class App extends Application {
 
     private static Scene scene;
+    private static final String LOGIN_FXML = "login";
 
     @Override
     public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("login"), 1200, 650);
+        scene = new Scene(loadFXML(LOGIN_FXML), 1200, 650);
         scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         stage.initStyle(StageStyle.UNDECORATED);
         stage.setScene(scene);
@@ -41,12 +43,21 @@ public class App extends Application {
     }
 
     static void setRoot(String fxml) throws IOException {
-        scene.setRoot(loadFXML(fxml));
+        if (fxmlExists(fxml)) {
+            scene.setRoot(loadFXML(fxml));
+        } else {
+            throw new IOException("FXML file does not exist: " + fxml);
+        }
     }
 
     private static Parent loadFXML(String fxml) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource(fxml + ".fxml"));
         return fxmlLoader.load();
+    }
+
+    private static boolean fxmlExists(String fxml) {
+        URL resource = App.class.getResource(fxml + ".fxml");
+        return resource != null;
     }
 
     public static void main(String[] args) {

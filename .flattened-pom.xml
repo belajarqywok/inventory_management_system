@@ -98,6 +98,11 @@
       <artifactId>mysql-connector-j</artifactId>
       <version>8.3.0</version>
     </dependency>
+    <dependency>
+      <groupId>com.zaxxer</groupId>
+      <artifactId>HikariCP</artifactId>
+      <version>4.0.3</version>
+    </dependency>
   </dependencies>
   <build>
     <pluginManagement>
@@ -145,21 +150,6 @@
         <configuration>
           <updatePomFile>true</updatePomFile>
           <flattenMode>resolveCiFriendliesOnly</flattenMode>
-        </configuration>
-      </plugin>
-      <plugin>
-        <groupId>org.gaul</groupId>
-        <artifactId>modernizer-maven-plugin</artifactId>
-        <version>2.7.0</version>
-        <executions>
-          <execution>
-            <goals>
-              <goal>modernizer</goal>
-            </goals>
-          </execution>
-        </executions>
-        <configuration>
-          <javaVersion>${java.version}</javaVersion>
         </configuration>
       </plugin>
       <plugin>

@@ -1,7 +1,6 @@
 package com.lestarieragemilang;
 
 import java.util.Map;
-import java.util.HashMap;
 
 import javafx.fxml.FXML;
 
@@ -22,9 +21,9 @@ import com.lestarieragemilang.Repositories.StockRepositories;
 
 
 /**
- *  Stock Form Handler
+ *  Stock Form Controller
  */
-public class StockForm extends StockRepositories {
+public class StockFormController extends StockRepositories {
   
   @FXML
   private AnchorPane anchorPane;

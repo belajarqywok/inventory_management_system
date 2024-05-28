@@ -27,13 +27,13 @@ import com.lestarieragemilang.Utilities.CacheService;
 
 import com.lestarieragemilang.Entities.StockEntity;
 import com.lestarieragemilang.Repositories.StockRepositories;
-
+ 
 
 
 /**
- *  Stock Handler
+ *  Stock Controller
  */
-public class Stock extends StockRepositories {
+public class StockController extends StockRepositories {
 
 	@FXML
   private TableView<StockEntity> stocksTable;
@@ -59,6 +59,7 @@ public class Stock extends StockRepositories {
 
 	@FXML
   private TableColumn<StockEntity, String> stockUnit;
+
 
 
 	@FXML

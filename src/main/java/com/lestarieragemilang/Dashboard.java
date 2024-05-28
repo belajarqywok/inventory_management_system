@@ -64,7 +64,7 @@ public class Dashboard {
 
     @FXML
     void setScenePembelianBesi(MouseEvent event) {
-        Redirect.page("pembelian", setScene, getClass());
+        Redirect.page("purchasing", setScene, getClass());
         CacheService.clear();
     }
 

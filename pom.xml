@@ -136,24 +136,24 @@
 
     <dependencies>
         <dependency>
-			<groupId>org.jfxtras</groupId>
-			<artifactId>jmetro</artifactId>
-			<version>11.6.16</version>
-			<exclusions>
-				<exclusion>
-					<groupId>org.openjfx</groupId>
-					<artifactId>javafx-controls</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.openjfx</groupId>
-					<artifactId>javafx-graphics</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.openjfx</groupId>
-					<artifactId>javafx-base</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
+					<groupId>org.jfxtras</groupId>
+					<artifactId>jmetro</artifactId>
+					<version>11.6.16</version>
+					<exclusions>
+						<exclusion>
+							<groupId>org.openjfx</groupId>
+							<artifactId>javafx-controls</artifactId>
+						</exclusion>
+						<exclusion>
+							<groupId>org.openjfx</groupId>
+							<artifactId>javafx-graphics</artifactId>
+						</exclusion>
+						<exclusion>
+							<groupId>org.openjfx</groupId>
+							<artifactId>javafx-base</artifactId>
+						</exclusion>
+					</exclusions>
+				</dependency>
 
         <!-- JavaFX FXML -->
         <dependency>
@@ -179,6 +179,13 @@
             <artifactId>mysql-connector-j</artifactId>
             <version>8.3.0</version>
         </dependency>
+ 
+				<!-- HikariCP -->
+				<dependency>
+					<groupId>com.zaxxer</groupId>
+					<artifactId>HikariCP</artifactId>
+					<version>4.0.3</version>
+				</dependency>
     </dependencies>
 
 
@@ -195,47 +202,47 @@
 
 
             <plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>flatten-maven-plugin</artifactId>
-				<version>1.6.0</version>
-				<configuration>
-					<updatePomFile>true</updatePomFile>
-					<flattenMode>resolveCiFriendliesOnly</flattenMode>
-				</configuration>
-				<executions>
-					<execution>
-						<id>flatten-clean</id>
-						<phase>clean</phase>
-						<goals>
-							<goal>clean</goal>
-						</goals>
-					</execution>
-					<execution>
-						<id>flatten-flatten</id>
-						<phase>process-resources</phase>
-						<goals>
-							<goal>flatten</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
+							<groupId>org.codehaus.mojo</groupId>
+							<artifactId>flatten-maven-plugin</artifactId>
+							<version>1.6.0</version>
+							<configuration>
+								<updatePomFile>true</updatePomFile>
+								<flattenMode>resolveCiFriendliesOnly</flattenMode>
+							</configuration>
+							<executions>
+								<execution>
+									<id>flatten-clean</id>
+									<phase>clean</phase>
+									<goals>
+										<goal>clean</goal>
+									</goals>
+								</execution>
+								<execution>
+									<id>flatten-flatten</id>
+									<phase>process-resources</phase>
+									<goals>
+										<goal>flatten</goal>
+									</goals>
+								</execution>
+							</executions>
+						</plugin>
 
 
-            <plugin>
-				<groupId>org.gaul</groupId>
-				<artifactId>modernizer-maven-plugin</artifactId>
-				<version>2.7.0</version>
-				<configuration>
-					<javaVersion>${java.version}</javaVersion>
-				</configuration>
-				<executions>
-					<execution>
-						<goals>
-							<goal>modernizer</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
+            <!-- <plugin>
+							<groupId>org.gaul</groupId>
+							<artifactId>modernizer-maven-plugin</artifactId>
+							<version>2.7.0</version>
+							<configuration>
+								<javaVersion>${java.version}</javaVersion>
+							</configuration>
+							<executions>
+								<execution>
+									<goals>
+										<goal>modernizer</goal>
+									</goals>
+								</execution>
+							</executions>
+						</plugin> -->
 
 
             <plugin>
@@ -259,51 +266,51 @@
 
 
             <plugin>
-				<groupId>com.gluonhq</groupId>
-				<artifactId>gluonfx-maven-plugin</artifactId>
-				<version>1.0.22</version>
-				<configuration>
-					<mainClass>${main.class}</mainClass>
-					<releaseConfiguration>
-						<skipSigning>true</skipSigning>
-						<description>appDescription</description>
-						<vendor>vendor</vendor>
-					</releaseConfiguration>
-				</configuration>
-			</plugin>
+							<groupId>com.gluonhq</groupId>
+							<artifactId>gluonfx-maven-plugin</artifactId>
+							<version>1.0.22</version>
+							<configuration>
+								<mainClass>${main.class}</mainClass>
+								<releaseConfiguration>
+									<skipSigning>true</skipSigning>
+									<description>appDescription</description>
+									<vendor>vendor</vendor>
+								</releaseConfiguration>
+							</configuration>
+						</plugin>
 
 
             <plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>exec-maven-plugin</artifactId>
-				<version>3.2.0</version>
-				<configuration>
-					<mainClass>${main.class}</mainClass>
-					<executable>${java.home}/bin/java.exe</executable>
-					<arguments>
-						<argument>-agentlib:native-image-agent=access-filter-file=${project.basedir}/src/main/resources/META-INF/native-image/filter-file.json,config-merge-dir=${project.basedir}/src/main/resources/META-INF/native-image</argument>
-						<argument>-classpath</argument>
-						<classpath />
-						<argument>${main.class}</argument>
-					</arguments>
-				</configuration>
-			</plugin>
+							<groupId>org.codehaus.mojo</groupId>
+							<artifactId>exec-maven-plugin</artifactId>
+							<version>3.2.0</version>
+							<configuration>
+								<mainClass>${main.class}</mainClass>
+								<executable>${java.home}/bin/java.exe</executable>
+								<arguments>
+									<argument>-agentlib:native-image-agent=access-filter-file=${project.basedir}/src/main/resources/META-INF/native-image/filter-file.json,config-merge-dir=${project.basedir}/src/main/resources/META-INF/native-image</argument>
+									<argument>-classpath</argument>
+									<classpath />
+									<argument>${main.class}</argument>
+								</arguments>
+							</configuration>
+						</plugin>
         </plugins>
 
 
         <pluginManagement>
-			<plugins>
-				<plugin>
-					<artifactId>maven-resources-plugin</artifactId>
-					<configuration>
-						<propertiesEncoding>ISO-8859-1</propertiesEncoding>
-					</configuration>
-				</plugin>
-				<plugin>
-					<artifactId>maven-site-plugin</artifactId>
-					<version>3.12.1</version>
-				</plugin>
-			</plugins>
-		</pluginManagement>
+					<plugins>
+						<plugin>
+							<artifactId>maven-resources-plugin</artifactId>
+							<configuration>
+								<propertiesEncoding>ISO-8859-1</propertiesEncoding>
+							</configuration>
+						</plugin>
+						<plugin>
+							<artifactId>maven-site-plugin</artifactId>
+							<version>3.12.1</version>
+						</plugin>
+					</plugins>
+				</pluginManagement>
     </build>
 </project>

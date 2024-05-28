@@ -27,7 +27,12 @@ import com.lestarieragemilang.Utilities.CacheService;
 import com.lestarieragemilang.Entities.SupplierEntity;
 import com.lestarieragemilang.Repositories.SupplierRepositories;
 
-public class Supplier extends SupplierRepositories {
+
+
+/**
+ *  Supplier Controller
+ */
+public class SupplierController extends SupplierRepositories {
 
   @FXML
   private TableView<SupplierEntity> suppliersTable;

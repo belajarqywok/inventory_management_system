@@ -31,9 +31,9 @@ import com.lestarieragemilang.Repositories.PurchasingRepositories;
 
 
 /**
- *  Purchasing Controller
+ *  Purchasing
  */
-public class PurchasingController extends PurchasingRepositories {
+public class Purchasing extends PurchasingRepositories {
 
   @FXML
   private TableView<PurchasingEntity> purchasingsTable;

@@ -30,9 +30,9 @@ import com.lestarieragemilang.Repositories.SupplierRepositories;
 
 
 /**
- *  Supplier Controller
+ *  Supplier
  */
-public class SupplierController extends SupplierRepositories {
+public class Supplier extends SupplierRepositories {
 
   @FXML
   private TableView<SupplierEntity> suppliersTable;

@@ -31,9 +31,9 @@ import com.lestarieragemilang.Repositories.StockRepositories;
 
 
 /**
- *  Stock Controller
+ *  Stock
  */
-public class StockController extends StockRepositories {
+public class Stock extends StockRepositories {
 
 	@FXML
   private TableView<StockEntity> stocksTable;

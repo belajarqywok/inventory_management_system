@@ -21,9 +21,9 @@ import com.lestarieragemilang.Repositories.StockRepositories;
 
 
 /**
- *  Stock Form Controller
+ *  Stock Form
  */
-public class StockFormController extends StockRepositories {
+public class StockForm extends StockRepositories {
   
   @FXML
   private AnchorPane anchorPane;

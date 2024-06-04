@@ -21,9 +21,9 @@ import com.lestarieragemilang.Repositories.PurchasingRepositories;
 
 
 /**
- *  Purchasing Form Controller
+ *  Purchasing Form
  */
-public class PurchasingFormController extends PurchasingRepositories {
+public class PurchasingForm extends PurchasingRepositories {
   
   @FXML
   private AnchorPane anchorPane;

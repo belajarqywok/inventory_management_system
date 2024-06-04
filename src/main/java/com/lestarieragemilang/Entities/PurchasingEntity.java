@@ -1,5 +1,7 @@
 package com.lestarieragemilang.Entities;
 
+import java.sql.Date;
+
 
 /**
  *  Purchasing Entity
@@ -106,15 +108,15 @@ public class PurchasingEntity {
   /**
    *  Purchasing Date
    */
-  private String purchasingDate;
+  private Date purchasingDate;
 
   // Purchasing Date Setter
-  public void setPurchasingDate(String date) {
+  public void setPurchasingDate(Date date) {
     this.purchasingDate = date;
   }
 
   // Purchasing Date Getter
-  public String getPurchasingDate() {
+  public Date getPurchasingDate() {
     return this.purchasingDate;
   }
 

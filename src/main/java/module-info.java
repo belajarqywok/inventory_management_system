@@ -3,6 +3,8 @@ module com.lestarieragemilang {
   requires javafx.fxml;
   requires java.sql;
   requires com.zaxxer.hikari;
+  requires java.desktop;
+  requires transitive javafx.graphics;
 
   opens com.lestarieragemilang to javafx.fxml;
   opens com.lestarieragemilang.Entities to javafx.base;

@@ -7,6 +7,7 @@ import java.util.ArrayList;
 
 import java.sql.ResultSet;
 import java.sql.Connection;
+import java.sql.Date;
 import java.sql.SQLException;
 import java.sql.PreparedStatement;
 import java.sql.SQLIntegrityConstraintViolationException;
@@ -116,7 +117,7 @@ public class PurchasingRepositories extends DatabaseConfiguration {
         "purchasing_amount,    "   +
         "purchasing_price      "   +
       ")"                          +
-      "VALUES (?, ?, ?, ?, ?, ?, ?)", this.TABLENAME
+      "VALUES (?, ?, ?, ?, ?, ?)", this.TABLENAME
     );
         
     try {
@@ -126,18 +127,25 @@ public class PurchasingRepositories extends DatabaseConfiguration {
       PreparedStatement statement = connection
         .prepareStatement(queryString);
 
-        Object[] entities = {
-          entity.getPurchasingId(),
-          entity.getCategoryId(),
-          entity.getSupplierId(),
+      //   Object[] entities = {
+      //     entity.getPurchasingId(),
+      //     entity.getCategoryId(),
+      //     entity.getSupplierId(),
 
-          entity.getPurchasingDate(),
-          entity.getPurchasingAmount(),
-          entity.getPurchasingPrice()
-        };
+      //     entity.getPurchasingDate(),
+      //     entity.getPurchasingAmount(),
+      //     entity.getPurchasingPrice()
+      //   };
       
-      for (int index = 0; index < entities.length; index ++) 
-        statement.setString(index + 1, (String) entities[index]);
+      // for (int index = 0; index < entities.length; index ++) 
+      //   statement.setString(index + 1, (String) entities[index]);
+
+      statement.setString(1, (String) entity.getPurchasingId());
+      statement.setString(2, (String) entity.getCategoryId());
+      statement.setString(3, (String) entity.getSupplierId());
+      statement.setDate(4, (Date) entity.getPurchasingDate());
+      statement.setInt(5, (int) Integer.parseInt(entity.getPurchasingAmount()));
+      statement.setInt(6, (int) Integer.parseInt(entity.getPurchasingPrice()));
 
       if (statement.executeUpdate() > 0) {
         connection.commit();
@@ -218,19 +226,26 @@ public class PurchasingRepositories extends DatabaseConfiguration {
       PreparedStatement statement = connection
         .prepareStatement(queryString);
 
-        Object[] entities = {
-          entity.getCategoryId(),
-          entity.getSupplierId(),
+      //   Object[] entities = {
+      //     entity.getCategoryId(),
+      //     entity.getSupplierId(),
 
-          entity.getPurchasingDate(),
-          entity.getPurchasingAmount(),
-          entity.getPurchasingPrice(),
+      //     entity.getPurchasingDate(),
+      //     entity.getPurchasingAmount(),
+      //     entity.getPurchasingPrice(),
 
-          entity.getPurchasingId()
-        };
+      //     entity.getPurchasingId()
+      //   };
       
-      for (int index = 0; index < entities.length; index ++) 
-        statement.setString(index + 1, (String) entities[index]);
+      // for (int index = 0; index < entities.length; index ++) 
+      //   statement.setString(index + 1, (String) entities[index]);
+      
+      statement.setString(1, (String) entity.getCategoryId());
+      statement.setString(2, (String) entity.getSupplierId());
+      statement.setDate(3, (Date) entity.getPurchasingDate());
+      statement.setInt(4, (int) Integer.parseInt(entity.getPurchasingAmount()));
+      statement.setInt(5, (int) Integer.parseInt(entity.getPurchasingPrice()));
+      statement.setString(6, (String) entity.getPurchasingId());
 
       if (statement.executeUpdate() > 0) {
         connection.commit();

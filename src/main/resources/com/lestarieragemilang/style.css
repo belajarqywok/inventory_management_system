@@ -1,0 +1,24 @@
+/* JavaFX CSS */
+
+.navText {
+    -fx-background-color: #efefef;
+    -fx-text-fill: #0b1215;
+    -fx-font-size: 18px;
+}
+
+.navText:hover {
+    -fx-background-color: #111111;
+    -fx-text-fill: white;
+}
+
+.buttonStyle {
+    -fx-background-color: white;
+    -fx-text-fill: #0b1215;
+    -fx-background-radius: 10px;   
+}
+
+.textFieldStyle {
+    -fx-background-color: white;
+    -fx-text-fill: #0b1215;
+    -fx-background-radius: 10px;
+}

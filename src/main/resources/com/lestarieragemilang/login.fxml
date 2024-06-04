@@ -5,6 +5,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -12,111 +13,206 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:controller="com.lestarieragemilang.Login" fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lestarieragemilang.Login">
    <children>
       <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="75.0" prefWidth="1280.0" style="-fx-background-color: #2A2438;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Pane prefHeight="200.0" prefWidth="200.0">
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
                <children>
-                  <ImageView fitHeight="47.0" fitWidth="52.0" layoutX="75.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../../images/engineer.png" />
-                     </image>
-                  </ImageView>
+                  <Label prefHeight="35.0" prefWidth="338.0" text="PT. LESTARI ERA GEMILANG" textFill="#dbd8e3" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="10.0">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
                </children>
-            </Pane>
-            <Label prefHeight="35.0" prefWidth="338.0" text="PT. LESTARI ERA GEMILANG" textFill="#dbd8e3">
-               <font>
-                  <Font name="System Bold" size="24.0" />
-               </font>
-            </Label>
-            <Pane prefHeight="75.0" prefWidth="648.0" />
+            </AnchorPane>
          </children>
       </HBox>
-      <BorderPane layoutX="16.0" layoutY="76.0" prefHeight="384.0" prefWidth="724.0" style="-fx-background-color: #DBD8E3;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="76.0">
+      <BorderPane layoutX="16.0" layoutY="76.0" prefHeight="384.0" prefWidth="724.0" style="-fx-background-color: #f9fdfe;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="76.0">
          <top>
-            <Label alignment="CENTER" prefHeight="85.0" prefWidth="757.0" text="Manajemen Persediaan dan Penjualan Besi" BorderPane.alignment="CENTER">
+            <Label alignment="CENTER" prefHeight="85.0" prefWidth="900.0" text="Aplikasi Manajemen Persediaan dan Penjualan Besi" BorderPane.alignment="CENTER">
                <font>
                   <Font name="System Bold" size="36.0" />
                </font>
                <BorderPane.margin>
                   <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                </BorderPane.margin>
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="10.0" offsetX="-1.0" offsetY="3.0" radius="4.5" width="10.0">
+                     <color>
+                        <Color opacity="0.20000000298023224" />
+                     </color>
+                  </DropShadow>
+               </effect>
             </Label>
          </top>
-         <left>
-            <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
-         </left>
-         <right>
-            <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
-         </right>
          <center>
-            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="60.0" BorderPane.alignment="CENTER">
                <children>
-                  <VBox alignment="CENTER" prefHeight="469.0" prefWidth="389.0" style="-fx-background-color: #5C5470; -fx-background-radius: 20;">
+                  <ImageView fitHeight="300.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Assets/Images/photo_6240183307941821545_x.jpg" />
+                     </image>
+                  </ImageView>
+                  <VBox alignment="CENTER" prefHeight="0.0" prefWidth="390.0" spacing="80.0" style="-fx-background-color: #f8feff; -fx-background-radius: 20;">
                      <children>
-                        <Label text="LOGIN ADMIN" textFill="#dbd8e3">
+                        <Label text="LOGIN ADMIN" textFill="#0c0c0c">
                            <font>
                               <Font name="System Bold" size="24.0" />
                            </font>
                            <VBox.margin>
-                              <Insets bottom="30.0" />
+                              <Insets />
                            </VBox.margin>
+                           <effect>
+                              <DropShadow height="10.0" offsetX="-1.0" offsetY="3.0" radius="4.5" width="10.0">
+                                 <color>
+                                    <Color opacity="0.20000000298023224" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
                         </Label>
-                        <AnchorPane prefHeight="215.0" prefWidth="389.0">
+                        <VBox prefHeight="100.0" prefWidth="100.0">
                            <children>
-                              <HBox alignment="CENTER_LEFT" prefHeight="67.0" prefWidth="349.0" spacing="20.0" AnchorPane.bottomAnchor="113.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+                              <HBox alignment="CENTER_LEFT" prefHeight="67.0" prefWidth="349.0" spacing="20.0">
                                  <children>
-                                    <Label alignment="BASELINE_LEFT" prefHeight="27.0" prefWidth="111.0" text="Username" textFill="#dbd8e3">
+                                    <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@Assets/Icons/user_.png" />
+                                       </image>
+                                       <effect>
+                                          <DropShadow height="10.0" offsetX="-1.0" offsetY="3.0" radius="4.5" width="10.0">
+                                             <color>
+                                                <Color opacity="0.20000000298023224" />
+                                             </color>
+                                          </DropShadow>
+                                       </effect>
+                                    </ImageView>
+                                    <Label alignment="BASELINE_LEFT" graphicTextGap="0.0" prefHeight="30.0" prefWidth="190.0" text="Username" textFill="#0c0c0c">
                                        <font>
                                           <Font size="18.0" />
                                        </font>
                                        <padding>
                                           <Insets left="10.0" right="10.0" />
                                        </padding>
+                                       <effect>
+                                          <DropShadow height="10.0" offsetX="-1.0" offsetY="3.0" radius="4.5" width="10.0">
+                                             <color>
+                                                <Color opacity="0.20000000298023224" />
+                                             </color>
+                                          </DropShadow>
+                                       </effect>
                                     </Label>
-                                    <TextField fx:id="username" prefHeight="25.0" prefWidth="153.0" style="-fx-background-radius: 10;" />
+                                    <TextField fx:id="username" prefHeight="25.0" prefWidth="160.0" style="-fx-background-radius: 5;">
+                                       <effect>
+                                          <DropShadow blurType="GAUSSIAN" height="10.0" offsetX="-1.0" offsetY="3.0" radius="4.5" width="10.0">
+                                             <color>
+                                                <Color opacity="0.20000000298023224" />
+                                             </color>
+                                          </DropShadow>
+                                       </effect></TextField>
                                  </children>
                                  <padding>
                                     <Insets left="30.0" right="30.0" />
                                  </padding>
                               </HBox>
-                              <HBox alignment="CENTER_LEFT" layoutX="20.0" layoutY="87.0" prefHeight="67.0" prefWidth="349.0" spacing="20.0">
+                              <HBox alignment="CENTER_LEFT" prefHeight="67.0" prefWidth="349.0" spacing="20.0">
                                  <children>
-                                    <Label alignment="BASELINE_LEFT" prefHeight="27.0" prefWidth="172.0" text="Password" textFill="#dbd8e3">
+                                    <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@Assets/Icons/password-duotone_.png" />
+                                       </image>
+                                       <effect>
+                                          <DropShadow height="10.0" offsetX="-1.0" offsetY="3.0" radius="4.5" width="10.0">
+                                             <color>
+                                                <Color opacity="0.20000000298023224" />
+                                             </color>
+                                          </DropShadow>
+                                       </effect>
+                                    </ImageView>
+                                    <Label alignment="BASELINE_LEFT" prefHeight="30.0" prefWidth="190.0" text="Password" textFill="#0c0c0c">
                                        <font>
                                           <Font size="18.0" />
                                        </font>
                                        <padding>
                                           <Insets left="10.0" right="10.0" />
                                        </padding>
+                                       <effect>
+                                          <DropShadow height="10.0" offsetX="-1.0" offsetY="3.0" radius="4.5" width="10.0">
+                                             <color>
+                                                <Color opacity="0.20000000298023224" />
+                                             </color>
+                                          </DropShadow>
+                                       </effect>
                                     </Label>
-                                    <PasswordField fx:id="password" prefHeight="25.0" prefWidth="217.0" style="-fx-background-radius: 10;" />
+                                    <PasswordField fx:id="password" prefHeight="25.0" prefWidth="160.0" style="-fx-background-radius: 5;">
+                                       <effect>
+                                          <DropShadow blurType="GAUSSIAN" height="10.0" offsetX="-1.0" offsetY="3.0" radius="4.5" width="10.0">
+                                             <color>
+                                                <Color opacity="0.20000000298023224" />
+                                             </color>
+                                          </DropShadow>
+                                       </effect></PasswordField>
                                  </children>
                                  <padding>
                                     <Insets left="30.0" right="30.0" />
                                  </padding>
                               </HBox>
                            </children>
-                        </AnchorPane>
-                        <HBox alignment="CENTER" prefHeight="78.0" prefWidth="389.0" spacing="80.0">
+                           <padding>
+                              <Insets left="10.0" right="10.0" />
+                           </padding>
+                        </VBox>
+                        <HBox alignment="CENTER" prefHeight="10.0" prefWidth="390.0" spacing="70.0">
                            <children>
-                              <Button mnemonicParsing="false" onAction="#btnMasuk" prefHeight="35.0" prefWidth="80.0" style="-fx-background-radius: 10; -fx-background-color: #2A2438;" text="Masuk" textFill="#dbd8e3">
+                              <Button graphicTextGap="0.0" mnemonicParsing="false" onAction="#btnMasuk" prefHeight="30.0" prefWidth="100.0" style="-fx-background-radius: 10; -fx-background-color: #2A2438; -fx-cursor: hand;" text="Masuk" textFill="#dbd8e3">
                                  <font>
                                     <Font name="System Bold" size="12.0" />
                                  </font>
+                                 <effect>
+                                    <DropShadow blurType="GAUSSIAN" height="10.0" offsetX="-1.0" offsetY="3.0" radius="4.5" width="10.0">
+                                       <color>
+                                          <Color opacity="0.20000000298023224" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
                               </Button>
-                              <Button mnemonicParsing="false" onAction="#btnKeluar" prefHeight="35.0" prefWidth="80.0" style="-fx-background-radius: 10; -fx-background-color: #DBD8E3;" text="Keluar">
+                              <Button graphicTextGap="0.0" mnemonicParsing="false" onAction="#btnKeluar" prefHeight="30.0" prefWidth="100.0" style="-fx-background-radius: 10; -fx-background-color: #DBD8E3; -fx-cursor: hand;" text="Keluar">
                                  <font>
                                     <Font name="System Bold" size="12.0" />
                                  </font>
+                                 <effect>
+                                    <DropShadow blurType="GAUSSIAN" height="10.0" offsetX="-1.0" offsetY="3.0" radius="4.5" width="10.0">
+                                       <color>
+                                          <Color opacity="0.20000000298023224" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
                               </Button>
                            </children>
                         </HBox>
                      </children>
+                     <effect>
+                        <DropShadow height="20.0" offsetX="-1.0" offsetY="5.0" radius="9.5" width="20.0">
+                           <color>
+                              <Color opacity="0.20000000298023224" />
+                           </color>
+                        </DropShadow>
+                     </effect>
                   </VBox>
+                  <ImageView fitHeight="300.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Assets/Images/photo_6240183307941821544_x.jpg" />
+                     </image>
+                  </ImageView>
                </children>
             </HBox>
          </center>

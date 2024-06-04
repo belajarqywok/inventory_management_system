@@ -1,5 +1,6 @@
 package com.lestarieragemilang;
 
+import java.sql.Date;
 import java.util.List;
 
 import javafx.collections.FXCollections;
@@ -39,7 +40,7 @@ public class Purchasing extends PurchasingRepositories {
   private TableView<PurchasingEntity> purchasingsTable;
 
   @FXML
-  private TableColumn<PurchasingEntity, String> purchasingDate;
+  private TableColumn<PurchasingEntity, Date> purchasingDate;
 
   @FXML
   private TableColumn<PurchasingEntity, String> purchasingId;
@@ -113,7 +114,7 @@ public class Purchasing extends PurchasingRepositories {
     for (Object[] rowData : searchStocks) {
       PurchasingEntity entity = new PurchasingEntity();
 
-      entity.setPurchasingDate((String) rowData[0]);
+      entity.setPurchasingDate((Date) Date.valueOf((String) rowData[0]));
       entity.setPurchasingId((String) rowData[1]);
       entity.setCategoryId((String) rowData[2]);
       entity.setCategoryBrand((String) rowData[3]);
@@ -167,7 +168,9 @@ public class Purchasing extends PurchasingRepositories {
     for (Object[] rowData : getStocks) {
       PurchasingEntity entity = new PurchasingEntity();
 
-      entity.setPurchasingDate((String) rowData[0]);
+      Date date = Date.valueOf((String) rowData[0]);
+      entity.setPurchasingDate(date);
+
       entity.setPurchasingId((String) rowData[1]);
       entity.setCategoryId((String) rowData[2]);
       entity.setCategoryBrand((String) rowData[3]);
@@ -202,7 +205,7 @@ public class Purchasing extends PurchasingRepositories {
   @FXML
   public void initialize() {
     purchasingDate.setCellValueFactory(
-        new PropertyValueFactory<PurchasingEntity, String>("purchasingDate"));
+        new PropertyValueFactory<PurchasingEntity, Date>("purchasingDate"));
     purchasingId.setCellValueFactory(
         new PropertyValueFactory<PurchasingEntity, String>("purchasingId"));
     categoryId.setCellValueFactory(
@@ -230,20 +233,20 @@ public class Purchasing extends PurchasingRepositories {
       @Override
       public void handle(MouseEvent event) {
         if (event.getClickCount() == 1) {
-          PurchasingEntity selectedStock = purchasingsTable
+          PurchasingEntity selectedPurchasing = purchasingsTable
               .getSelectionModel().getSelectedItem();
 
-          if (selectedStock != null) {
-            CacheService.put("purchasingDate", selectedStock.getPurchasingDate());
-            CacheService.put("purchasingId", selectedStock.getPurchasingId());
-            CacheService.put("categoryId", selectedStock.getCategoryId());
-            CacheService.put("categoryBrand", selectedStock.getCategoryBrand());
-            CacheService.put("categoryType", selectedStock.getCategoryType());
-            CacheService.put("supplierId", selectedStock.getSupplierId());
-            CacheService.put("supplierName", selectedStock.getSupplierName());
-            CacheService.put("purchasingAmount", selectedStock.getPurchasingAmount());
-            CacheService.put("purchasingPrice", selectedStock.getPurchasingPrice());
-            CacheService.put("purchasingTotal", selectedStock.getPurchasingTotal());
+          if (selectedPurchasing != null) {
+            CacheService.put("purchasingDate", selectedPurchasing.getPurchasingDate());
+            CacheService.put("purchasingId", selectedPurchasing.getPurchasingId());
+            CacheService.put("categoryId", selectedPurchasing.getCategoryId());
+            CacheService.put("categoryBrand", selectedPurchasing.getCategoryBrand());
+            CacheService.put("categoryType", selectedPurchasing.getCategoryType());
+            CacheService.put("supplierId", selectedPurchasing.getSupplierId());
+            CacheService.put("supplierName", selectedPurchasing.getSupplierName());
+            CacheService.put("purchasingAmount", selectedPurchasing.getPurchasingAmount());
+            CacheService.put("purchasingPrice", selectedPurchasing.getPurchasingPrice());
+            CacheService.put("purchasingTotal", selectedPurchasing.getPurchasingTotal());
 
             addPurchasing.setVisible(false);
             editPurchasing.setVisible(true);

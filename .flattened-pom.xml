@@ -10,7 +10,7 @@
     <main.class>com.lestarieragemilang.App</main.class>
     <maven.compiler.source>17</maven.compiler.source>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <javafx.version>21</javafx.version>
+    <javafx.version>22</javafx.version>
     <java.home>${env.GRAALVM_HOME}</java.home>
   </properties>
   <dependencyManagement>
